@@ -145,7 +145,7 @@ def objective(trial):
 
     print_hyperparameters(batch_size, learning_rate, dropout, optimizer_name, momentum_term, patience, fc_units, fc_units_2)
 
-    num_epochs = 10
+    num_epochs = 30
     #patience = 3
 
     best_val_f1 = 0
@@ -214,13 +214,13 @@ study = optuna.create_study(study_name=study_name, storage=storage_url, directio
 
 # Optuna study setup and optimization
 study = optuna.create_study(
-    study_name='optuna_study10multiclass04David',
+    study_name='optuna_study10multiclass05David',
     direction='maximize',
-    storage='sqlite:///optuna_study10multiclass04David.db',
+    storage='sqlite:///optuna_study10multiclass05David.db',
     load_if_exists=True
 )
 
-study.optimize(objective, n_trials=10)
+study.optimize(objective, n_trials=100)
 
 # Output the best trial
 best_trial = study.best_trial
