@@ -1,0 +1,133 @@
+Query 1: Using the exact images and labels from the CSV for this iteration.
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss     dur
+-------  ----------  ------------  -----------  ----------  ------------  ------
+      1      0.5689        0.7063       0.0043      0.3807        0.7121  6.9556
+Accuracy after query 1: 0.0359375
+F1 Score after query 1: 0.37667137581693
+
+Query 2: Using the exact images and labels from the CSV for this iteration.
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss     dur
+-------  ----------  ------------  -----------  ----------  ------------  ------
+      1      0.4649        0.7023       0.0042      0.3788        0.7107  7.2089
+Accuracy after query 2: 0.034895833333333334
+F1 Score after query 2: 0.3741956320798307
+
+Query 3: Using the exact images and labels from the CSV for this iteration.
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss     dur
+-------  ----------  ------------  -----------  ----------  ------------  ------
+      1      0.4909        0.7025       0.0038      0.3742        0.7072  7.6421
+Accuracy after query 3: 0.03333333333333333
+F1 Score after query 3: 0.3679663738992905
+
+Query 4: Using the exact images and labels from the CSV for this iteration.
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss     dur
+-------  ----------  ------------  -----------  ----------  ------------  ------
+      1      0.4451        0.6995       0.0073      0.3581        0.6964  8.7344
+Accuracy after query 4: 0.03142361111111111
+F1 Score after query 4: 0.35447605553604333
+
+Query 5: Using the exact images and labels from the CSV for this iteration.
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss      dur
+-------  ----------  ------------  -----------  ----------  ------------  -------
+      1      0.4203        0.6885       0.2266      0.2511        0.6738  10.9257
+Accuracy after query 5: 0.20538194444444444
+F1 Score after query 5: 0.2471595772001086
+
+Query 6: Using the exact images and labels from the CSV for this iteration.
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss      dur
+-------  ----------  ------------  -----------  ----------  ------------  -------
+      1      0.3329        0.6711       0.3325      0.1910        0.6442  14.8471
+Accuracy after query 6: 0.36006944444444444
+F1 Score after query 6: 0.1633055812519272
+
+Query 7: Using the exact images and labels from the CSV for this iteration.
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss      dur
+-------  ----------  ------------  -----------  ----------  ------------  -------
+      1      0.2281        0.6490       0.3753      0.1846        0.6198  22.0572
+Accuracy after query 7: 0.40434027777777776
+F1 Score after query 7: 0.16322676379333603
+
+Query 8: Using the exact images and labels from the CSV for this iteration.
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss      dur
+-------  ----------  ------------  -----------  ----------  ------------  -------
+      1      0.2334        0.6284       0.3691      0.2494        0.5862  35.0931
+Accuracy after query 8: 0.4001736111111111
+F1 Score after query 8: 0.2530873608781826
+
+Query 9: Using the exact images and labels from the CSV for this iteration.
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss      dur
+-------  ----------  ------------  -----------  ----------  ------------  -------
+      1      0.4634        0.5674       0.5865      0.5770        0.4578  58.6755
+Accuracy after query 9: 0.5836805555555555
+F1 Score after query 9: 0.5834306276969227
+
+Query 10: Using the exact images and labels from the CSV for this iteration.
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss       dur
+-------  ----------  ------------  -----------  ----------  ------------  --------
+      1      0.7846        0.4523       0.6958      0.8360        0.3625  101.5900
+Accuracy after query 10: 0.7241319444444444
+F1 Score after query 10: 0.8492575873217958
+
+Query 11: Using the exact images and labels from the CSV for this iteration.
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss       dur
+-------  ----------  ------------  -----------  ----------  ------------  --------
+      1      0.8722        0.3716       0.7182      0.8536        0.3063  179.8069
+Accuracy after query 11: 0.7390625
+F1 Score after query 11: 0.8648136149332437
+
+Query 12: Using the exact images and labels from the CSV for this iteration.
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss       dur
+-------  ----------  ------------  -----------  ----------  ------------  --------
+      1      0.8942        0.3064       0.7438      0.8688        0.2528  321.4072
+Accuracy after query 12: 0.7651041666666667
+F1 Score after query 12: 0.882635840409399
+
+Query 13: Using the exact images and labels from the CSV for this iteration.
+Traceback (most recent call last):
+  File ".\FixAvg_confidence.py", line 272, in <module>
+    learner.teach(X=X_cumulative, y=y_cumulative)
+  File "C:\Users\localuserSG\anaconda3\envs\shubham_gupta_AL01\lib\site-packages\modAL\models\learners.py", line 175, in teach  
+    self._add_training_data(X, y)
+  File "C:\Users\localuserSG\anaconda3\envs\shubham_gupta_AL01\lib\site-packages\modAL\models\learners.py", line 108, in _add_training_data
+    self.X_training = data_vstack((self.X_training, X))
+  File "C:\Users\localuserSG\anaconda3\envs\shubham_gupta_AL01\lib\site-packages\modAL\utils\data.py", line 31, in data_vstack  
+    return np.concatenate(blocks)
+  File "<__array_function__ internals>", line 200, in concatenate
+numpy.core._exceptions.MemoryError: Unable to allocate 110. GiB for an array with shape (195616, 3, 224, 224) and data type float32
+PS C:\Users\localuserSG\ActiveLearning\MultiLabel\imagesFroMullticlass\FixAvg_confidence> 
