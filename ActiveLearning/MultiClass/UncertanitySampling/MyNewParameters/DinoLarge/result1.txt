@@ -1,0 +1,477 @@
+PS C:\Users\localuserSG\ActiveLearning\MultiClass\US\FixedUS\DinoL> python .\Fixuncertainty_sampling.py
+(26880, 5)
+(5760, 5)
+(5760, 5)
+100%|████████████████████████████████████████████████████████████████████████████████| 26880/26880 [00:00<00:00, 128347.95it/s] 
+100%|██████████████████████████████████████████████████████████████████████████████████| 5760/5760 [00:00<00:00, 127258.12it/s] 
+100%|██████████████████████████████████████████████████████████████████████████████████| 5760/5760 [00:00<00:00, 126964.53it/s] 
+3
+multiclass_train_df shape: (26880, 2)
+multiclass_test_df shape: (5760, 2)
+multiclass_val_df shape: (5760, 2)
+Calculated train_size: 8
+Using cache found in C:\Users\localuserSG/.cache\torch\hub\facebookresearch_dinov2_main
+C:\Users\localuserSG/.cache\torch\hub\facebookresearch_dinov2_main\dinov2\layers\swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+C:\Users\localuserSG/.cache\torch\hub\facebookresearch_dinov2_main\dinov2\layers\attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+C:\Users\localuserSG/.cache\torch\hub\facebookresearch_dinov2_main\dinov2\layers\block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+Adjusted shapes after loading:
+X_initial_np: (8, 224, 224, 3) y_initial_np: (8,)
+X_train_np: (26880, 224, 224, 3) y_train_np: (26880,)
+X_pool_np: (26872, 224, 224, 3) y_pool_np: (26872,)
+X_test_np: (5760, 224, 224, 3) y_test_np: (5760,)
+X_val_np: (5760, 224, 224, 3) y_val_np: (5760,)
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss    cp      dur
+-------  ----------  ------------  -----------  ----------  ------------  ----  -------
+      1      0.2500        2.1662       0.2036      0.2036        2.0320     +  61.8060
+      2      0.1250        1.9899       0.1146      0.1146        2.0486        64.2570
+      3      0.5000        1.9021       0.1460      0.1460        2.0683        64.7577
+      4      0.5000        1.8624       0.1356      0.1356        2.1151        64.5092
+      5      1.0000        1.6957       0.1502      0.1502        2.0093     +  64.2924
+      6      0.8750        1.6236       0.1714      0.1714        2.1371        64.7707
+      7      0.8750        1.4413       0.1488      0.1488        2.1766        64.2079
+      8      0.8750        1.3102       0.1738      0.1738        2.1044        64.0997
+      9      0.8750        1.2733       0.1814      0.1814        2.1132        63.9858
+     10      0.8750        1.2553       0.1688      0.1688        2.2007        63.5711
+     11      1.0000        1.0859       0.1797      0.1797        2.0518        63.5208
+     12      1.0000        1.0179       0.1528      0.1528        2.1882        63.4954
+     13      1.0000        0.9008       0.1628      0.1628        2.1147        63.5269
+     14      1.0000        0.8464       0.1434      0.1434        2.1828        63.4822
+     15      1.0000        0.7880       0.1413      0.1413        2.1884        63.4826
+     16      1.0000        0.7177       0.1431      0.1431        2.1639        63.4932
+     17      1.0000        0.6909       0.1566      0.1566        2.1799        63.4914
+     18      1.0000        0.6272       0.1384      0.1384        2.2888        63.5393
+     19      1.0000        0.6242       0.1543      0.1543        2.1701        63.5241
+Stopping since valid_loss has not improved in the last 15 epochs.
+
+Query 1: Using the initial 8 samples already in X_cumulative and y_cumulative.
+Training begins with initial 8 samples.
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss    cp      dur
+-------  ----------  ------------  -----------  ----------  ------------  ----  -------
+      1      1.0000        0.6008       0.2753      0.2753        1.9576     +  63.7018
+      2      0.8125        1.4109       0.1422      0.1422        2.2234        64.9292
+      3      1.0000        0.8745       0.1502      0.1502        2.2165        64.0643
+      4      1.0000        0.6814       0.1302      0.1302        2.3926        63.8392
+      5      1.0000        0.5430       0.1396      0.1396        2.3226        63.7282
+      6      1.0000        0.4333       0.1264      0.1264        2.3948        63.6563
+      7      1.0000        0.3925       0.1276      0.1276        2.3817        63.6689
+      8      1.0000        0.3665       0.1257      0.1257        2.4292        63.6771
+      9      1.0000        0.3515       0.1252      0.1252        2.4570        63.6791
+     10      1.0000        0.3266       0.1222      0.1222        2.4729        63.7161
+     11      1.0000        0.3201       0.1247      0.1247        2.4387        63.6878
+     12      1.0000        0.2993       0.1238      0.1238        2.4599        63.6688
+     13      1.0000        0.2928       0.1278      0.1278        2.4559        63.6794
+     14      1.0000        0.2758       0.1212      0.1212        2.4646        63.6853
+     15      1.0000        0.2731       0.1243      0.1243        2.4877        63.6959
+Stopping since valid_loss has not improved in the last 15 epochs.
+Accuracy after query 1: 0.17829861111111112
+F1 Score after query 1: 0.17829861111111112
+Number of samples used for retraining: 8
+Model checkpoint saved to D:/Shubham/results/US/Fixuncertainty_sampling/DinoL/model_checkpoint_iteration_0.pt
+
+Query 2: Requesting 16 samples.
+Number of samples in pool before query: 26872
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss    cp      dur
+-------  ----------  ------------  -----------  ----------  ------------  ----  -------
+      1      0.6250        0.9594       0.4580      0.4580        1.6258     +  65.4922
+      2      0.9000        0.7660       0.2682      0.2682        1.9404        65.4750
+      3      1.0000        0.5520       0.4019      0.4019        1.7941        65.1778
+      4      1.0000        0.3950       0.3139      0.3139        1.8830        64.1939
+      5      1.0000        0.3246       0.3293      0.3293        1.8717        64.1904
+      6      1.0000        0.2929       0.3417      0.3417        1.8657        64.2129
+      7      1.0000        0.2697       0.3283      0.3283        1.8827        64.1611
+      8      1.0000        0.2680       0.3391      0.3391        1.8905        64.1782
+      9      1.0000        0.2536       0.3326      0.3326        1.8930        64.1665
+     10      1.0000        0.2431       0.3288      0.3288        1.9049        64.1886
+     11      1.0000        0.2428       0.3359      0.3359        1.8948        64.1693
+     12      1.0000        0.2280       0.3271      0.3271        1.9172        64.1453
+     13      1.0000        0.2253       0.3365      0.3365        1.9160        64.1389
+     14      1.0000        0.2177       0.3276      0.3276        1.9279        64.1453
+     15      1.0000        0.2134       0.3349      0.3349        1.9259        64.1541
+Stopping since valid_loss has not improved in the last 15 epochs.
+Accuracy after query 2: 0.41805555555555557
+F1 Score after query 2: 0.41805555555555557
+Number of samples used for retraining: 24
+Number of samples in pool after query: 26856
+Model checkpoint saved to D:/Shubham/results/US/Fixuncertainty_sampling/DinoL/model_checkpoint_iteration_1.pt
+
+Query 3: Requesting 32 samples.
+Number of samples in pool before query: 26856
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss    cp      dur
+-------  ----------  ------------  -----------  ----------  ------------  ----  -------
+      1      0.6979        0.8060       0.2991      0.2991        2.1492     +  66.4520
+      2      0.6667        0.9992       0.4497      0.4497        1.5334     +  66.5575
+      3      0.9479        0.6406       0.4210      0.4210        1.7218        65.4701
+      4      0.9167        0.4965       0.4589      0.4589        1.6646        65.3358
+      5      0.9375        0.3952       0.4667      0.4667        1.6451        65.3217
+      6      0.9479        0.3507       0.4674      0.4674        1.6190        65.3043
+      7      0.9479        0.3215       0.4639      0.4639        1.6691        65.3413
+      8      0.9479        0.3104       0.4727      0.4727        1.6293        65.3444
+      9      0.9479        0.3007       0.4422      0.4422        1.7070        65.3388
+     10      0.9479        0.3246       0.5035      0.5035        1.6143        65.2897
+     11      0.9479        0.3233       0.4623      0.4623        1.6813        65.2971
+     12      0.9583        0.2802       0.4705      0.4705        1.6915        65.2894
+     13      0.9479        0.2612       0.4602      0.4602        1.6697        65.3142
+     14      0.9688        0.2517       0.4724      0.4724        1.6807        65.3173
+     15      0.9479        0.2523       0.4587      0.4587        1.6969        65.3379
+     16      0.9583        0.2557       0.4729      0.4729        1.6869        65.3146
+Stopping since valid_loss has not improved in the last 15 epochs.
+Accuracy after query 3: 0.5196180555555555
+F1 Score after query 3: 0.5196180555555555
+Number of samples used for retraining: 56
+Number of samples in pool after query: 26824
+Model checkpoint saved to D:/Shubham/results/US/Fixuncertainty_sampling/DinoL/model_checkpoint_iteration_2.pt
+
+Query 4: Requesting 56 samples.
+Number of samples in pool before query: 26824
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss    cp      dur
+-------  ----------  ------------  -----------  ----------  ------------  ----  -------
+      1      0.8029        0.7738       0.5969      0.5969        1.3124     +  71.2287
+      2      0.7212        0.9431       0.4656      0.4656        1.4864        70.4710
+      3      0.7981        0.6607       0.4931      0.4931        1.5019        70.5050
+      4      0.8269        0.6189       0.5194      0.5194        1.3596        70.5783
+      5      0.8990        0.4578       0.4571      0.4571        1.5162        70.4985
+      6      0.9135        0.4266       0.5049      0.5049        1.4462        70.5403
+      7      0.9423        0.3598       0.5045      0.5045        1.3450        70.5323
+      8      0.9567        0.3206       0.4840      0.4840        1.4808        70.5064
+      9      0.9567        0.3188       0.4733      0.4733        1.4512        70.5036
+     10      0.9279        0.3519       0.4655      0.4655        1.7333        70.5292
+     11      0.8990        0.3688       0.4373      0.4373        1.5270        70.5683
+     12      0.9375        0.3317       0.5161      0.5161        1.4053        70.5795
+     13      0.9519        0.2616       0.5071      0.5071        1.3845        70.5168
+     14      0.9663        0.2490       0.5071      0.5071        1.4162        70.5093
+     15      0.9663        0.2324       0.5054      0.5054        1.3859        70.4795
+Stopping since valid_loss has not improved in the last 15 epochs.
+Accuracy after query 4: 0.5932291666666667
+F1 Score after query 4: 0.5932291666666667
+Number of samples used for retraining: 112
+Number of samples in pool after query: 26768
+Model checkpoint saved to D:/Shubham/results/US/Fixuncertainty_sampling/DinoL/model_checkpoint_iteration_3.pt
+
+Query 5: Requesting 96 samples.
+Number of samples in pool before query: 26768
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss    cp      dur
+-------  ----------  ------------  -----------  ----------  ------------  ----  -------
+      1      0.6274        1.1730       0.3543      0.3543        1.6056     +  81.4486
+      2      0.8317        0.7589       0.5663      0.5663        1.3001     +  80.4972
+      3      0.8510        0.5699       0.6722      0.6722        1.0149     +  80.5869
+      4      0.8966        0.4313       0.6696      0.6696        1.0467        80.5746
+      5      0.9399        0.3553       0.6715      0.6715        1.0185        80.6950
+      6      0.9495        0.3155       0.6611      0.6611        1.0643        80.5256
+      7      0.9567        0.2937       0.6738      0.6738        1.0121     +  80.5974
+      8      0.9615        0.2876       0.6507      0.6507        1.1074        80.6092
+      9      0.9471        0.2855       0.6823      0.6823        1.0240        80.6568
+     10      0.9688        0.2360       0.6778      0.6778        1.0284        80.5448
+     11      0.9736        0.2291       0.7106      0.7106        0.9827     +  80.5444
+     12      0.9784        0.2133       0.6898      0.6898        1.0188        80.5634
+     13      0.9615        0.2233       0.6903      0.6903        1.0162        80.6257
+     14      0.9808        0.1872       0.6774      0.6774        1.0535        80.6001
+     15      0.9663        0.1986       0.6757      0.6757        1.0606        80.5716
+     16      0.9639        0.1890       0.6766      0.6766        1.0600        80.5669
+     17      0.9856        0.1645       0.6847      0.6847        1.0456        80.6102
+     18      0.9856        0.1530       0.6847      0.6847        1.0507        80.6296
+     19      0.9880        0.1444       0.6856      0.6856        1.0465        80.5239
+     20      0.9856        0.1388       0.6800      0.6800        1.0697        80.5791
+     21      0.9928        0.1340       0.6891      0.6891        1.0542        80.5921
+     22      0.9904        0.1308       0.6901      0.6901        1.0478        80.5255
+     23      0.9928        0.1276       0.6849      0.6849        1.0738        80.6139
+     24      0.9976        0.1217       0.6950      0.6950        1.0501        80.6079
+     25      0.9928        0.1206       0.6960      0.6960        1.0542        80.5614
+Stopping since valid_loss has not improved in the last 15 epochs.
+Accuracy after query 5: 0.7690972222222222
+F1 Score after query 5: 0.7690972222222222
+Number of samples used for retraining: 208
+Number of samples in pool after query: 26672
+Model checkpoint saved to D:/Shubham/results/US/Fixuncertainty_sampling/DinoL/model_checkpoint_iteration_4.pt
+
+Query 6: Requesting 176 samples.
+Number of samples in pool before query: 26672
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss    cp      dur
+-------  ----------  ------------  -----------  ----------  ------------  ----  -------
+      1      0.7400        0.8919       0.6543      0.6543        1.1252     +  97.9313
+      2      0.8938        0.4332       0.7335      0.7335        0.8121     +  97.0793
+      3      0.9600        0.2522       0.7835      0.7835        0.7364     +  97.0289
+      4      0.9688        0.1989       0.7878      0.7878        0.7411        97.1622
+      5      0.9775        0.1728       0.7899      0.7899        0.7572        97.1407
+      6      0.9838        0.1534       0.7878      0.7878        0.7646        97.1406
+      7      0.9850        0.1425       0.7872      0.7872        0.7808        97.1622
+      8      0.9888        0.1323       0.7844      0.7844        0.7905        97.1220
+      9      0.9950        0.1228       0.7870      0.7870        0.8014        97.1494
+     10      0.9938        0.1143       0.7884      0.7884        0.8009        97.1217
+     11      0.9962        0.1063       0.7828      0.7828        0.8168        97.1246
+     12      1.0000        0.0990       0.7821      0.7821        0.8224        97.2290
+     13      1.0000        0.0939       0.7819      0.7819        0.8302        97.1059
+     14      1.0000        0.0887       0.7828      0.7828        0.8344        97.1550
+     15      1.0000        0.0851       0.7818      0.7818        0.8380        97.1219
+     16      1.0000        0.0813       0.7807      0.7807        0.8453        97.0857
+     17      1.0000        0.0781       0.7809      0.7809        0.8493        97.0883
+Stopping since valid_loss has not improved in the last 15 epochs.
+Accuracy after query 6: 0.8567708333333334
+F1 Score after query 6: 0.8567708333333334
+Number of samples used for retraining: 384
+Number of samples in pool after query: 26496
+Model checkpoint saved to D:/Shubham/results/US/Fixuncertainty_sampling/DinoL/model_checkpoint_iteration_5.pt
+
+Query 7: Requesting 320 samples.
+Number of samples in pool before query: 26496
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss    cp       dur
+-------  ----------  ------------  -----------  ----------  ------------  ----  --------
+      1      0.7899        0.6862       0.7236      0.7236        0.9167     +  126.2196
+      2      0.9435        0.2657       0.7866      0.7866        0.9246        125.2665
+      3      0.9701        0.1917       0.7707      0.7707        0.8190     +  125.3558
+      4      0.9801        0.1453       0.8109      0.8109        0.8764        125.0430
+      5      0.9860        0.1230       0.7934      0.7934        0.8008     +  124.9902
+      6      0.9920        0.1022       0.8031      0.8031        0.8281        124.9796
+      7      0.9927        0.0930       0.7990      0.7990        0.8427        125.0438
+      8      0.9934        0.0866       0.7965      0.7965        0.8603        124.8867
+      9      0.9927        0.0820       0.7924      0.7924        0.8783        124.8714
+     10      0.9940        0.0758       0.7957      0.7957        0.8762        124.8264
+     11      0.9960        0.0698       0.7955      0.7955        0.8868        124.8106
+     12      0.9967        0.0661       0.7969      0.7969        0.8905        124.8238
+     13      0.9967        0.0636       0.7965      0.7965        0.8954        124.8893
+     14      0.9973        0.0597       0.8000      0.8000        0.8975        124.8747
+     15      0.9980        0.0579       0.7993      0.7993        0.8946        124.8318
+     16      0.9980        0.0541       0.8005      0.8005        0.9065        124.7317
+     17      0.9980        0.0516       0.8000      0.8000        0.9180        124.7856
+     18      0.9987        0.0495       0.7993      0.7993        0.9269        124.6942
+     19      1.0000        0.0471       0.7990      0.7990        0.9267        124.7679
+Stopping since valid_loss has not improved in the last 15 epochs.
+Accuracy after query 7: 0.8751736111111111
+F1 Score after query 7: 0.8751736111111111
+Number of samples used for retraining: 704
+Number of samples in pool after query: 26176
+Model checkpoint saved to D:/Shubham/results/US/Fixuncertainty_sampling/DinoL/model_checkpoint_iteration_6.pt
+
+Query 8: Requesting 560 samples.
+Number of samples in pool before query: 26176
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss    cp       dur
+-------  ----------  ------------  -----------  ----------  ------------  ----  --------
+      1      0.8501        0.4996       0.8030      0.8030        0.6357     +  180.3763
+      2      0.9350        0.2422       0.8156      0.8156        0.6309     +  179.3226
+      3      0.9689        0.1494       0.8090      0.8090        0.6492        179.7286
+      4      0.9790        0.1122       0.8161      0.8161        0.7283        179.8862
+      5      0.9830        0.0964       0.8122      0.8122        0.7310        179.9247
+      6      0.9845        0.0857       0.8182      0.8182        0.8375        180.1443
+      7      0.9852        0.0796       0.8175      0.8175        0.8189        180.2192
+      8      0.9743        0.1089       0.8259      0.8259        0.6240     +  180.3900
+      9      0.9870        0.0744       0.8163      0.8163        0.7358        180.2560
+     10      0.9892        0.0628       0.8139      0.8139        0.7767        180.3868
+     11      0.9892        0.0587       0.8175      0.8175        0.7708        180.4232
+     12      0.9917        0.0539       0.8177      0.8177        0.7979        180.5770
+     13      0.9852        0.0651       0.8069      0.8069        0.8692        180.5397
+     14      0.9902        0.0582       0.8181      0.8181        0.7939        180.5088
+     15      0.9924        0.0512       0.8155      0.8155        0.8232        180.1719
+     16      0.9949        0.0442       0.8187      0.8187        0.8331        179.9001
+     17      0.9939        0.0418       0.8234      0.8234        0.8464        179.8739
+     18      0.9953        0.0396       0.8257      0.8257        0.9052        179.7170
+     19      0.9892        0.0539       0.8024      0.8024        1.0291        179.4289
+     20      0.9895        0.0454       0.8175      0.8175        0.9068        179.6000
+     21      0.9949        0.0360       0.8089      0.8089        0.8632        179.3024
+     22      0.9975        0.0299       0.8078      0.8078        0.9052        179.7406
+Stopping since valid_loss has not improved in the last 15 epochs.
+Accuracy after query 8: 0.8789930555555555
+F1 Score after query 8: 0.8789930555555554
+Number of samples used for retraining: 1264
+Number of samples in pool after query: 25616
+Model checkpoint saved to D:/Shubham/results/US/Fixuncertainty_sampling/DinoL/model_checkpoint_iteration_7.pt
+
+Query 9: Requesting 1000 samples.
+Number of samples in pool before query: 25616
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss    cp       dur
+-------  ----------  ------------  -----------  ----------  ------------  ----  --------
+      1      0.8986        0.3474       0.8333      0.8333        0.6130     +  278.7246
+      2      0.9453        0.1990       0.8010      0.8010        0.6758        277.6593
+      3      0.9700        0.1234       0.8285      0.8285        0.7405        277.7867
+      4      0.9762        0.0991       0.8120      0.8120        0.8371        277.2986
+      5      0.9767        0.0940       0.8220      0.8220        0.6229        277.6773
+      6      0.9867        0.0683       0.8309      0.8309        0.7653        277.7914
+      7      0.9845        0.0643       0.8130      0.8130        0.8116        277.6186
+      8      0.9875        0.0545       0.8302      0.8302        0.8017        277.3896
+      9      0.9899        0.0482       0.8295      0.8295        0.8355        277.5842
+     10      0.9887        0.0532       0.8075      0.8075        1.0378        277.4086
+     11      0.9855        0.0612       0.8356      0.8356        0.7637        277.1610
+     12      0.9942        0.0332       0.8330      0.8330        0.7904        277.5394
+     13      0.9962        0.0276       0.8332      0.8332        0.7875        277.9860
+     14      0.9960        0.0262       0.8240      0.8240        0.8540        277.4459
+     15      0.9970        0.0259       0.8335      0.8335        0.8649        277.4021
+Stopping since valid_loss has not improved in the last 15 epochs.
+Accuracy after query 9: 0.8671875
+F1 Score after query 9: 0.8671875
+Number of samples in pool after query: 24616
+Model checkpoint saved to D:/Shubham/results/US/Fixuncertainty_sampling/DinoL/model_checkpoint_iteration_8.pt
+
+Query 10: Requesting 1776 samples.
+Number of samples in pool before query: 24616
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss    cp       dur
+-------  ----------  ------------  -----------  ----------  ------------  ----  --------
+      1      0.9356        0.2184       0.8399      0.8399        0.5441     +  453.5026
+      2      0.9699        0.1113       0.8406      0.8406        0.6423        452.5716
+      3      0.9727        0.1022       0.8460      0.8460        0.6241        455.2324
+      4      0.9813        0.0750       0.8339      0.8339        0.7051        452.5784
+      5      0.9882        0.0544       0.8347      0.8347        0.7315        453.4087
+      6      0.9835        0.0615       0.8361      0.8361        0.6774        452.7148
+      7      0.9890        0.0463       0.8411      0.8411        0.7035        452.4322
+      8      0.9903        0.0420       0.8321      0.8321        0.7550        452.9871
+      9      0.9921        0.0363       0.8420      0.8420        0.7864        453.0876
+     10      0.9925        0.0320       0.8335      0.8335        0.8557        452.3639
+     11      0.9924        0.0346       0.8356      0.8356        0.8528        452.5139
+     12      0.9963        0.0204       0.8330      0.8330        0.9062        452.3683
+     13      0.9928        0.0317       0.8148      0.8148        1.0240        452.4968
+     14      0.9940        0.0270       0.8417      0.8417        0.8431        455.2946
+     15      0.9965        0.0168       0.8425      0.8425        0.8811        452.3209
+Stopping since valid_loss has not improved in the last 15 epochs.
+Accuracy after query 10: 0.8675347222222223
+F1 Score after query 10: 0.8675347222222223
+Number of samples used for retraining: 4040
+Number of samples in pool after query: 22840
+ration_9.pt
+
+Query 11: Requesting 3160 samples.
+Number of samples in pool before query: 22840
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss    cp       dur
+-------  ----------  ------------  -----------  ----------  ------------  ----  --------
+      1      0.9648        0.1263       0.8189      0.8189        0.6929     +  762.7996
+      2      0.9821        0.0664       0.8288      0.8288        0.7138        762.2933
+      3      0.9874        0.0482       0.8281      0.8281        0.7496        762.0546
+      4      0.9894        0.0400       0.8210      0.8210        0.7917        762.0215
+      5      0.9934        0.0269       0.8281      0.8281        0.7735        763.7721
+      6      0.9927        0.0281       0.8373      0.8373        0.7374        761.8276
+      7      0.9949        0.0210       0.8349      0.8349        0.8173        762.1457
+      8      0.9949        0.0194       0.8420      0.8420        0.7868        765.2131
+      9      0.9952        0.0187       0.8401      0.8401        0.8578        761.6813
+     10      0.9964        0.0136       0.8411      0.8411        0.8168        762.1461
+     11      0.9966        0.0136       0.8328      0.8328        0.9141        762.3606
+     12      0.9957        0.0167       0.8274      0.8274        0.9159        762.2595
+     13      0.9961        0.0182       0.8356      0.8356        0.8657        762.4604
+     14      0.9990        0.0065       0.8484      0.8484        0.8506        763.1312
+     15      0.9952        0.0223       0.8313      0.8313        0.9617        762.5188
+Stopping since valid_loss has not improved in the last 15 epochs.
+Accuracy after query 11: 0.8713541666666667
+F1 Score after query 11: 0.8713541666666665
+Number of samples used for retraining: 7200
+Number of samples in pool after query: 19680
+Model checkpoint saved to D:/Shubham/results/US/Fixuncertainty_sampling/DinoL/model_checkpoint_iteration_10.pt
+
+Query 12: Requesting 5624 samples.
+Number of samples in pool before query: 19680
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss    cp        dur
+-------  ----------  ------------  -----------  ----------  ------------  ----  ---------
+      1      0.9822        0.0651       0.8201      0.8201        0.6384     +  1315.5442
+      2      0.9889        0.0398       0.8264      0.8264        0.7177        1314.9253
+      3      0.9903        0.0347       0.8260      0.8260        0.7049        1314.4331
+      4      0.9917        0.0285       0.8345      0.8345        0.7429        1314.3062
+      5      0.9945        0.0198       0.8283      0.8283        0.8129        1313.4665
+      6      0.9950        0.0172       0.8365      0.8365        0.7554        1314.9845
+      7      0.9945        0.0184       0.8349      0.8349        0.7999        1313.4015
+      8      0.9961        0.0124       0.8443      0.8443        0.7702        1314.0653
+      9      0.9957        0.0171       0.8465      0.8465        0.7298        1313.2690
+     10      0.9965        0.0137       0.8354      0.8354        0.8630        1313.7723
+     11      0.9977        0.0099       0.8420      0.8420        0.8544        1313.9039
+     12      0.9974        0.0095       0.8469      0.8469        0.8362        1314.7940
+     13      0.9965        0.0137       0.8458      0.8458        0.8172        1317.4444
+     14      0.9979        0.0075       0.8399      0.8399        0.8933        1316.9958
+     15      0.9980        0.0079       0.8488      0.8488        0.8395        1315.1330
+Stopping since valid_loss has not improved in the last 15 epochs.
+Accuracy after query 12: 0.8711805555555555
+F1 Score after query 12: 0.8711805555555555
+Number of samples used for retraining: 12824
+Model checkpoint saved to D:/Shubham/results/US/Fixuncertainty_sampling/DinoL/model_checkpoint_iteration_11.pt
+
+Query 13: Requesting 10000 samples.
+Number of samples in pool before query: 14056
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss    cp        dur
+-------  ----------  ------------  -----------  ----------  ------------  ----  ---------
+      1      0.9952        0.0235       0.8432      0.8432        0.7383     +  2297.7824
+      2      0.9972        0.0130       0.8418      0.8418        0.7972        2295.7699
+      3      0.9974        0.0116       0.8354      0.8354        0.8076        2296.2737
+      4      0.9976        0.0111       0.8262      0.8262        0.9686        2296.6743
+      5      0.9977        0.0097       0.8467      0.8467        0.8126        2300.8764
+      6      0.9980        0.0093       0.8352      0.8352        0.9222        2297.2423
+      7      0.9984        0.0080       0.8356      0.8356        0.8961        2296.0127
+      8      0.9983        0.0077       0.8472      0.8472        0.8966        2295.3410
+      9      0.9985        0.0070       0.8481      0.8481        0.9139        2295.9977
+     10      0.9986        0.0061       0.8418      0.8418        0.9193        2297.5148
+     11      0.9982        0.0079       0.8415      0.8415        1.0024        2296.6871
+     12      0.9987        0.0061       0.8448      0.8448        0.8963        2295.6165
+     13      0.9983        0.0069       0.8424      0.8424        1.0358        2296.3241
+     14      0.9986        0.0058       0.8434      0.8434        1.0084        2296.2279
+     15      0.9985        0.0060       0.8465      0.8465        1.0237        2296.4205
+Stopping since valid_loss has not improved in the last 15 epochs.
+Accuracy after query 13: 0.8661458333333333
+Number of samples used for retraining: 22824
+Number of samples in pool after query: 4056
+Model checkpoint saved to D:/Shubham/results/US/Fixuncertainty_sampling/DinoL/model_checkpoint_iteration_12.pt
+
+Query 14: Requesting 4056 samples.
+Number of samples in pool before query: 4056
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss    cp        dur
+-------  ----------  ------------  -----------  ----------  ------------  ----  ---------
+      1      0.9977        0.0105       0.7962      0.7962        1.3348     +  3455.4362
+      2      0.9988        0.0055       0.8366      0.8366        1.0919     +  3461.5643
+      3      0.9985        0.0062       0.8398      0.8398        1.0677     +  3470.8841
+      4      0.9989        0.0042       0.8500      0.8500        1.0228     +  3477.3610
+      5      0.9989        0.0044       0.8373      0.8373        1.0650        3449.0194
+      6      0.9992        0.0039       0.8392      0.8392        1.1537        3449.0464
+      7      0.9991        0.0032       0.8359      0.8359        1.2388        3448.2732
+      8      0.9992        0.0033       0.8356      0.8356        1.1086        3449.0392
+      9      0.9993        0.0027       0.8344      0.8344        1.0894        3465.0564
+     10      0.9994        0.0024       0.8370      0.8370        1.2183        3449.9251
+     11      0.9990        0.0036       0.8349      0.8349        1.1439        3449.0131
+     12      0.9995        0.0021       0.8370      0.8370        1.2466        3448.6640
+     13      0.9993        0.0027       0.8319      0.8319        1.2030        3449.0746
+     14      0.9995        0.0022       0.8411      0.8411        1.2340        3475.3909
+     15      0.9992        0.0041       0.8391      0.8391        1.1745        3469.9804
+     16      0.9994        0.0024       0.8467      0.8467        1.0855        3472.4407
+Number of samples in pool after query: 0
+Model checkpoint saved to D:/Shubham/results/US/Fixuncertainty_sampling/DinoL/model_checkpoint_iteration_13.pt
+Final F1 scores across iterations: [0.17829861111111112, 0.41805555555555557, 0.5196180555555555, 0.5932291666666667, 0.7690972222222222, 0.8567708333333334, 0.8751736111111111, 0.8789930555555554, 0.8671875, 0.8675347222222223, 0.8713541666666665, 0.8711805555555555, 0.8661458333333333, 0.8795138888888889]
+Final accuracies across iterations: [0.17829861111111112, 0.41805555555555557, 0.5196180555555555, 0.5932291666666667, 0.7690972222222222, 0.8567708333333334, 0.8751736111111111, 0.8789930555555555, 0.8671875, 0.8675347222222223, 0.8713541666666667, 0.8711805555555555, 0.8661458333333333, 0.8795138888888889]
+Performance results saved to D:/Shubham/results/US/Fixuncertainty_sampling/DinoL/performance_results.npy
+PS C:\Users\localuserSG\ActiveLearning\MultiClass\US\FixedUS\DinoL>
+
+
+
