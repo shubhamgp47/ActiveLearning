@@ -31,6 +31,13 @@ import csv
 
 torch.multiprocessing.set_sharing_strategy('file_system')
 
+seed_value = 42
+
+random.seed(seed_value)
+np.random.seed(seed_value)
+torch.manual_seed(seed_value)
+torch.cuda.manual_seed_all(seed_value)
+
 # Define image directory and load dataframes
 image_dir = os.path.abspath('D:/linear_winding_images_with_labels/')
 df_dir = os.path.abspath('D:/datasets/')
@@ -173,7 +180,7 @@ class CSVLogger(Callback):
             writer = csv.DictWriter(f, fieldnames=self.fieldnames)
             writer.writerow(logs)
 
-save_dir = os.path.abspath('D:/Shubham/results/Multiclass01/DinoSmall/ActiveLearning/uncertainty_sampling/')
+save_dir = os.path.abspath('D:/Shubham/results/Multiclass01/DinoSmall/ActiveLearning/ParamsFromMultilabel/uncertainty_sampling/')
 os.makedirs(save_dir, exist_ok=True)
 
 csv_logger = CSVLogger(
@@ -254,13 +261,25 @@ cp = Checkpoint(dirname='model_checkpoints', monitor='valid_loss_best')
     callbacks=[train_f1, valid_f1, es, cp, csv_logger],
     verbose=1
 )'''
-classifier = NeuralNetClassifier(
+'''classifier = NeuralNetClassifier(
         module=model,
         criterion=nn.CrossEntropyLoss(),
         optimizer=optim.RMSprop,
         lr=0.000002,
         max_epochs=100,
         train_split=train_split,
+        device=device,
+        callbacks=[train_f1, valid_f1, es, cp, csv_logger],
+        verbose=1
+    )'''
+classifier=NeuralNetClassifier(
+        module=model,
+        criterion=nn.CrossEntropyLoss,
+        optimizer=optim.SGD,
+        optimizer__momentum=0.14729309193472406,
+        lr=0.0001375803586556554,
+        max_epochs=100,
+        train_split=predefined_split(Dataset(X_val_np, y_val_np)),  # Validation set split
         device=device,
         callbacks=[train_f1, valid_f1, es, cp, csv_logger],
         verbose=1
