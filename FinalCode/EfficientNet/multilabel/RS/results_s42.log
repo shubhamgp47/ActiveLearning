@@ -1,0 +1,308 @@
+Adjusted shapes after loading:
+X_initial_np: (8, 224, 224, 3), y_initial_np: (8, 3)
+X_pool_np: (26872, 224, 224, 3), y_pool_np: (26872, 3)
+X_test_np: (5760, 224, 224, 3), y_test_np: (5760, 3)
+X_val_np: (5760, 224, 224, 3), y_val_np: (5760, 3)
+
+Iteration 1: Using initial samples.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss    cp      dur
+-------  ----------  ------------  -----------  ----------  ------------  ----  -------
+      1      [36m0.3016[0m        [32m0.7095[0m       [35m0.2000[0m      [31m0.1465[0m        [94m0.6758[0m     +  38.0875
+      2      [36m0.6349[0m        [32m0.6434[0m       [35m0.2005[0m      [31m0.2417[0m        0.6782        37.3443
+      3      [36m0.7024[0m        [32m0.6029[0m       [35m0.2125[0m      [31m0.2962[0m        0.6777        37.1909
+      4      [36m0.8796[0m        [32m0.5443[0m       [35m0.2292[0m      [31m0.3076[0m        0.6796        37.3437
+      5      [36m0.9630[0m        [32m0.4719[0m       0.1934      [31m0.3698[0m        0.6821        37.0153
+      6      [36m1.0000[0m        [32m0.4474[0m       0.1434      [31m0.3812[0m        0.6836        37.0688
+      7      0.9524        [32m0.4456[0m       0.1050      0.3608        0.6835        37.4050
+      8      1.0000        [32m0.3578[0m       0.0740      0.3259        0.6855        37.2829
+Stopping since valid_loss has not improved in the last 8 epochs.
+Iteration 1: Test F1 Micro Score: 0.4042923838060065
+Iteration 1: Test F1 Macro Score: 0.34113755097316845
+Model checkpoint saved to C:\Users\localuserSKSG\Desktop\Shubham\RandomSampling/Multilabel/EffNet/seed_42_config/model_checkpoint_iteration_0.pt
+
+Iteration 2: Requesting 16 samples.
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss    cp      dur
+-------  ----------  ------------  -----------  ----------  ------------  ----  -------
+      1      [36m0.3540[0m        [32m0.6865[0m       [35m0.3095[0m      [31m0.5555[0m        [94m0.6681[0m     +  37.5979
+      2      [36m0.6144[0m        [32m0.5942[0m       [35m0.3470[0m      0.1978        [94m0.6579[0m     +  37.6381
+      3      [36m0.7871[0m        [32m0.5247[0m       [35m0.4696[0m      0.2088        [94m0.6322[0m     +  37.9028
+      4      [36m0.8355[0m        [32m0.4583[0m       [35m0.5094[0m      0.3415        [94m0.6027[0m     +  37.5325
+      5      [36m0.8889[0m        [32m0.3916[0m       0.5092      0.4638        [94m0.5780[0m     +  37.8906
+      6      [36m0.9628[0m        [32m0.3411[0m       0.4530      0.4967        [94m0.5599[0m     +  38.3431
+      7      0.9213        [32m0.3114[0m       0.4580      0.5522        [94m0.5319[0m     +  37.7365
+      8      [36m0.9630[0m        [32m0.2561[0m       0.4189      [31m0.5758[0m        [94m0.5066[0m     +  37.8280
+      9      0.9583        [32m0.2336[0m       0.4361      [31m0.6218[0m        [94m0.4900[0m     +  37.8305
+     10      [36m1.0000[0m        [32m0.1837[0m       0.4368      [31m0.6533[0m        [94m0.4844[0m     +  37.7940
+     11      1.0000        [32m0.1792[0m       0.4342      [31m0.6659[0m        [94m0.4814[0m     +  37.5707
+     12      1.0000        [32m0.1451[0m       0.4773      [31m0.6861[0m        0.4863        37.9042
+     13      1.0000        [32m0.1388[0m       0.5073      [31m0.6943[0m        0.4977        37.6244
+     14      1.0000        [32m0.1162[0m       [35m0.5165[0m      [31m0.7002[0m        0.5031        37.9222
+     15      1.0000        [32m0.0976[0m       0.5135      [31m0.7183[0m        0.4930        38.0937
+     16      1.0000        [32m0.0837[0m       [35m0.5179[0m      [31m0.7262[0m        0.4970        37.5658
+     17      1.0000        [32m0.0648[0m       0.5141      0.7236        0.5201        37.6852
+     18      0.9804        0.0728       0.4724      0.7153        0.5700        37.7668
+Stopping since valid_loss has not improved in the last 8 epochs.
+Iteration 2: Test F1 Micro Score: 0.7034654189208949
+Iteration 2: Test F1 Macro Score: 0.698525118765683
+Model checkpoint saved to C:\Users\localuserSKSG\Desktop\Shubham\RandomSampling/Multilabel/EffNet/seed_42_config/model_checkpoint_iteration_1.pt
+
+Iteration 3: Requesting 32 samples.
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss    cp      dur
+-------  ----------  ------------  -----------  ----------  ------------  ----  -------
+      1      [36m0.8359[0m        [32m0.3364[0m       [35m0.5625[0m      [31m0.7767[0m        [94m0.4090[0m     +  38.9691
+      2      0.8038        [32m0.2583[0m       [35m0.6957[0m      [31m0.8205[0m        [94m0.2942[0m     +  39.0628
+      3      [36m0.9355[0m        [32m0.1877[0m       0.6533      0.7631        0.2961        39.2762
+      4      0.9052        [32m0.1585[0m       [35m0.7045[0m      [31m0.8221[0m        [94m0.2928[0m     +  38.8296
+      5      [36m0.9781[0m        [32m0.1207[0m       0.6977      [31m0.8253[0m        0.3162        39.0349
+      6      [36m0.9877[0m        [32m0.0949[0m       0.6753      0.8185        0.3053        39.0021
+      7      0.9678        [32m0.0810[0m       0.6774      0.7991        0.3057        38.8902
+      8      0.9662        [32m0.0620[0m       0.6800      0.8052        0.3181        38.7316
+      9      0.9811        [32m0.0531[0m       0.6951      0.8241        0.3203        39.5142
+     10      [36m1.0000[0m        [32m0.0365[0m       0.6793      0.8126        0.3264        38.7616
+     11      0.9804        0.0454       0.6693      0.8072        0.3489        39.2952
+Stopping since valid_loss has not improved in the last 8 epochs.
+Iteration 3: Test F1 Micro Score: 0.8443090978302246
+Iteration 3: Test F1 Macro Score: 0.8245881320612497
+Model checkpoint saved to C:\Users\localuserSKSG\Desktop\Shubham\RandomSampling/Multilabel/EffNet/seed_42_config/model_checkpoint_iteration_2.pt
+
+Iteration 4: Requesting 56 samples.
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss    cp      dur
+-------  ----------  ------------  -----------  ----------  ------------  ----  -------
+      1      [36m0.8803[0m        [32m0.2181[0m       [35m0.6378[0m      [31m0.7636[0m        [94m0.4210[0m     +  40.6275
+      2      0.8738        [32m0.1931[0m       [35m0.6655[0m      [31m0.8023[0m        [94m0.3401[0m     +  40.3134
+      3      [36m0.9330[0m        [32m0.1402[0m       0.6394      0.7551        0.3500        40.6410
+      4      [36m0.9613[0m        [32m0.1010[0m       [35m0.6670[0m      [31m0.8054[0m        [94m0.3090[0m     +  40.4548
+      5      0.9584        [32m0.0969[0m       [35m0.6755[0m      [31m0.8115[0m        0.3263        40.6549
+      6      [36m0.9867[0m        [32m0.0483[0m       0.6687      0.8097        0.3771        40.2795
+      7      [36m0.9939[0m        [32m0.0361[0m       [35m0.6922[0m      [31m0.8290[0m        0.3763        40.3744
+      8      0.9904        [32m0.0332[0m       0.6738      0.7949        0.3747        40.0874
+      9      [36m1.0000[0m        [32m0.0193[0m       0.6891      0.8286        0.3861        40.9036
+     10      1.0000        [32m0.0136[0m       [35m0.6964[0m      [31m0.8329[0m        0.4228        40.2024
+     11      1.0000        0.0151       0.6915      0.8228        0.4309        40.0156
+Stopping since valid_loss has not improved in the last 8 epochs.
+Iteration 4: Test F1 Micro Score: 0.8517709471056327
+Iteration 4: Test F1 Macro Score: 0.8352666088054287
+Model checkpoint saved to C:\Users\localuserSKSG\Desktop\Shubham\RandomSampling/Multilabel/EffNet/seed_42_config/model_checkpoint_iteration_3.pt
+
+Iteration 5: Requesting 96 samples.
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss    cp      dur
+-------  ----------  ------------  -----------  ----------  ------------  ----  -------
+      1      [36m0.8839[0m        [32m0.2138[0m       [35m0.6646[0m      [31m0.7944[0m        [94m0.3780[0m     +  43.8733
+      2      [36m0.8925[0m        [32m0.1752[0m       0.6533      [31m0.7978[0m        [94m0.3387[0m     +  43.9237
+      3      [36m0.9334[0m        [32m0.1148[0m       [35m0.6962[0m      [31m0.8279[0m        [94m0.3252[0m     +  44.0239
+      4      [36m0.9670[0m        [32m0.0826[0m       [35m0.7132[0m      [31m0.8463[0m        [94m0.3083[0m     +  44.0334
+      5      [36m0.9765[0m        [32m0.0656[0m       0.7104      0.8323        0.3544        44.0323
+      6      [36m0.9878[0m        [32m0.0443[0m       [35m0.7238[0m      0.8402        0.3379        44.1729
+      7      0.9769        0.0514       0.6814      0.8184        0.3533        43.9057
+      8      0.9747        0.0616       0.7156      0.8435        0.3442        43.9841
+      9      0.9798        0.0514       0.6925      0.8369        0.3222        43.8326
+     10      0.9801        [32m0.0321[0m       0.7115      0.8329        0.3487        43.9420
+     11      [36m0.9892[0m        [32m0.0259[0m       0.7017      0.8289        0.4103        44.2684
+Stopping since valid_loss has not improved in the last 8 epochs.
+Iteration 5: Test F1 Micro Score: 0.8655708173834721
+Iteration 5: Test F1 Macro Score: 0.8520488410339117
+Model checkpoint saved to C:\Users\localuserSKSG\Desktop\Shubham\RandomSampling/Multilabel/EffNet/seed_42_config/model_checkpoint_iteration_4.pt
+
+Iteration 6: Requesting 176 samples.
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss    cp      dur
+-------  ----------  ------------  -----------  ----------  ------------  ----  -------
+      1      [36m0.9175[0m        [32m0.1782[0m       [35m0.7069[0m      [31m0.8386[0m        [94m0.3290[0m     +  50.4532
+      2      [36m0.9393[0m        [32m0.1259[0m       [35m0.7141[0m      [31m0.8394[0m        0.4378        50.4219
+      3      [36m0.9480[0m        [32m0.0967[0m       [35m0.7241[0m      [31m0.8553[0m        0.4116        50.1442
+      4      [36m0.9704[0m        [32m0.0648[0m       0.7170      [31m0.8632[0m        0.4109        51.5469
+      5      [36m0.9736[0m        [32m0.0555[0m       0.7095      0.8448        0.4429        50.5994
+      6      [36m0.9779[0m        [32m0.0398[0m       [35m0.7694[0m      [31m0.8853[0m        0.3511        50.6240
+      7      [36m0.9820[0m        0.0504       0.7483      0.8685        0.3927        50.1719
+      8      [36m0.9824[0m        0.0425       0.7356      0.8517        0.3702        50.9998
+Stopping since valid_loss has not improved in the last 8 epochs.
+Iteration 6: Test F1 Micro Score: 0.8549750704530673
+Iteration 6: Test F1 Macro Score: 0.8363213785339441
+Model checkpoint saved to C:\Users\localuserSKSG\Desktop\Shubham\RandomSampling/Multilabel/EffNet/seed_42_config/model_checkpoint_iteration_5.pt
+
+Iteration 7: Requesting 320 samples.
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss    cp      dur
+-------  ----------  ------------  -----------  ----------  ------------  ----  -------
+      1      [36m0.9006[0m        [32m0.1756[0m       [35m0.7446[0m      [31m0.8622[0m        [94m0.2795[0m     +  62.9871
+      2      [36m0.9456[0m        [32m0.1104[0m       [35m0.7575[0m      [31m0.8692[0m        0.2858        63.8214
+      3      [36m0.9611[0m        [32m0.0751[0m       0.7531      0.8656        0.3479        63.2815
+      4      [36m0.9625[0m        [32m0.0676[0m       [35m0.7710[0m      [31m0.8730[0m        0.3546        63.8742
+      5      [36m0.9702[0m        [32m0.0654[0m       [35m0.7896[0m      [31m0.8784[0m        [94m0.2588[0m     +  63.9683
+      6      [36m0.9844[0m        [32m0.0363[0m       0.7747      [31m0.8804[0m        0.3260        63.9218
+      7      [36m0.9917[0m        [32m0.0170[0m       0.7835      [31m0.8895[0m        0.3668        63.5437
+      8      [36m0.9967[0m        [32m0.0078[0m       0.7637      0.8712        0.3863        64.0463
+      9      [36m1.0000[0m        [32m0.0037[0m       [35m0.7936[0m      0.8876        0.3735        63.4060
+     10      0.9982        [32m0.0036[0m       0.7691      0.8788        0.4441        63.2245
+     11      0.9957        0.0061       0.7837      0.8862        0.4291        63.6093
+     12      0.9887        0.0214       0.7540      0.8592        0.4834        64.1428
+Stopping since valid_loss has not improved in the last 8 epochs.
+Iteration 7: Test F1 Micro Score: 0.8830872278885675
+Iteration 7: Test F1 Macro Score: 0.8591735338659916
+Model checkpoint saved to C:\Users\localuserSKSG\Desktop\Shubham\RandomSampling/Multilabel/EffNet/seed_42_config/model_checkpoint_iteration_6.pt
+
+Iteration 8: Requesting 560 samples.
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss    cp      dur
+-------  ----------  ------------  -----------  ----------  ------------  ----  -------
+      1      [36m0.9386[0m        [32m0.1181[0m       [35m0.7939[0m      [31m0.8902[0m        [94m0.1935[0m     +  85.6395
+      2      [36m0.9641[0m        [32m0.0648[0m       0.7877      0.8892        0.2267        84.8452
+      3      [36m0.9768[0m        [32m0.0484[0m       [35m0.8073[0m      0.8865        0.2650        84.8174
+      4      0.9698        0.0497       0.7233      0.8374        0.3464        85.2940
+      5      0.9767        [32m0.0412[0m       [35m0.8326[0m      [31m0.9083[0m        [94m0.1824[0m     +  85.1500
+      6      [36m0.9781[0m        [32m0.0397[0m       0.7769      0.8622        0.2485        84.8408
+      7      [36m0.9849[0m        [32m0.0299[0m       0.7984      0.8800        0.2218        85.1717
+      8      [36m0.9895[0m        [32m0.0185[0m       0.8253      0.8900        0.2132        85.0626
+      9      [36m0.9906[0m        [32m0.0158[0m       0.8059      0.8783        0.2544        85.0640
+     10      0.9847        0.0268       0.7698      0.8632        0.3368        84.8325
+     11      0.9825        0.0306       0.7766      0.8588        0.3058        87.1592
+     12      0.9888        0.0240       0.7790      0.8508        0.2791        88.6720
+Stopping since valid_loss has not improved in the last 8 epochs.
+Iteration 8: Test F1 Micro Score: 0.882735900854969
+Iteration 8: Test F1 Macro Score: 0.8559950027238248
+Model checkpoint saved to C:\Users\localuserSKSG\Desktop\Shubham\RandomSampling/Multilabel/EffNet/seed_42_config/model_checkpoint_iteration_7.pt
+
+Iteration 9: Requesting 1000 samples.
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss    cp       dur
+-------  ----------  ------------  -----------  ----------  ------------  ----  --------
+      1      [36m0.9610[0m        [32m0.0826[0m       [35m0.7875[0m      [31m0.8840[0m        [94m0.2797[0m     +  129.5781
+      2      [36m0.9732[0m        [32m0.0559[0m       [35m0.8012[0m      [31m0.8846[0m        [94m0.2407[0m     +  130.1665
+      3      [36m0.9794[0m        [32m0.0347[0m       [35m0.8179[0m      0.8842        0.2865        130.1875
+      4      [36m0.9832[0m        [32m0.0324[0m       0.8028      [31m0.8915[0m        [94m0.2387[0m     +  129.9530
+      5      [36m0.9889[0m        [32m0.0239[0m       0.7861      0.8819        0.3036        130.5676
+      6      0.9874        0.0270       0.7288      0.8053        1.1139        129.7222
+      7      [36m0.9891[0m        [32m0.0223[0m       0.8033      0.8852        0.3028        129.8135
+      8      [36m0.9900[0m        [32m0.0193[0m       0.7960      0.8839        0.3428        129.9701
+      9      0.9886        0.0203       0.7481      0.8423        0.4018        129.8435
+     10      0.9859        0.0318       0.8010      [31m0.8916[0m        0.2872        129.9462
+     11      [36m0.9906[0m        [32m0.0188[0m       0.7859      0.8838        0.3257        129.7774
+Stopping since valid_loss has not improved in the last 8 epochs.
+Iteration 9: Test F1 Micro Score: 0.890328214831526
+Iteration 9: Test F1 Macro Score: 0.8721738249472635
+Model checkpoint saved to C:\Users\localuserSKSG\Desktop\Shubham\RandomSampling/Multilabel/EffNet/seed_42_config/model_checkpoint_iteration_8.pt
+
+Iteration 10: Requesting 1776 samples.
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss    cp       dur
+-------  ----------  ------------  -----------  ----------  ------------  ----  --------
+      1      [36m0.9666[0m        [32m0.0655[0m       [35m0.8130[0m      [31m0.8426[0m        [94m0.1738[0m     +  194.4872
+      2      [36m0.9745[0m        [32m0.0486[0m       [35m0.8260[0m      [31m0.8788[0m        0.1947        193.9606
+      3      [36m0.9803[0m        [32m0.0320[0m       0.8030      [31m0.8843[0m        0.2813        195.0963
+      4      0.9757        0.0418       0.7970      [31m0.8902[0m        0.2719        194.1239
+      5      0.9799        0.0362       0.8214      0.8817        0.2429        194.4525
+      6      [36m0.9850[0m        [32m0.0237[0m       0.8010      0.8815        0.3183        193.7874
+      7      [36m0.9853[0m        0.0250       0.8156      [31m0.8906[0m        0.2503        193.5915
+      8      [36m0.9861[0m        [32m0.0231[0m       0.8168      0.8876        0.1984        194.0618
+Stopping since valid_loss has not improved in the last 8 epochs.
+Iteration 10: Test F1 Micro Score: 0.8980597964376591
+Iteration 10: Test F1 Macro Score: 0.8722700868129728
+Model checkpoint saved to C:\Users\localuserSKSG\Desktop\Shubham\RandomSampling/Multilabel/EffNet/seed_42_config/model_checkpoint_iteration_9.pt
+
+Iteration 11: Requesting 3160 samples.
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss    cp       dur
+-------  ----------  ------------  -----------  ----------  ------------  ----  --------
+      1      [36m0.9675[0m        [32m0.0596[0m       [35m0.8075[0m      [31m0.8926[0m        [94m0.2258[0m     +  317.1527
+      2      [36m0.9727[0m        [32m0.0444[0m       [35m0.8158[0m      0.8923        [94m0.1887[0m     +  318.3766
+      3      [36m0.9787[0m        [32m0.0359[0m       0.8132      [31m0.8961[0m        0.2184        319.1620
+      4      [36m0.9797[0m        [32m0.0317[0m       [35m0.8332[0m      [31m0.8973[0m        0.2183        318.1209
+      5      [36m0.9816[0m        [32m0.0276[0m       0.8267      0.8939        0.2186        318.9391
+      6      [36m0.9834[0m        [32m0.0248[0m       0.8311      [31m0.9049[0m        0.2814        318.7125
+      7      0.9828        0.0291       [35m0.8436[0m      [31m0.9094[0m        [94m0.1831[0m     +  318.1068
+      8      [36m0.9889[0m        [32m0.0188[0m       0.8144      0.8898        0.3094        318.1379
+      9      [36m0.9904[0m        [32m0.0168[0m       0.8196      0.8906        0.3139        318.7660
+     10      0.9882        0.0216       0.8054      0.8886        0.2604        321.0278
+     11      0.9896        0.0187       0.8290      0.9017        0.2537        320.6091
+     12      [36m0.9926[0m        [32m0.0137[0m       0.8288      0.8879        0.2332        319.2030
+     13      [36m0.9933[0m        [32m0.0120[0m       0.8179      0.8905        0.2843        318.9213
+     14      0.9923        0.0140       0.8038      0.8710        0.3180        319.6094
+Stopping since valid_loss has not improved in the last 8 epochs.
+Iteration 11: Test F1 Micro Score: 0.9067113558375229
+Iteration 11: Test F1 Macro Score: 0.8857988260395516
+Model checkpoint saved to C:\Users\localuserSKSG\Desktop\Shubham\RandomSampling/Multilabel/EffNet/seed_42_config/model_checkpoint_iteration_10.pt
+
+Iteration 12: Requesting 5624 samples.
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss    cp       dur
+-------  ----------  ------------  -----------  ----------  ------------  ----  --------
+      1      [36m0.9782[0m        [32m0.0416[0m       [35m0.7936[0m      [31m0.8788[0m        [94m0.2555[0m     +  538.6241
+      2      [36m0.9808[0m        [32m0.0316[0m       [35m0.7983[0m      [31m0.8902[0m        0.2861        540.5466
+      3      [36m0.9832[0m        [32m0.0287[0m       0.7931      0.8837        [94m0.2551[0m     +  541.3090
+      4      [36m0.9854[0m        [32m0.0227[0m       0.7894      0.8746        0.3135        541.6912
+      5      [36m0.9877[0m        [32m0.0210[0m       [35m0.8191[0m      [31m0.8911[0m        0.3106        543.6936
+      6      [36m0.9893[0m        [32m0.0185[0m       0.8156      [31m0.8940[0m        0.2671        542.6490
+      7      [36m0.9905[0m        [32m0.0155[0m       0.8014      0.8904        0.4013        561.1964
+      8      [36m0.9913[0m        [32m0.0150[0m       0.8092      0.8936        0.3503        556.4058
+      9      [36m0.9930[0m        [32m0.0122[0m       0.7905      0.8801        0.4455        552.0533
+     10      [36m0.9938[0m        0.0127       0.7753      0.8561        0.4235        560.4080
+Stopping since valid_loss has not improved in the last 8 epochs.
+Iteration 12: Test F1 Micro Score: 0.9050313503593821
+Iteration 12: Test F1 Macro Score: 0.8820940628681263
+Model checkpoint saved to C:\Users\localuserSKSG\Desktop\Shubham\RandomSampling/Multilabel/EffNet/seed_42_config/model_checkpoint_iteration_11.pt
+
+Iteration 13: Requesting 10000 samples.
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss    cp       dur
+-------  ----------  ------------  -----------  ----------  ------------  ----  --------
+      1      [36m0.9776[0m        [32m0.0399[0m       [35m0.8229[0m      [31m0.8972[0m        [94m0.1926[0m     +  953.0941
+      2      [36m0.9806[0m        [32m0.0327[0m       [35m0.8309[0m      [31m0.9055[0m        [94m0.1840[0m     +  956.0878
+      3      [36m0.9829[0m        [32m0.0280[0m       0.7755      0.8662        0.2534        952.3739
+      4      [36m0.9853[0m        [32m0.0232[0m       0.8137      0.8935        0.2863        953.7958
+      5      [36m0.9872[0m        [32m0.0215[0m       0.8149      0.8967        0.2911        949.1031
+      6      [36m0.9885[0m        [32m0.0186[0m       0.7964      0.8827        0.3571        940.5441
+      7      [36m0.9916[0m        [32m0.0148[0m       0.8130      0.8858        0.2953        949.6357
+      8      [36m0.9926[0m        [32m0.0130[0m       0.8094      0.8859        0.3071        950.6868
+      9      [36m0.9931[0m        [32m0.0119[0m       0.8193      0.8921        0.3195        950.0696
+Stopping since valid_loss has not improved in the last 8 epochs.
+Iteration 13: Test F1 Micro Score: 0.9048910937136655
+Iteration 13: Test F1 Macro Score: 0.8824931977496443
+Model checkpoint saved to C:\Users\localuserSKSG\Desktop\Shubham\RandomSampling/Multilabel/EffNet/seed_42_config/model_checkpoint_iteration_12.pt
+
+Iteration 14: Requesting all remaining samples.
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss    cp        dur
+-------  ----------  ------------  -----------  ----------  ------------  ----  ---------
+      1      [36m0.9813[0m        [32m0.0308[0m       [35m0.8170[0m      [31m0.8947[0m        [94m0.1867[0m     +  1113.3747
+      2      [36m0.9842[0m        [32m0.0252[0m       0.8059      0.8841        0.2113        1119.6903
+      3      [36m0.9865[0m        [32m0.0223[0m       0.7731      0.8561        0.2726        1106.7974
+      4      [36m0.9886[0m        [32m0.0186[0m       0.7882      0.8817        0.2874        1099.5653
+      5      [36m0.9899[0m        [32m0.0170[0m       0.8115      0.8778        0.2651        1122.6409
+      6      [36m0.9915[0m        [32m0.0137[0m       [35m0.8210[0m      0.8916        0.2333        1112.8472
+      7      [36m0.9935[0m        [32m0.0120[0m       0.8132      0.8876        0.3489        1106.7864
+      8      [36m0.9937[0m        [32m0.0108[0m       0.8137      0.8862        0.2801        1106.7039
+Stopping since valid_loss has not improved in the last 8 epochs.
+Iteration 14: Test F1 Micro Score: 0.9190661478599221
+Iteration 14: Test F1 Macro Score: 0.9002594514852177
+Model checkpoint saved to C:\Users\localuserSKSG\Desktop\Shubham\RandomSampling/Multilabel/EffNet/seed_42_config/model_checkpoint_iteration_13.pt
+Pickle file saved to C:\Users\localuserSKSG\Desktop\Shubham\RandomSampling/Multilabel/EffNet/seed_42_config\random_sampling_results_for_multilabel_classification.pickle
