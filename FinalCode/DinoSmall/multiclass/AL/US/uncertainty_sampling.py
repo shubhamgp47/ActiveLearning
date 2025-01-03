@@ -31,7 +31,7 @@ from skorch.callbacks import EarlyStopping, Checkpoint, Callback, LRScheduler
 from sklearn.metrics import f1_score, make_scorer, accuracy_score
 from torch.utils.data import DataLoader
 from modAL.models import ActiveLearner
-from modAL.uncertainty import entropy_sampling
+from modAL.uncertainty import uncertainty_sampling
 
 
 def find_config_file(filename='config.ini'):
@@ -113,9 +113,9 @@ gamma = float(config['multiclass_DinoS_Parameters_9']['gamma'])
 
 POWER = 1
 N_QUERIES = 13
-FILENAME = "AL_entropy_sampling_results_for_multiclass_classification_s51.pickle"
-SPECIFIC_PATH = 'ActiveLearning/Multiclass/DinoS/entropy_sampling_seed51'
-DEVICE = "cuda:0" if torch.cuda.is_available() else "cpu"
+FILENAME = "AL_uncertainty_sampling_results_for_multiclass_classification_s51.pickle"
+SPECIFIC_PATH = 'ActiveLearning/Multiclass/DinoS/uncertainty_sampling_seed51'
+DEVICE = "cuda:1" if torch.cuda.is_available() else "cpu"
 
 list_data_frame = [train_df, test_df, val_df]
 multiclass_labels = []
@@ -435,7 +435,7 @@ classifier = NeuralNetClassifier(
 
 learner = ActiveLearner(
     estimator=classifier,
-    query_strategy=entropy_sampling,
+    query_strategy=uncertainty_sampling,
     X_training=X_initial_np,
     y_training=y_initial_np
 )
