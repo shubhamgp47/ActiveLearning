@@ -1,0 +1,477 @@
+(26880, 5)
+(5760, 5)
+(5760, 5)
+3
+multiclass_train_df shape: (26880, 2)
+multiclass_test_df shape: (5760, 2)
+multiclass_val_df shape: (5760, 2)
+Calculated train_size: 8
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss    cp      lr      dur
+-------  ----------  ------------  -----------  ----------  ------------  ----  ------  -------
+      1      [36m0.2500[0m        [32m2.0680[0m       [35m0.0681[0m      [31m0.0681[0m        [94m2.0433[0m     +  0.0000  11.6972
+      2      0.1250        [32m2.0342[0m       [35m0.0974[0m      [31m0.0974[0m        2.0815        0.0000  10.6105
+      3      0.1250        [32m1.8353[0m       0.0868      0.0868        2.0730        0.0000  10.3282
+      4      0.2500        1.8643       [35m0.2356[0m      [31m0.2356[0m        [94m2.0238[0m     +  0.0000  10.8502
+      5      [36m0.3750[0m        [32m1.7453[0m       0.0925      0.0925        2.1370        0.0000  10.4690
+      6      [36m0.7500[0m        [32m1.5699[0m       0.1229      0.1229        2.1193        0.0000  10.9056
+      7      0.7500        [32m1.4449[0m       0.1455      0.1455        2.1077        0.0000  10.5088
+      8      [36m0.8750[0m        [32m1.4169[0m       0.1530      0.1530        2.1011        0.0000  10.5173
+      9      0.7500        1.4854       0.1488      0.1488        2.1046        0.0000  10.8532
+     10      0.7500        1.4983       0.1623      0.1623        2.0929        0.0000  10.7989
+     11      [36m1.0000[0m        [32m1.3437[0m       0.1622      0.1622        2.0925        0.0000  10.5395
+     12      0.8750        [32m1.2569[0m       0.1611      0.1611        2.0942        0.0000  10.7442
+     13      0.7500        1.4251       0.1618      0.1618        2.0936        0.0000  10.7869
+     14      0.7500        1.3116       0.1623      0.1623        2.0940        0.0000  10.6448
+Stopping since valid_loss has not improved in the last 11 epochs.
+Pre F1 micro score = 0.1825
+Pre F1 macro score = 0.1215
+
+Iteration:  1
+Selecting 16 informative samples: 
+
+Training started with 24 samples:
+
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss    cp      lr      dur
+-------  ----------  ------------  -----------  ----------  ------------  ----  ------  -------
+      1      [36m0.5417[0m        [32m1.7386[0m       [35m0.1660[0m      [31m0.1660[0m        [94m2.0089[0m     +  0.0000  10.7198
+      2      [36m0.7083[0m        [32m1.4710[0m       0.1090      0.1090        2.1655        0.0000  10.9504
+      3      0.7083        [32m1.2600[0m       0.1137      0.1137        2.1114        0.0000  10.8436
+      4      [36m0.7917[0m        [32m1.1634[0m       0.1245      0.1245        2.1437        0.0000  10.8785
+      5      [36m0.8333[0m        [32m1.0956[0m       0.1247      0.1247        2.1316        0.0000  10.9812
+      6      0.7917        [32m1.0097[0m       0.1165      0.1165        2.1481        0.0000  10.8609
+      7      0.7917        1.0301       0.1179      0.1179        2.1491        0.0000  10.8626
+      8      0.8333        [32m0.9417[0m       0.1274      0.1274        2.1486        0.0000  10.9317
+      9      0.8333        1.0090       0.1316      0.1316        2.1463        0.0000  10.9221
+     10      0.7917        [32m0.9363[0m       0.1469      0.1469        2.1473        0.0000  10.7079
+     11      [36m0.8750[0m        0.9681       0.1462      0.1462        2.1484        0.0000  10.8436
+Stopping since valid_loss has not improved in the last 11 epochs.
+[8, 24]
+F1 Micro Score after query 1: 0.1996527777777778
+F1 Macro Score after query 1: 0.11163044042195483
+Number of samples used for retraining: 24
+Number of samples in pool after training and deleting samples: 26856
+Model checkpoint saved to C:\Users\localuserSKSG\Desktop\Shubham\ActiveLearning/Multiclass/DinoS/entropy_sampling_seed44\model_checkpoint_iteration_0.pt
+
+Iteration:  2
+Selecting 32 informative samples: 
+
+Training started with 56 samples:
+
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss    cp      lr      dur
+-------  ----------  ------------  -----------  ----------  ------------  ----  ------  -------
+      1      [36m0.6786[0m        [32m1.3665[0m       [35m0.3174[0m      [31m0.3174[0m        [94m1.8759[0m     +  0.0000  10.8695
+      2      [36m0.8214[0m        [32m1.0612[0m       0.2774      0.2774        [94m1.8606[0m     +  0.0000  11.0290
+      3      [36m0.8393[0m        [32m0.8371[0m       0.2804      0.2804        [94m1.8598[0m     +  0.0000  10.8998
+      4      0.8393        [32m0.7896[0m       0.2847      0.2847        [94m1.8501[0m     +  0.0000  11.0588
+      5      [36m0.8571[0m        [32m0.7057[0m       0.2872      0.2872        1.8672        0.0000  10.7450
+      6      [36m0.8929[0m        [32m0.6513[0m       0.2898      0.2898        1.8704        0.0000  10.8082
+      7      [36m0.9107[0m        0.7054       0.2899      0.2899        1.8744        0.0000  10.7623
+      8      0.8929        0.6687       0.2918      0.2918        1.8695        0.0000  11.0904
+      9      [36m0.9286[0m        0.7065       0.2946      0.2946        1.8677        0.0000  10.9648
+     10      0.9107        [32m0.6206[0m       0.2964      0.2964        1.8695        0.0000  11.0723
+     11      0.8929        0.6476       0.2965      0.2965        1.8696        0.0000  10.8686
+     12      0.8929        [32m0.6098[0m       0.2967      0.2967        1.8696        0.0000  11.1025
+     13      0.9286        0.6283       0.2964      0.2964        1.8690        0.0000  10.9958
+     14      0.9107        0.6433       0.2969      0.2969        1.8691        0.0000  11.0259
+Stopping since valid_loss has not improved in the last 11 epochs.
+[8, 24, 56]
+F1 Micro Score after query 2: 0.30850694444444443
+F1 Macro Score after query 2: 0.0974946704177963
+Number of samples used for retraining: 56
+Number of samples in pool after training and deleting samples: 26824
+Model checkpoint saved to C:\Users\localuserSKSG\Desktop\Shubham\ActiveLearning/Multiclass/DinoS/entropy_sampling_seed44\model_checkpoint_iteration_1.pt
+
+Iteration:  3
+Selecting 56 informative samples: 
+
+Training started with 112 samples:
+
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss    cp      lr      dur
+-------  ----------  ------------  -----------  ----------  ------------  ----  ------  -------
+      1      [36m0.8929[0m        [32m0.9181[0m       [35m0.3785[0m      [31m0.3785[0m        [94m1.6632[0m     +  0.0000  10.9802
+      2      [36m0.9375[0m        [32m0.7276[0m       0.3264      0.3264        1.6903        0.0000  11.3074
+      3      [36m0.9464[0m        [32m0.6334[0m       0.3312      0.3312        1.7104        0.0000  11.2445
+      4      0.9464        [32m0.5563[0m       0.3312      0.3312        1.7231        0.0000  11.0569
+      5      0.9464        [32m0.4947[0m       0.3352      0.3352        1.7334        0.0000  11.3399
+      6      [36m0.9643[0m        [32m0.4817[0m       0.3356      0.3356        1.7370        0.0000  11.4496
+      7      0.9554        0.4996       0.3372      0.3372        1.7472        0.0000  11.2153
+      8      0.9554        [32m0.4589[0m       0.3399      0.3399        1.7502        0.0000  11.1049
+      9      0.9464        [32m0.4388[0m       0.3408      0.3408        1.7550        0.0000  11.2605
+     10      0.9643        [32m0.4272[0m       0.3413      0.3413        1.7539        0.0000  11.0905
+     11      [36m0.9732[0m        0.4344       0.3413      0.3413        1.7566        0.0000  11.0877
+Stopping since valid_loss has not improved in the last 11 epochs.
+[8, 24, 56, 112]
+F1 Micro Score after query 3: 0.40659722222222217
+F1 Macro Score after query 3: 0.1961036914128223
+Number of samples used for retraining: 112
+Number of samples in pool after training and deleting samples: 26768
+Model checkpoint saved to C:\Users\localuserSKSG\Desktop\Shubham\ActiveLearning/Multiclass/DinoS/entropy_sampling_seed44\model_checkpoint_iteration_2.pt
+
+Iteration:  4
+Selecting 96 informative samples: 
+
+Training started with 208 samples:
+
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss    cp      lr      dur
+-------  ----------  ------------  -----------  ----------  ------------  ----  ------  -------
+      1      [36m0.9087[0m        [32m0.7611[0m       [35m0.2573[0m      [31m0.2573[0m        [94m1.8154[0m     +  0.0000  11.7934
+      2      0.9087        [32m0.6009[0m       [35m0.3389[0m      [31m0.3389[0m        [94m1.6906[0m     +  0.0000  11.5742
+      3      [36m0.9471[0m        [32m0.5087[0m       [35m0.3823[0m      [31m0.3823[0m        [94m1.6463[0m     +  0.0000  11.7171
+      4      0.9423        [32m0.4647[0m       [35m0.4113[0m      [31m0.4113[0m        [94m1.6331[0m     +  0.0000  11.4962
+      5      0.9471        [32m0.4161[0m       [35m0.4451[0m      [31m0.4451[0m        [94m1.6049[0m     +  0.0000  11.4824
+      6      [36m0.9519[0m        [32m0.4149[0m       [35m0.4495[0m      [31m0.4495[0m        1.6066        0.0000  11.6057
+      7      [36m0.9663[0m        [32m0.3869[0m       [35m0.4530[0m      [31m0.4530[0m        [94m1.6047[0m     +  0.0000  11.6218
+      8      [36m0.9712[0m        [32m0.3699[0m       0.4519      0.4519        1.6071        0.0000  11.7922
+      9      0.9615        0.3736       [35m0.4557[0m      [31m0.4557[0m        [94m1.5999[0m     +  0.0000  11.4339
+     10      0.9663        [32m0.3648[0m       0.4542      0.4542        1.6017        0.0000  11.7476
+     11      0.9663        [32m0.3614[0m       0.4550      0.4550        1.6021        0.0000  11.7456
+     12      0.9663        0.3784       0.4543      0.4543        1.6029        0.0000  11.5290
+     13      [36m0.9760[0m        0.3641       [35m0.4559[0m      [31m0.4559[0m        1.6022        0.0000  11.7596
+     14      0.9712        [32m0.3608[0m       [35m0.4566[0m      [31m0.4566[0m        1.6019        0.0000  11.9023
+     15      0.9712        0.3691       [35m0.4575[0m      [31m0.4575[0m        1.6017        0.0000  11.5728
+     16      0.9760        [32m0.3492[0m       [35m0.4576[0m      [31m0.4576[0m        1.6020        0.0000  11.8550
+     17      0.9760        0.3649       0.4576      0.4576        1.6020        0.0000  11.5107
+     18      [36m0.9808[0m        0.3666       [35m0.4580[0m      [31m0.4580[0m        1.6017        0.0000  11.5896
+     19      0.9760        0.3574       [35m0.4583[0m      [31m0.4583[0m        1.6015        0.0000  11.5746
+Stopping since valid_loss has not improved in the last 11 epochs.
+[8, 24, 56, 112, 208]
+F1 Micro Score after query 4: 0.48194444444444445
+F1 Macro Score after query 4: 0.2207743148533381
+Number of samples used for retraining: 208
+Number of samples in pool after training and deleting samples: 26672
+Model checkpoint saved to C:\Users\localuserSKSG\Desktop\Shubham\ActiveLearning/Multiclass/DinoS/entropy_sampling_seed44\model_checkpoint_iteration_3.pt
+
+Iteration:  5
+Selecting 176 informative samples: 
+
+Training started with 384 samples:
+
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss    cp      lr      dur
+-------  ----------  ------------  -----------  ----------  ------------  ----  ------  -------
+      1      [36m0.7474[0m        [32m0.8783[0m       [35m0.4243[0m      [31m0.4243[0m        [94m1.5751[0m     +  0.0000  12.3721
+      2      [36m0.8229[0m        [32m0.6875[0m       0.3997      0.3997        1.6354        0.0000  12.5270
+      3      [36m0.8568[0m        [32m0.5820[0m       0.4052      0.4052        1.6256        0.0000  12.5110
+      4      [36m0.8984[0m        [32m0.4992[0m       0.4134      0.4134        1.6178        0.0000  12.7170
+      5      [36m0.9297[0m        [32m0.4511[0m       0.4189      0.4189        1.6157        0.0000  12.4970
+      6      [36m0.9531[0m        [32m0.3982[0m       0.4198      0.4198        1.6060        0.0000  12.5904
+      7      [36m0.9557[0m        [32m0.3897[0m       0.4200      0.4200        1.6096        0.0000  12.6194
+      8      0.9557        [32m0.3749[0m       0.4194      0.4194        1.6111        0.0000  12.6208
+      9      [36m0.9583[0m        [32m0.3741[0m       0.4189      0.4189        1.6079        0.0000  12.4028
+     10      0.9583        [32m0.3601[0m       0.4167      0.4167        1.6067        0.0000  12.2788
+     11      [36m0.9740[0m        [32m0.3390[0m       0.4179      0.4179        1.6066        0.0000  12.6371
+Stopping since valid_loss has not improved in the last 11 epochs.
+[8, 24, 56, 112, 208, 384]
+F1 Micro Score after query 5: 0.440625
+F1 Macro Score after query 5: 0.17272150284386756
+Number of samples used for retraining: 384
+Number of samples in pool after training and deleting samples: 26496
+Model checkpoint saved to C:\Users\localuserSKSG\Desktop\Shubham\ActiveLearning/Multiclass/DinoS/entropy_sampling_seed44\model_checkpoint_iteration_4.pt
+
+Iteration:  6
+Selecting 320 informative samples: 
+
+Training started with 704 samples:
+
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss    cp      lr      dur
+-------  ----------  ------------  -----------  ----------  ------------  ----  ------  -------
+      1      [36m0.8722[0m        [32m0.6028[0m       [35m0.4479[0m      [31m0.4479[0m        [94m1.5849[0m     +  0.0000  14.0698
+      2      [36m0.9205[0m        [32m0.4501[0m       [35m0.5019[0m      [31m0.5019[0m        [94m1.4398[0m     +  0.0000  14.2651
+      3      [36m0.9389[0m        [32m0.3962[0m       0.5009      0.5009        [94m1.3494[0m     +  0.0000  14.1703
+      4      [36m0.9574[0m        [32m0.3507[0m       [35m0.5257[0m      [31m0.5257[0m        [94m1.3096[0m     +  0.0000  13.9997
+      5      [36m0.9673[0m        [32m0.3044[0m       0.5198      0.5198        1.3150        0.0000  14.2016
+      6      [36m0.9744[0m        [32m0.2743[0m       0.5253      0.5253        [94m1.2995[0m     +  0.0000  13.9220
+      7      [36m0.9801[0m        [32m0.2654[0m       0.5236      0.5236        1.3024        0.0000  14.1685
+      8      0.9787        [32m0.2553[0m       0.5255      0.5255        [94m1.2942[0m     +  0.0000  14.3091
+      9      [36m0.9872[0m        [32m0.2462[0m       0.5250      0.5250        1.2946        0.0000  14.0292
+     10      0.9844        [32m0.2411[0m       0.5241      0.5241        [94m1.2874[0m     +  0.0000  13.8416
+     11      [36m0.9886[0m        [32m0.2332[0m       0.5238      0.5238        1.2898        0.0000  14.2025
+     12      0.9872        0.2349       0.5240      0.5240        1.2883        0.0000  13.9338
+     13      [36m0.9901[0m        [32m0.2281[0m       0.5222      0.5222        1.2899        0.0000  14.2160
+     14      0.9872        [32m0.2255[0m       0.5233      0.5233        1.2882        0.0000  13.9204
+     15      0.9858        0.2358       0.5227      0.5227        1.2880        0.0000  14.2455
+     16      0.9886        0.2258       0.5234      0.5234        [94m1.2862[0m     +  0.0000  14.1150
+     17      0.9872        [32m0.2237[0m       0.5229      0.5229        1.2863        0.0000  14.1061
+     18      [36m0.9915[0m        [32m0.2218[0m       0.5236      0.5236        [94m1.2857[0m     +  0.0000  14.1665
+     19      0.9872        0.2361       0.5229      0.5229        1.2861        0.0000  13.8737
+     20      0.9901        0.2306       0.5229      0.5229        1.2858        0.0000  14.2784
+     21      0.9872        0.2254       0.5229      0.5229        [94m1.2855[0m     +  0.0000  14.3832
+     22      0.9901        [32m0.2154[0m       0.5234      0.5234        [94m1.2850[0m     +  0.0000  13.9660
+     23      0.9886        0.2333       0.5236      0.5236        [94m1.2845[0m     +  0.0000  14.1545
+     24      0.9886        0.2273       0.5238      0.5238        1.2848        0.0000  14.1777
+     25      0.9886        0.2234       0.5238      0.5238        1.2845        0.0000  14.1071
+     26      0.9901        0.2240       0.5238      0.5238        [94m1.2844[0m     +  0.0000  14.1519
+     27      0.9872        0.2249       0.5238      0.5238        1.2845        0.0000  14.2637
+     28      0.9901        0.2155       0.5238      0.5238        1.2845        0.0000  14.1392
+     29      0.9901        0.2239       0.5238      0.5238        1.2845        0.0000  14.3745
+     30      0.9886        0.2214       0.5238      0.5238        1.2845        0.0000  14.4817
+     31      0.9901        0.2284       0.5238      0.5238        1.2845        0.0000  14.2324
+     32      0.9886        0.2262       0.5238      0.5238        1.2845        0.0000  14.2924
+     33      0.9872        0.2274       0.5238      0.5238        1.2845        0.0000  14.3716
+Stopping since valid_loss has not improved in the last 11 epochs.
+[8, 24, 56, 112, 208, 384, 704]
+F1 Micro Score after query 6: 0.5623263888888889
+F1 Macro Score after query 6: 0.21072350138752938
+Number of samples used for retraining: 704
+Number of samples in pool after training and deleting samples: 26176
+Model checkpoint saved to C:\Users\localuserSKSG\Desktop\Shubham\ActiveLearning/Multiclass/DinoS/entropy_sampling_seed44\model_checkpoint_iteration_5.pt
+
+Iteration:  7
+Selecting 560 informative samples: 
+
+Training started with 1264 samples:
+
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss    cp      lr      dur
+-------  ----------  ------------  -----------  ----------  ------------  ----  ------  -------
+      1      [36m0.8695[0m        [32m0.5843[0m       [35m0.5842[0m      [31m0.5842[0m        [94m1.2789[0m     +  0.0000  16.8925
+      2      [36m0.9272[0m        [32m0.4402[0m       0.5811      0.5811        [94m1.2203[0m     +  0.0000  16.6873
+      3      [36m0.9430[0m        [32m0.3797[0m       0.5840      0.5840        [94m1.2000[0m     +  0.0000  16.6277
+      4      [36m0.9509[0m        [32m0.3409[0m       0.5823      0.5823        1.2190        0.0000  16.8776
+      5      [36m0.9581[0m        [32m0.3176[0m       0.5727      0.5727        1.2167        0.0000  16.7630
+      6      [36m0.9660[0m        [32m0.2817[0m       [35m0.5885[0m      [31m0.5885[0m        [94m1.1742[0m     +  0.0000  16.7587
+      7      [36m0.9707[0m        [32m0.2711[0m       0.5865      0.5865        [94m1.1725[0m     +  0.0000  17.0024
+      8      [36m0.9771[0m        [32m0.2570[0m       [35m0.5922[0m      [31m0.5922[0m        [94m1.1654[0m     +  0.0000  16.8432
+      9      [36m0.9786[0m        [32m0.2507[0m       0.5873      0.5873        1.1754        0.0000  16.7461
+     10      [36m0.9818[0m        [32m0.2504[0m       0.5908      0.5908        1.1718        0.0000  16.6521
+     11      [36m0.9826[0m        [32m0.2432[0m       [35m0.5927[0m      [31m0.5927[0m        [94m1.1593[0m     +  0.0000  17.0601
+     12      0.9810        [32m0.2422[0m       0.5927      0.5927        [94m1.1570[0m     +  0.0000  16.9211
+     13      [36m0.9858[0m        [32m0.2389[0m       [35m0.5934[0m      [31m0.5934[0m        [94m1.1554[0m     +  0.0000  16.8757
+     14      0.9850        [32m0.2378[0m       0.5925      0.5925        1.1559        0.0000  17.0651
+     15      0.9834        0.2398       [35m0.5941[0m      [31m0.5941[0m        [94m1.1533[0m     +  0.0000  16.9220
+     16      0.9842        [32m0.2359[0m       0.5938      0.5938        [94m1.1506[0m     +  0.0000  16.9992
+     17      0.9850        [32m0.2320[0m       0.5941      0.5941        [94m1.1501[0m     +  0.0000  16.8764
+     18      0.9834        0.2322       [35m0.5944[0m      [31m0.5944[0m        [94m1.1497[0m     +  0.0000  16.6240
+     19      0.9842        [32m0.2302[0m       0.5939      0.5939        1.1504        0.0000  16.9523
+     20      [36m0.9866[0m        0.2336       0.5943      0.5943        1.1500        0.0000  17.0953
+     21      0.9866        0.2350       0.5943      0.5943        1.1499        0.0000  17.0651
+     22      0.9850        0.2342       0.5943      0.5943        [94m1.1496[0m     +  0.0000  17.0138
+     23      [36m0.9873[0m        [32m0.2297[0m       0.5941      0.5941        [94m1.1496[0m     +  0.0000  16.7347
+     24      0.9834        0.2349       0.5941      0.5941        [94m1.1495[0m     +  0.0000  16.9388
+     25      0.9873        0.2311       0.5944      0.5944        [94m1.1493[0m     +  0.0000  16.8893
+     26      0.9873        0.2325       0.5944      0.5944        [94m1.1492[0m     +  0.0000  17.0616
+     27      0.9858        0.2306       0.5944      0.5944        [94m1.1492[0m     +  0.0000  16.9532
+     28      [36m0.9881[0m        0.2335       0.5944      0.5944        [94m1.1491[0m     +  0.0000  17.0328
+     29      0.9858        0.2368       [35m0.5946[0m      [31m0.5946[0m        [94m1.1491[0m     +  0.0000  16.7985
+     30      0.9826        0.2347       0.5944      0.5944        [94m1.1491[0m     +  0.0000  16.7606
+     31      0.9850        [32m0.2286[0m       0.5944      0.5944        [94m1.1491[0m     +  0.0000  17.0787
+     32      0.9858        [32m0.2278[0m       0.5944      0.5944        [94m1.1491[0m     +  0.0000  16.8144
+     33      0.9873        [32m0.2223[0m       0.5944      0.5944        [94m1.1491[0m     +  0.0000  16.7193
+     34      0.9866        0.2334       0.5944      0.5944        [94m1.1491[0m     +  0.0000  16.7979
+     35      0.9873        0.2328       0.5946      0.5946        [94m1.1490[0m     +  0.0000  16.8757
+     36      0.9873        [32m0.2219[0m       0.5946      0.5946        [94m1.1490[0m     +  0.0000  16.9201
+     37      0.9873        0.2295       0.5946      0.5946        [94m1.1490[0m     +  0.0000  16.8909
+     38      0.9850        0.2335       0.5946      0.5946        [94m1.1490[0m     +  0.0000  16.9708
+Stopping since valid_loss has not improved in the last 11 epochs.
+[8, 24, 56, 112, 208, 384, 704, 1264]
+F1 Micro Score after query 7: 0.5899305555555555
+F1 Macro Score after query 7: 0.23674936161602433
+Number of samples used for retraining: 1264
+Number of samples in pool after training and deleting samples: 25616
+Model checkpoint saved to C:\Users\localuserSKSG\Desktop\Shubham\ActiveLearning/Multiclass/DinoS/entropy_sampling_seed44\model_checkpoint_iteration_6.pt
+
+Iteration:  8
+Selecting 1000 informative samples: 
+
+Training started with 2264 samples:
+
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss    cp      lr      dur
+-------  ----------  ------------  -----------  ----------  ------------  ----  ------  -------
+      1      [36m0.9223[0m        [32m0.3922[0m       [35m0.6422[0m      [31m0.6422[0m        [94m0.9933[0m     +  0.0000  21.9610
+      2      [36m0.9527[0m        [32m0.2927[0m       0.6372      0.6372        [94m0.9916[0m     +  0.0000  22.0191
+      3      [36m0.9633[0m        [32m0.2566[0m       [35m0.6873[0m      [31m0.6873[0m        [94m0.9280[0m     +  0.0000  21.9120
+      4      0.9633        [32m0.2345[0m       0.6795      0.6795        0.9423        0.0000  21.9349
+      5      [36m0.9761[0m        [32m0.2018[0m       [35m0.6962[0m      [31m0.6962[0m        [94m0.9228[0m     +  0.0000  22.0067
+      6      [36m0.9832[0m        [32m0.1746[0m       0.6806      0.6806        0.9246        0.0000  21.9278
+      7      [36m0.9854[0m        [32m0.1664[0m       0.6819      0.6819        0.9291        0.0000  21.8636
+      8      0.9845        [32m0.1615[0m       0.6809      0.6809        0.9342        0.0000  21.8143
+      9      [36m0.9872[0m        [32m0.1603[0m       0.6913      0.6913        0.9242        0.0000  22.0339
+     10      [36m0.9885[0m        [32m0.1534[0m       0.6918      0.6918        0.9309        0.0000  21.8636
+     11      [36m0.9920[0m        [32m0.1468[0m       0.6901      0.6901        0.9307        0.0000  21.8633
+     12      0.9916        [32m0.1441[0m       0.6917      0.6917        0.9305        0.0000  21.9884
+     13      [36m0.9925[0m        [32m0.1423[0m       0.6905      0.6905        0.9312        0.0000  22.1136
+     14      [36m0.9934[0m        [32m0.1400[0m       0.6929      0.6929        0.9329        0.0000  22.0175
+     15      [36m0.9947[0m        [32m0.1365[0m       0.6915      0.6915        0.9324        0.0000  21.8179
+Stopping since valid_loss has not improved in the last 11 epochs.
+[8, 24, 56, 112, 208, 384, 704, 1264, 2264]
+F1 Micro Score after query 8: 0.7064236111111111
+F1 Macro Score after query 8: 0.3216557110790569
+Number of samples used for retraining: 2264
+Number of samples in pool after training and deleting samples: 24616
+Model checkpoint saved to C:\Users\localuserSKSG\Desktop\Shubham\ActiveLearning/Multiclass/DinoS/entropy_sampling_seed44\model_checkpoint_iteration_7.pt
+
+Iteration:  9
+Selecting 1776 informative samples: 
+
+Training started with 4040 samples:
+
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss    cp      lr      dur
+-------  ----------  ------------  -----------  ----------  ------------  ----  ------  -------
+      1      [36m0.9126[0m        [32m0.3954[0m       [35m0.7866[0m      [31m0.7866[0m        [94m0.6861[0m     +  0.0000  30.5627
+      2      [36m0.9470[0m        [32m0.2882[0m       [35m0.7915[0m      [31m0.7915[0m        [94m0.6772[0m     +  0.0000  30.5303
+      3      [36m0.9569[0m        [32m0.2438[0m       0.7557      0.7557        0.7323        0.0000  30.8275
+      4      [36m0.9653[0m        [32m0.2145[0m       0.7613      0.7613        0.7321        0.0000  31.1176
+      5      [36m0.9713[0m        [32m0.1875[0m       0.7684      0.7684        0.7489        0.0000  30.9380
+      6      [36m0.9770[0m        [32m0.1593[0m       0.7792      0.7792        0.7714        0.0000  30.6387
+      7      [36m0.9824[0m        [32m0.1465[0m       0.7812      0.7812        0.7512        0.0000  30.9376
+      8      [36m0.9864[0m        [32m0.1368[0m       0.7866      0.7866        0.7479        0.0000  30.8126
+      9      [36m0.9889[0m        [32m0.1268[0m       0.7852      0.7852        0.7549        0.0000  30.7776
+     10      [36m0.9908[0m        [32m0.1210[0m       0.7865      0.7865        0.7707        0.0000  30.7942
+     11      [36m0.9923[0m        [32m0.1121[0m       [35m0.7948[0m      [31m0.7948[0m        0.7378        0.0000  30.8921
+     12      [36m0.9933[0m        [32m0.1091[0m       0.7944      0.7944        0.7438        0.0000  30.7968
+Stopping since valid_loss has not improved in the last 11 epochs.
+[8, 24, 56, 112, 208, 384, 704, 1264, 2264, 4040]
+F1 Micro Score after query 9: 0.8185763888888888
+F1 Macro Score after query 9: 0.5234064055162495
+Number of samples used for retraining: 4040
+Number of samples in pool after training and deleting samples: 22840
+Model checkpoint saved to C:\Users\localuserSKSG\Desktop\Shubham\ActiveLearning/Multiclass/DinoS/entropy_sampling_seed44\model_checkpoint_iteration_8.pt
+
+Iteration:  10
+Selecting 3160 informative samples: 
+
+Training started with 7200 samples:
+
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss    cp      lr      dur
+-------  ----------  ------------  -----------  ----------  ------------  ----  ------  -------
+      1      [36m0.8996[0m        [32m0.3985[0m       [35m0.8146[0m      [31m0.8146[0m        [94m0.5988[0m     +  0.0000  46.1840
+      2      [36m0.9279[0m        [32m0.3136[0m       0.8137      0.8137        0.6101        0.0000  46.5762
+      3      [36m0.9392[0m        [32m0.2669[0m       0.7877      0.7877        0.7256        0.0000  46.2709
+      4      [36m0.9490[0m        [32m0.2366[0m       [35m0.8149[0m      [31m0.8149[0m        0.6121        0.0000  45.9782
+      5      [36m0.9536[0m        [32m0.2132[0m       0.8137      0.8137        0.6519        0.0000  46.7015
+      6      [36m0.9678[0m        [32m0.1667[0m       [35m0.8238[0m      [31m0.8238[0m        0.6118        0.0000  46.6232
+      7      [36m0.9742[0m        [32m0.1517[0m       0.8220      0.8220        0.6361        0.0000  46.6550
+      8      [36m0.9778[0m        [32m0.1383[0m       0.8193      0.8193        0.6503        0.0000  46.5105
+      9      [36m0.9806[0m        [32m0.1286[0m       [35m0.8241[0m      [31m0.8241[0m        0.6489        0.0000  46.7842
+     10      [36m0.9811[0m        [32m0.1246[0m       0.8231      0.8231        0.6602        0.0000  46.5885
+     11      [36m0.9854[0m        [32m0.1116[0m       0.8113      0.8113        0.6992        0.0000  46.6381
+Stopping since valid_loss has not improved in the last 11 epochs.
+[8, 24, 56, 112, 208, 384, 704, 1264, 2264, 4040, 7200]
+F1 Micro Score after query 10: 0.8352430555555554
+F1 Macro Score after query 10: 0.5268036828488635
+Number of samples used for retraining: 7200
+Number of samples in pool after training and deleting samples: 19680
+Model checkpoint saved to C:\Users\localuserSKSG\Desktop\Shubham\ActiveLearning/Multiclass/DinoS/entropy_sampling_seed44\model_checkpoint_iteration_9.pt
+
+Iteration:  11
+Selecting 5624 informative samples: 
+
+Training started with 12824 samples:
+
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss    cp      lr      dur
+-------  ----------  ------------  -----------  ----------  ------------  ----  ------  -------
+      1      [36m0.9253[0m        [32m0.3211[0m       [35m0.8444[0m      [31m0.8444[0m        [94m0.4919[0m     +  0.0000  73.8803
+      2      [36m0.9393[0m        [32m0.2643[0m       0.8172      0.8172        0.5398        0.0000  74.8381
+      3      [36m0.9475[0m        [32m0.2212[0m       0.8220      0.8220        0.5742        0.0000  74.7329
+      4      [36m0.9522[0m        [32m0.1988[0m       0.8186      0.8186        0.6088        0.0000  75.0926
+      5      [36m0.9565[0m        [32m0.1756[0m       0.8010      0.8010        0.7061        0.0000  74.7907
+      6      [36m0.9683[0m        [32m0.1401[0m       0.8109      0.8109        0.6787        0.0000  75.0562
+      7      [36m0.9743[0m        [32m0.1236[0m       0.8141      0.8141        0.6829        0.0000  75.0054
+      8      [36m0.9779[0m        [32m0.1115[0m       0.8161      0.8161        0.6956        0.0000  74.9135
+      9      [36m0.9811[0m        [32m0.1002[0m       0.8186      0.8186        0.6937        0.0000  74.9615
+     10      [36m0.9845[0m        [32m0.0938[0m       0.8174      0.8174        0.7254        0.0000  74.6649
+     11      [36m0.9871[0m        [32m0.0847[0m       0.8123      0.8123        0.7193        0.0000  74.8364
+Stopping since valid_loss has not improved in the last 11 epochs.
+[8, 24, 56, 112, 208, 384, 704, 1264, 2264, 4040, 7200, 12824]
+F1 Micro Score after query 11: 0.8328125
+F1 Macro Score after query 11: 0.5281433552307272
+Number of samples used for retraining: 12824
+Number of samples in pool after training and deleting samples: 14056
+Model checkpoint saved to C:\Users\localuserSKSG\Desktop\Shubham\ActiveLearning/Multiclass/DinoS/entropy_sampling_seed44\model_checkpoint_iteration_10.pt
+
+Iteration:  12
+Selecting 10000 informative samples: 
+
+Training started with 22824 samples:
+
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss    cp      lr       dur
+-------  ----------  ------------  -----------  ----------  ------------  ----  ------  --------
+      1      [36m0.9568[0m        [32m0.1978[0m       [35m0.8005[0m      [31m0.8005[0m        [94m0.6585[0m     +  0.0000  124.8438
+      2      [36m0.9616[0m        [32m0.1660[0m       [35m0.8073[0m      [31m0.8073[0m        [94m0.6502[0m     +  0.0000  125.2333
+      3      [36m0.9644[0m        [32m0.1428[0m       0.7840      0.7840        0.7625        0.0000  125.1614
+      4      [36m0.9691[0m        [32m0.1264[0m       0.7899      0.7899        0.8227        0.0000  125.4928
+      5      [36m0.9703[0m        [32m0.1134[0m       0.7740      0.7740        0.9425        0.0000  125.3362
+      6      [36m0.9784[0m        [32m0.0874[0m       [35m0.8306[0m      [31m0.8306[0m        0.6598        0.0000  125.3366
+      7      [36m0.9826[0m        [32m0.0740[0m       0.8297      0.8297        [94m0.6463[0m     +  0.0000  125.3712
+      8      [36m0.9861[0m        [32m0.0646[0m       0.8241      0.8241        0.6621        0.0000  125.2099
+      9      [36m0.9886[0m        [32m0.0574[0m       0.8196      0.8196        0.6846        0.0000  125.4292
+     10      [36m0.9897[0m        [32m0.0518[0m       0.8198      0.8198        0.7250        0.0000  125.0665
+     11      [36m0.9919[0m        [32m0.0445[0m       0.8187      0.8187        0.7420        0.0000  125.4045
+     12      [36m0.9937[0m        [32m0.0405[0m       0.8196      0.8196        0.7453        0.0000  125.0442
+     13      [36m0.9941[0m        [32m0.0395[0m       0.8219      0.8219        0.7520        0.0000  125.2790
+     14      [36m0.9945[0m        [32m0.0373[0m       0.8201      0.8201        0.7623        0.0000  125.0000
+     15      [36m0.9950[0m        [32m0.0365[0m       0.8203      0.8203        0.7783        0.0000  124.9630
+     16      [36m0.9955[0m        [32m0.0341[0m       0.8174      0.8174        0.8050        0.0000  125.4583
+     17      0.9953        [32m0.0338[0m       0.8179      0.8179        0.8043        0.0000  125.1993
+Stopping since valid_loss has not improved in the last 11 epochs.
+[8, 24, 56, 112, 208, 384, 704, 1264, 2264, 4040, 7200, 12824, 22824]
+F1 Micro Score after query 12: 0.8362847222222223
+F1 Macro Score after query 12: 0.517352247099452
+Number of samples used for retraining: 22824
+Number of samples in pool after training and deleting samples: 4056
+Model checkpoint saved to C:\Users\localuserSKSG\Desktop\Shubham\ActiveLearning/Multiclass/DinoS/entropy_sampling_seed44\model_checkpoint_iteration_11.pt
+
+Iteration:  13
+Selecting 4056 informative samples: 
+
+Training started with 26880 samples:
+
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss    cp      lr       dur
+-------  ----------  ------------  -----------  ----------  ------------  ----  ------  --------
+      1      [36m0.9791[0m        [32m0.0784[0m       [35m0.7628[0m      [31m0.7628[0m        [94m1.0543[0m     +  0.0000  144.8556
+      2      [36m0.9811[0m        [32m0.0707[0m       [35m0.8120[0m      [31m0.8120[0m        [94m0.7423[0m     +  0.0000  145.6073
+      3      [36m0.9825[0m        [32m0.0632[0m       0.7826      0.7826        1.0257        0.0000  145.9180
+      4      [36m0.9839[0m        [32m0.0580[0m       [35m0.8273[0m      [31m0.8273[0m        0.7964        0.0000  145.6056
+      5      [36m0.9863[0m        [32m0.0508[0m       0.7979      0.7979        1.0775        0.0000  145.5219
+      6      [36m0.9919[0m        [32m0.0349[0m       0.8148      0.8148        0.8682        0.0000  145.5772
+      7      [36m0.9937[0m        [32m0.0270[0m       0.8108      0.8108        0.9312        0.0000  145.7319
+      8      [36m0.9958[0m        [32m0.0223[0m       0.8038      0.8038        1.0114        0.0000  145.6257
+      9      [36m0.9966[0m        [32m0.0199[0m       0.8113      0.8113        0.9704        0.0000  145.8967
+     10      [36m0.9977[0m        [32m0.0166[0m       0.8045      0.8045        1.0940        0.0000  145.5785
+     11      [36m0.9983[0m        [32m0.0144[0m       0.8066      0.8066        1.0746        0.0000  145.1754
+     12      [36m0.9986[0m        [32m0.0130[0m       0.8069      0.8069        1.0818        0.0000  145.9205
+Stopping since valid_loss has not improved in the last 11 epochs.
+[8, 24, 56, 112, 208, 384, 704, 1264, 2264, 4040, 7200, 12824, 22824, 26880]
+F1 Micro Score after query 13: 0.8371527777777777
+F1 Macro Score after query 13: 0.5455163086373945
+Number of samples used for retraining: 26880
+Number of samples in pool after training and deleting samples: 0
+Model checkpoint saved to C:\Users\localuserSKSG\Desktop\Shubham\ActiveLearning/Multiclass/DinoS/entropy_sampling_seed44\model_checkpoint_iteration_12.pt
+Pickle file saved to C:\Users\localuserSKSG\Desktop\Shubham\ActiveLearning/Multiclass/DinoS/entropy_sampling_seed44\AL_entropy_sampling_results_for_multiclass_classification_s44.pickle
