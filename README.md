@@ -8,3 +8,23 @@ Research Question 1 : Does active learning surpass random sampling?
 Research Question 2: Which active learning query strategies do not result in worse results compared to random sampling?
 
 Research Question 3: Does the gain over random sampling justified considering the overhead costs involved?
+
+## Project Structure
+
+## Usage
+
+To clone this repository and navigate into the project directory, run the following commands:
+
+```bash
+git clone https://github.com/andi677/ai-faps-shubham-gupta.git
+cd ai-faps-shubham-gupta
+```
+
+## Create the Environment
+
+To set up the environment, use Conda:
+
+```bash
+conda env create -f requirements.yml
+conda activate AL_env
+```
