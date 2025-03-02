@@ -26,5 +26,5 @@ To set up the environment, use Conda:
 
 ```bash
 conda env create -f requirements.yml
-conda activate AL_env
+conda activate ActiveLearning
 ```
