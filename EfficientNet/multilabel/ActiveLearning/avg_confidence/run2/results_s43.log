@@ -1,0 +1,391 @@
+Adjusted shapes after loading:
+X_initial_np: (8, 224, 224, 3), y_initial_np: (8, 3)
+X_pool_np: (26872, 224, 224, 3), y_pool_np: (26872, 3)
+X_test_np: (5760, 224, 224, 3), y_test_np: (5760, 3)
+X_val_np: (5760, 224, 224, 3), y_val_np: (5760, 3)
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss    cp      dur
+-------  ----------  ------------  -----------  ----------  ------------  ----  -------
+      1      [36m0.5386[0m        [32m0.7045[0m       [35m0.1245[0m      [31m0.4766[0m        [94m0.6946[0m     +  47.3040
+      2      [36m0.7302[0m        [32m0.6689[0m       [35m0.1262[0m      0.4354        [94m0.6941[0m     +  45.0460
+      3      [36m0.8320[0m        [32m0.5988[0m       0.1207      0.4697        [94m0.6926[0m     +  45.5842
+      4      [36m0.8413[0m        [32m0.5420[0m       0.0837      [31m0.4836[0m        0.6934        42.9297
+      5      [36m1.0000[0m        [32m0.5055[0m       0.0840      [31m0.4906[0m        [94m0.6908[0m     +  44.4764
+      6      0.9153        [32m0.4467[0m       0.1161      [31m0.5024[0m        [94m0.6860[0m     +  43.7646
+      7      0.9630        [32m0.4186[0m       [35m0.1571[0m      0.4907        [94m0.6798[0m     +  43.1045
+      8      0.9524        [32m0.3871[0m       [35m0.2427[0m      0.4459        [94m0.6718[0m     +  45.0158
+      9      1.0000        [32m0.3157[0m       [35m0.2753[0m      0.3773        [94m0.6657[0m     +  42.5367
+     10      1.0000        [32m0.3000[0m       [35m0.2799[0m      0.3254        [94m0.6625[0m     +  44.7111
+     11      1.0000        0.3151       [35m0.2835[0m      0.3127        [94m0.6618[0m     +  43.9383
+     12      1.0000        [32m0.2657[0m       [35m0.2847[0m      0.3130        [94m0.6615[0m     +  43.1023
+     13      1.0000        0.2774       [35m0.2899[0m      0.3431        0.6643        44.7433
+     14      1.0000        [32m0.1752[0m       [35m0.2932[0m      0.3855        0.6688        42.6095
+     15      1.0000        0.1805       [35m0.2944[0m      0.4194        0.6727        42.9216
+     16      1.0000        0.2151       0.2872      0.4403        0.6823        43.4422
+     17      1.0000        [32m0.1751[0m       0.2840      0.4547        0.6899        41.5423
+     18      1.0000        [32m0.1457[0m       0.2842      0.4583        0.6975        43.7187
+     19      1.0000        [32m0.0986[0m       0.2851      0.4571        0.7071        42.6727
+Stopping since valid_loss has not improved in the last 8 epochs.
+Pre F1 micro score = 0.4446
+Pre F1 macro score = 0.4461
+Pre Accuracy = 0.2894
+
+Iteration: 1
+Selecting 16 informative samples: 
+
+Training started with 24 samples:
+
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss    cp      dur
+-------  ----------  ------------  -----------  ----------  ------------  ----  -------
+      1      [36m0.6942[0m        [32m0.6047[0m       [35m0.2681[0m      [31m0.5150[0m        [94m0.6369[0m     +  43.4384
+      2      [36m0.8958[0m        [32m0.3347[0m       0.2076      [31m0.5636[0m        [94m0.5973[0m     +  43.8993
+      3      [36m0.9825[0m        [32m0.2624[0m       0.2585      [31m0.6226[0m        [94m0.5619[0m     +  41.9802
+      4      0.9583        [32m0.2274[0m       [35m0.3733[0m      [31m0.6817[0m        [94m0.5208[0m     +  44.3906
+      5      [36m1.0000[0m        [32m0.1806[0m       [35m0.4488[0m      [31m0.7253[0m        [94m0.4905[0m     +  43.3591
+      6      1.0000        [32m0.1559[0m       [35m0.4856[0m      [31m0.7472[0m        [94m0.4784[0m     +  43.7035
+      7      1.0000        [32m0.1053[0m       [35m0.4950[0m      [31m0.7562[0m        [94m0.4768[0m     +  44.3919
+      8      1.0000        [32m0.0813[0m       0.4870      0.7556        [94m0.4626[0m     +  42.2035
+      9      1.0000        [32m0.0793[0m       0.4936      [31m0.7601[0m        [94m0.4487[0m     +  44.1812
+     10      0.9905        [32m0.0701[0m       [35m0.5234[0m      [31m0.7647[0m        [94m0.4176[0m     +  43.3144
+     11      1.0000        [32m0.0484[0m       [35m0.5460[0m      0.7645        [94m0.4068[0m     +  43.5504
+     12      1.0000        [32m0.0387[0m       0.5427      0.7607        0.4115        43.9462
+     13      1.0000        0.0462       0.5382      0.7646        0.4243        42.8126
+     14      1.0000        [32m0.0367[0m       [35m0.5488[0m      0.7632        0.4257        44.1317
+     15      1.0000        [32m0.0299[0m       [35m0.5497[0m      0.7615        0.4273        43.5764
+     16      1.0000        [32m0.0207[0m       [35m0.5519[0m      0.7633        0.4377        43.1372
+     17      1.0000        0.0303       [35m0.5573[0m      0.7642        0.4362        44.3384
+     18      1.0000        [32m0.0197[0m       0.5502      0.7546        0.4478        42.9107
+Stopping since valid_loss has not improved in the last 8 epochs.
+[24]
+F1 Micro Score after query 1: 0.7390054613394654
+F1 Macro Score after query 1: 0.7170544218702329
+Number of samples used for retraining: 24
+Number of samples in pool after training and deleting samples: 26856
+Model checkpoint saved to C:\Users\localuserSKSG\Desktop\Shubham\ActiveLearning/Multilabel/EffNet/average_confidence_seed43\model_checkpoint_iteration_0.pt
+
+Iteration: 2
+Selecting 32 informative samples: 
+
+Training started with 56 samples:
+
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss    cp      dur
+-------  ----------  ------------  -----------  ----------  ------------  ----  -------
+      1      [36m0.8913[0m        [32m0.3297[0m       [35m0.5859[0m      [31m0.7706[0m        [94m0.3955[0m     +  44.5058
+      2      [36m0.9340[0m        [32m0.1432[0m       [35m0.6212[0m      0.7537        [94m0.3472[0m     +  43.8890
+      3      [36m0.9492[0m        [32m0.1087[0m       [35m0.6486[0m      [31m0.8122[0m        [94m0.3111[0m     +  45.3275
+      4      [36m0.9789[0m        [32m0.0838[0m       0.6189      0.7796        0.3256        44.3124
+      5      [36m0.9859[0m        [32m0.0560[0m       0.6245      0.7714        0.3274        43.8730
+      6      0.9859        [32m0.0524[0m       0.6340      [31m0.8130[0m        0.3368        44.9187
+      7      [36m0.9899[0m        0.0528       [35m0.6755[0m      [31m0.8300[0m        0.3217        45.3754
+      8      [36m1.0000[0m        [32m0.0274[0m       0.6736      0.8174        0.3369        43.9511
+      9      0.9954        0.0416       [35m0.6760[0m      0.8161        0.3249        44.1990
+     10      1.0000        [32m0.0229[0m       [35m0.6901[0m      0.8298        0.3189        45.2329
+Stopping since valid_loss has not improved in the last 8 epochs.
+[24, 56]
+F1 Micro Score after query 2: 0.8688975105075978
+F1 Macro Score after query 2: 0.8479021953026783
+Number of samples used for retraining: 56
+Number of samples in pool after training and deleting samples: 26824
+Model checkpoint saved to C:\Users\localuserSKSG\Desktop\Shubham\ActiveLearning/Multilabel/EffNet/average_confidence_seed43\model_checkpoint_iteration_1.pt
+
+Iteration: 3
+Selecting 56 informative samples: 
+
+Training started with 112 samples:
+
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss    cp      dur
+-------  ----------  ------------  -----------  ----------  ------------  ----  -------
+      1      [36m0.8995[0m        [32m0.2215[0m       [35m0.6323[0m      [31m0.7525[0m        [94m0.3547[0m     +  45.7154
+      2      [36m0.9161[0m        [32m0.2046[0m       [35m0.7377[0m      [31m0.8622[0m        [94m0.2494[0m     +  47.7541
+      3      [36m0.9373[0m        [32m0.1222[0m       0.7063      0.7949        0.2770        46.6890
+      4      [36m0.9834[0m        [32m0.0642[0m       0.7196      0.8474        0.2944        45.8258
+      5      0.9801        [32m0.0479[0m       0.7122      0.8470        0.3499        47.3435
+      6      [36m0.9874[0m        [32m0.0385[0m       0.7130      0.8434        0.3439        46.9580
+      7      [36m0.9910[0m        [32m0.0285[0m       0.7248      0.8542        0.3214        45.9831
+      8      [36m1.0000[0m        [32m0.0196[0m       0.7163      0.8396        0.3475        47.0327
+      9      1.0000        [32m0.0130[0m       0.7236      0.8490        0.3752        46.9982
+Stopping since valid_loss has not improved in the last 8 epochs.
+[24, 56, 112]
+F1 Micro Score after query 3: 0.8596422097880053
+F1 Macro Score after query 3: 0.8379864004960966
+Number of samples used for retraining: 112
+Number of samples in pool after training and deleting samples: 26768
+Model checkpoint saved to C:\Users\localuserSKSG\Desktop\Shubham\ActiveLearning/Multilabel/EffNet/average_confidence_seed43\model_checkpoint_iteration_2.pt
+
+Iteration: 4
+Selecting 96 informative samples: 
+
+Training started with 208 samples:
+
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss    cp      dur
+-------  ----------  ------------  -----------  ----------  ------------  ----  -------
+      1      [36m0.9001[0m        [32m0.2371[0m       [35m0.7073[0m      [31m0.8129[0m        [94m0.3715[0m     +  50.8449
+      2      0.8986        [32m0.2182[0m       [35m0.7302[0m      [31m0.8549[0m        [94m0.2642[0m     +  51.3625
+      3      [36m0.9503[0m        [32m0.1228[0m       [35m0.7559[0m      [31m0.8716[0m        [94m0.2398[0m     +  50.0334
+      4      [36m0.9816[0m        [32m0.0529[0m       0.7260      0.8485        0.2674        51.0387
+      5      0.9811        [32m0.0482[0m       0.7422      0.8582        0.2847        50.8474
+      6      [36m0.9862[0m        [32m0.0420[0m       0.7207      0.8509        0.3518        49.8426
+      7      [36m0.9932[0m        [32m0.0303[0m       0.7082      0.8414        0.3165        51.2832
+      8      0.9838        0.0463       0.6988      0.8388        0.3392        50.5652
+      9      0.9787        0.0592       0.7530      0.8634        0.3190        49.5954
+     10      0.9875        0.0367       0.6569      0.8123        0.3842        51.3479
+Stopping since valid_loss has not improved in the last 8 epochs.
+[24, 56, 112, 208]
+F1 Micro Score after query 4: 0.8636144578313253
+F1 Macro Score after query 4: 0.8440806073292486
+Number of samples used for retraining: 208
+Number of samples in pool after training and deleting samples: 26672
+Model checkpoint saved to C:\Users\localuserSKSG\Desktop\Shubham\ActiveLearning/Multilabel/EffNet/average_confidence_seed43\model_checkpoint_iteration_3.pt
+
+Iteration: 5
+Selecting 176 informative samples: 
+
+Training started with 384 samples:
+
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss    cp      dur
+-------  ----------  ------------  -----------  ----------  ------------  ----  -------
+      1      [36m0.8886[0m        [32m0.2082[0m       [35m0.7170[0m      [31m0.8435[0m        [94m0.2547[0m     +  58.1020
+      2      [36m0.9028[0m        [32m0.1797[0m       [35m0.7326[0m      [31m0.8485[0m        [94m0.2463[0m     +  58.7555
+      3      [36m0.9383[0m        [32m0.1043[0m       0.7248      0.8436        0.2606        56.6083
+      4      [36m0.9676[0m        [32m0.0646[0m       [35m0.7667[0m      [31m0.8627[0m        0.2592        56.4187
+      5      [36m0.9752[0m        [32m0.0442[0m       0.7406      0.8554        0.3560        58.3210
+      6      0.9694        0.0477       0.7167      0.8092        0.3394        57.7071
+      7      [36m0.9817[0m        0.0481       0.7293      0.8374        0.3638        56.2912
+      8      0.9708        0.0448       0.6908      0.7489        0.3184        56.5073
+      9      [36m0.9921[0m        [32m0.0186[0m       0.7436      0.8096        0.3264        58.0042
+Stopping since valid_loss has not improved in the last 8 epochs.
+[24, 56, 112, 208, 384]
+F1 Micro Score after query 5: 0.9105975368709138
+F1 Macro Score after query 5: 0.8987618647804432
+Number of samples used for retraining: 384
+Number of samples in pool after training and deleting samples: 26496
+Model checkpoint saved to C:\Users\localuserSKSG\Desktop\Shubham\ActiveLearning/Multilabel/EffNet/average_confidence_seed43\model_checkpoint_iteration_4.pt
+
+Iteration: 6
+Selecting 320 informative samples: 
+
+Training started with 704 samples:
+
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss    cp      dur
+-------  ----------  ------------  -----------  ----------  ------------  ----  -------
+      1      [36m0.9265[0m        [32m0.1590[0m       [35m0.7427[0m      [31m0.8635[0m        [94m0.2461[0m     +  70.9208
+      2      [36m0.9463[0m        [32m0.0975[0m       [35m0.7533[0m      [31m0.8691[0m        0.2526        69.1640
+      3      [36m0.9645[0m        [32m0.0676[0m       0.7234      0.7870        0.2984        68.5176
+      4      [36m0.9745[0m        [32m0.0541[0m       [35m0.7668[0m      0.8402        0.2664        70.6555
+      5      [36m0.9750[0m        [32m0.0491[0m       [35m0.7854[0m      0.8629        0.2646        68.9766
+      6      [36m0.9782[0m        [32m0.0441[0m       [35m0.8063[0m      0.8545        0.2601        69.3888
+      7      [36m0.9894[0m        [32m0.0326[0m       0.7427      0.8559        0.3433        70.5827
+      8      [36m0.9931[0m        [32m0.0134[0m       0.7875      [31m0.8709[0m        0.3194        69.3458
+Stopping since valid_loss has not improved in the last 8 epochs.
+[24, 56, 112, 208, 384, 704]
+F1 Micro Score after query 6: 0.916673401761901
+F1 Macro Score after query 6: 0.8994103586479253
+Number of samples used for retraining: 704
+Number of samples in pool after training and deleting samples: 26176
+Model checkpoint saved to C:\Users\localuserSKSG\Desktop\Shubham\ActiveLearning/Multilabel/EffNet/average_confidence_seed43\model_checkpoint_iteration_5.pt
+
+Iteration: 7
+Selecting 560 informative samples: 
+
+Training started with 1264 samples:
+
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss    cp      dur
+-------  ----------  ------------  -----------  ----------  ------------  ----  -------
+      1      [36m0.9236[0m        [32m0.1542[0m       [35m0.7807[0m      [31m0.8658[0m        [94m0.1821[0m     +  91.4024
+      2      [36m0.9619[0m        [32m0.0720[0m       [35m0.7821[0m      0.8654        0.2056        92.6294
+      3      [36m0.9679[0m        [32m0.0578[0m       [35m0.8201[0m      [31m0.8936[0m        0.1980        91.1824
+      4      [36m0.9741[0m        [32m0.0549[0m       0.7658      0.8486        0.2220        92.7476
+      5      0.9725        [32m0.0461[0m       0.7859      0.8821        0.2623        91.0105
+      6      [36m0.9819[0m        [32m0.0367[0m       0.7389      0.8276        0.2735        92.6572
+      7      [36m0.9830[0m        [32m0.0351[0m       0.7724      0.8646        0.3049        91.1067
+      8      [36m0.9857[0m        [32m0.0211[0m       0.7642      0.8377        0.3996        92.0783
+Stopping since valid_loss has not improved in the last 8 epochs.
+[24, 56, 112, 208, 384, 704, 1264]
+F1 Micro Score after query 7: 0.90755607051229
+F1 Macro Score after query 7: 0.8729429657448494
+Number of samples used for retraining: 1264
+Number of samples in pool after training and deleting samples: 25616
+Model checkpoint saved to C:\Users\localuserSKSG\Desktop\Shubham\ActiveLearning/Multilabel/EffNet/average_confidence_seed43\model_checkpoint_iteration_6.pt
+
+Iteration: 8
+Selecting 1000 informative samples: 
+
+Training started with 2264 samples:
+
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss    cp       dur
+-------  ----------  ------------  -----------  ----------  ------------  ----  --------
+      1      [36m0.9373[0m        [32m0.1138[0m       [35m0.7538[0m      [31m0.8697[0m        [94m0.2526[0m     +  131.2514
+      2      [36m0.9592[0m        [32m0.0698[0m       [35m0.8092[0m      [31m0.8997[0m        [94m0.2021[0m     +  133.1339
+      3      [36m0.9749[0m        [32m0.0465[0m       0.7840      0.8759        0.2512        130.8578
+      4      [36m0.9822[0m        [32m0.0380[0m       0.8016      0.8916        0.2176        131.2049
+      5      0.9769        0.0445       0.7882      0.8884        0.2774        132.6050
+      6      [36m0.9824[0m        [32m0.0339[0m       0.7524      0.8665        0.3343        130.7755
+      7      [36m0.9858[0m        [32m0.0247[0m       0.7955      0.8828        0.3113        131.2627
+      8      0.9851        0.0262       [35m0.8210[0m      0.8840        0.2464        132.5242
+      9      [36m0.9891[0m        [32m0.0222[0m       0.7767      0.8828        0.3929        130.3354
+Stopping since valid_loss has not improved in the last 8 epochs.
+[24, 56, 112, 208, 384, 704, 1264, 2264]
+F1 Micro Score after query 8: 0.907097167225099
+F1 Macro Score after query 8: 0.8910953306038412
+Number of samples used for retraining: 2264
+Number of samples in pool after training and deleting samples: 24616
+Model checkpoint saved to C:\Users\localuserSKSG\Desktop\Shubham\ActiveLearning/Multilabel/EffNet/average_confidence_seed43\model_checkpoint_iteration_7.pt
+
+Iteration: 9
+Selecting 1776 informative samples: 
+
+Training started with 4040 samples:
+
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss    cp       dur
+-------  ----------  ------------  -----------  ----------  ------------  ----  --------
+      1      [36m0.9578[0m        [32m0.0789[0m       [35m0.7889[0m      [31m0.8780[0m        [94m0.2060[0m     +  201.6576
+      2      [36m0.9707[0m        [32m0.0524[0m       [35m0.7927[0m      0.8764        0.2207        202.5337
+      3      [36m0.9782[0m        [32m0.0436[0m       0.7488      0.8365        0.2329        201.3096
+      4      0.9777        [32m0.0382[0m       [35m0.8130[0m      [31m0.8859[0m        [94m0.1918[0m     +  201.6628
+      5      [36m0.9795[0m        [32m0.0365[0m       0.7795      0.8648        0.2923        202.4330
+      6      [36m0.9847[0m        [32m0.0255[0m       0.7839      0.8634        0.3101        201.0136
+      7      [36m0.9856[0m        [32m0.0233[0m       0.8036      0.8818        0.2383        202.1058
+      8      0.9843        0.0275       [35m0.8151[0m      [31m0.8882[0m        0.2212        202.6692
+      9      [36m0.9895[0m        [32m0.0198[0m       0.8073      0.8801        0.2843        201.6650
+     10      [36m0.9899[0m        [32m0.0179[0m       0.7906      0.8818        0.2694        201.8293
+     11      0.9887        0.0214       0.8125      [31m0.8901[0m        0.2451        202.7018
+Stopping since valid_loss has not improved in the last 8 epochs.
+[24, 56, 112, 208, 384, 704, 1264, 2264, 4040]
+F1 Micro Score after query 9: 0.9395582802798081
+F1 Macro Score after query 9: 0.9264450742012306
+Number of samples used for retraining: 4040
+Number of samples in pool after training and deleting samples: 22840
+Model checkpoint saved to C:\Users\localuserSKSG\Desktop\Shubham\ActiveLearning/Multilabel/EffNet/average_confidence_seed43\model_checkpoint_iteration_8.pt
+
+Iteration: 10
+Selecting 3160 informative samples: 
+
+Training started with 7200 samples:
+
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss    cp       dur
+-------  ----------  ------------  -----------  ----------  ------------  ----  --------
+      1      [36m0.9669[0m        [32m0.0578[0m       [35m0.7729[0m      [31m0.8789[0m        [94m0.2322[0m     +  326.7247
+      2      [36m0.9746[0m        [32m0.0424[0m       [35m0.7818[0m      [31m0.8884[0m        0.2796        327.6647
+      3      [36m0.9778[0m        [32m0.0341[0m       [35m0.7958[0m      [31m0.8892[0m        0.2874        327.5167
+      4      [36m0.9794[0m        [32m0.0326[0m       0.7698      0.8725        0.3246        327.8414
+      5      [36m0.9825[0m        [32m0.0288[0m       [35m0.8087[0m      [31m0.8907[0m        0.2912        328.7552
+      6      [36m0.9860[0m        [32m0.0243[0m       0.7929      0.8843        0.3056        327.9290
+      7      [36m0.9869[0m        [32m0.0217[0m       0.7865      0.8746        0.2802        328.4998
+      8      [36m0.9871[0m        [32m0.0204[0m       0.7863      0.8414        0.3285        327.4281
+Stopping since valid_loss has not improved in the last 8 epochs.
+[24, 56, 112, 208, 384, 704, 1264, 2264, 4040, 7200]
+F1 Micro Score after query 10: 0.9207470182046453
+F1 Macro Score after query 10: 0.8977787856323344
+Number of samples used for retraining: 7200
+Number of samples in pool after training and deleting samples: 19680
+Model checkpoint saved to C:\Users\localuserSKSG\Desktop\Shubham\ActiveLearning/Multilabel/EffNet/average_confidence_seed43\model_checkpoint_iteration_9.pt
+
+Iteration: 11
+Selecting 5624 informative samples: 
+
+Training started with 12824 samples:
+
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss    cp       dur
+-------  ----------  ------------  -----------  ----------  ------------  ----  --------
+      1      [36m0.9690[0m        [32m0.0544[0m       [35m0.8104[0m      [31m0.8967[0m        [94m0.2006[0m     +  550.9839
+      2      [36m0.9753[0m        [32m0.0426[0m       0.7941      0.8947        0.2356        551.0217
+      3      [36m0.9791[0m        [32m0.0346[0m       [35m0.8349[0m      [31m0.9060[0m        [94m0.1812[0m     +  551.9078
+      4      [36m0.9809[0m        [32m0.0308[0m       0.8012      0.8850        0.2651        550.7478
+      5      [36m0.9814[0m        [32m0.0288[0m       0.8179      0.8954        0.2624        551.1835
+      6      [36m0.9840[0m        [32m0.0241[0m       0.8257      0.8974        0.2771        552.8995
+      7      [36m0.9872[0m        [32m0.0206[0m       0.7941      0.8826        0.3985        553.2864
+      8      0.9865        0.0221       0.8146      0.8869        0.2676        552.4725
+      9      [36m0.9899[0m        [32m0.0167[0m       0.7809      0.8753        0.3134        552.2145
+     10      [36m0.9900[0m        0.0171       0.7981      0.8848        0.3370        553.0342
+Stopping since valid_loss has not improved in the last 8 epochs.
+[24, 56, 112, 208, 384, 704, 1264, 2264, 4040, 7200, 12824]
+F1 Micro Score after query 11: 0.9428996631941724
+F1 Macro Score after query 11: 0.9288965755218713
+Number of samples used for retraining: 12824
+Number of samples in pool after training and deleting samples: 14056
+Model checkpoint saved to C:\Users\localuserSKSG\Desktop\Shubham\ActiveLearning/Multilabel/EffNet/average_confidence_seed43\model_checkpoint_iteration_10.pt
+
+Iteration: 12
+Selecting 10000 informative samples: 
+
+Training started with 22824 samples:
+
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss    cp       dur
+-------  ----------  ------------  -----------  ----------  ------------  ----  --------
+      1      [36m0.9755[0m        [32m0.0415[0m       [35m0.8047[0m      [31m0.8742[0m        [94m0.1918[0m     +  946.5455
+      2      [36m0.9787[0m        [32m0.0346[0m       0.7958      0.8693        0.2373        950.7009
+      3      [36m0.9812[0m        [32m0.0304[0m       [35m0.8250[0m      [31m0.8908[0m        0.2726        949.8768
+      4      [36m0.9843[0m        [32m0.0256[0m       0.8059      0.8765        0.2699        950.3116
+      5      [36m0.9854[0m        [32m0.0231[0m       [35m0.8457[0m      [31m0.9061[0m        0.2632        958.5771
+      6      [36m0.9871[0m        [32m0.0206[0m       0.8019      0.8818        0.3096        957.9929
+      7      [36m0.9893[0m        [32m0.0168[0m       0.8229      0.8816        0.3194        953.2569
+      8      [36m0.9906[0m        [32m0.0147[0m       0.8175      0.8843        0.3284        953.3324
+Stopping since valid_loss has not improved in the last 8 epochs.
+[24, 56, 112, 208, 384, 704, 1264, 2264, 4040, 7200, 12824, 22824]
+F1 Micro Score after query 12: 0.9324461839530334
+F1 Macro Score after query 12: 0.9220903575760294
+Number of samples used for retraining: 22824
+Number of samples in pool after training and deleting samples: 4056
+Model checkpoint saved to C:\Users\localuserSKSG\Desktop\Shubham\ActiveLearning/Multilabel/EffNet/average_confidence_seed43\model_checkpoint_iteration_11.pt
+
+Iteration: 13
+Selecting 4056 informative samples: 
+
+Training started with 26880 samples:
+
+Re-initializing module.
+Re-initializing criterion.
+Re-initializing optimizer.
+  epoch    train_f1    train_loss    valid_acc    valid_f1    valid_loss    cp        dur
+-------  ----------  ------------  -----------  ----------  ------------  ----  ---------
+      1      [36m0.9771[0m        [32m0.0390[0m       [35m0.8281[0m      [31m0.9042[0m        [94m0.2009[0m     +  1110.0280
+      2      [36m0.9801[0m        [32m0.0320[0m       0.8099      0.8971        0.2634        1112.6164
+      3      [36m0.9822[0m        [32m0.0293[0m       0.8125      0.8909        0.2557        1113.7687
+      4      [36m0.9841[0m        [32m0.0243[0m       0.8090      0.8961        0.3388        1114.5396
+      5      [36m0.9866[0m        [32m0.0202[0m       [35m0.8299[0m      0.9003        0.2374        1114.3586
+      6      [36m0.9885[0m        [32m0.0176[0m       0.8214      0.8969        0.3019        1113.8710
+      7      [36m0.9911[0m        [32m0.0149[0m       0.7986      0.8894        0.4024        1116.3128
+      8      [36m0.9915[0m        [32m0.0133[0m       0.8226      0.8940        0.3300        1117.3174
+Stopping since valid_loss has not improved in the last 8 epochs.
+[24, 56, 112, 208, 384, 704, 1264, 2264, 4040, 7200, 12824, 22824, 26880]
+F1 Micro Score after query 13: 0.9107129241326726
+F1 Macro Score after query 13: 0.898243281582543
+Number of samples used for retraining: 26880
+Number of samples in pool after training and deleting samples: 0
+Model checkpoint saved to C:\Users\localuserSKSG\Desktop\Shubham\ActiveLearning/Multilabel/EffNet/average_confidence_seed43\model_checkpoint_iteration_12.pt
+Pickle file saved to C:\Users\localuserSKSG\Desktop\Shubham\ActiveLearning/Multilabel/EffNet/average_confidence_seed43\AL_average_confidence_results_for_multilabel_classification.pickle
