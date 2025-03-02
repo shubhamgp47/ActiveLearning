@@ -1,4 +1,4 @@
-name: AL_env  
+name: ActiveLearning
 channels:
   - nvidia
   - conda-forge
