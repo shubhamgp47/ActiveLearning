@@ -9,6 +9,8 @@ Research Question 2: Which active learning query strategies do not result in wor
 
 Research Question 3: Does the gain over random sampling justified considering the overhead costs involved?
 
+We have used DINOv2 and EfficientNetv2 models for the experiments and Optuna for hzperparameter optimisation.
+
 ## Project Structure
 
 ## Usage
