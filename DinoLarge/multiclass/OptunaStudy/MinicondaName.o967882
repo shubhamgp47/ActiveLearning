@@ -1,0 +1,1035 @@
+### Starting TaskPrologue of job 967882 on tg06a at Mon 06 Jan 2025 07:20:36 PM CET
+Running on cores 4-5,12,14,20-21,28,30 with governor ondemand
+Mon Jan  6 19:20:36 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 565.57.01              Driver Version: 565.57.01      CUDA Version: 12.7     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 2080 Ti     On  |   00000000:86:00.0 Off |                  N/A |
+| 27%   26C    P8             19W /  250W |       1MiB /  11264MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+/home/hpc/iwfa/iwfa044h/.local/lib/python3.8/site-packages/pandas/core/computation/expressions.py:20: UserWarning: Pandas requires version '2.7.3' or newer of 'numexpr' (version '2.7.1' currently installed).
+  from pandas.core.computation.check import NUMEXPR_INSTALLED
+  0%|          | 0/26880 [00:00<?, ?it/s] 23%|██▎       | 6155/26880 [00:00<00:00, 61542.72it/s] 51%|█████     | 13751/26880 [00:00<00:00, 65256.61it/s] 80%|███████▉  | 21453/26880 [00:00<00:00, 68389.97it/s]100%|██████████| 26880/26880 [00:00<00:00, 74011.64it/s]
+  0%|          | 0/5760 [00:00<?, ?it/s]100%|██████████| 5760/5760 [00:00<00:00, 86850.45it/s]
+  0%|          | 0/5760 [00:00<?, ?it/s]100%|██████████| 5760/5760 [00:00<00:00, 86970.83it/s]
+[I 2025-01-06 19:21:16,119] Using an existing study with name 'optuna_study02multiclass_DinoL' instead of creating a new one.
+Best trial's number:  22
+Best score: 0.8368055555555556
+Best hyperparameters:
+batch_size: 8
+learning_rate: 2.5e-05
+dropout: 0.25
+optimizer: Adam
+step_size: 14
+gamma: 0.1
+layer_freeze_upto: dino_model.blocks.7.ls2.gamma
+Number of trials completed: 31
+Number of pruned trials: 54
+Total number of trails completed: 85
+Number of trials to run: 115
+==================== Training of trial number:90 ====================
+Learning rate: 0.0005000000
+Dropout: 0.35
+Optimizer: Adam
+Momentum term: 0
+Number of frozen parameters: dino_model.blocks.11.ls2.gamma
+Step size: 10
+Gamma: 0.1
+Batch size: 8
+Device: cuda
+Best F1-score on Validation data until now: 0.8368055555555556
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+/home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+/home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+/home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+Epoch 1/100, Training Loss: 0.5735, Training F1-score: 0.7832, Validation Loss: 0.5893, Validation F1-score: 0.7736
+Best F1-score till now on the current trail on Validation data: 0.7736111111111111
+Epoch 2/100, Training Loss: 0.3982, Training F1-score: 0.8496, Validation Loss: 0.4969, Validation F1-score: 0.8064
+Best F1-score till now on the current trail on Validation data: 0.8064236111111112
+Epoch 3/100, Training Loss: 0.3368, Training F1-score: 0.8762, Validation Loss: 0.6602, Validation F1-score: 0.7542
+Epoch 4/100, Training Loss: 0.3050, Training F1-score: 0.8884, Validation Loss: 0.5605, Validation F1-score: 0.7920
+Epoch 5/100, Training Loss: 0.2852, Training F1-score: 0.8961, Validation Loss: 0.5375, Validation F1-score: 0.8177
+Best F1-score till now on the current trail on Validation data: 0.8177083333333333
+Epoch 6/100, Training Loss: 0.2684, Training F1-score: 0.9019, Validation Loss: 0.6023, Validation F1-score: 0.8082
+Epoch 7/100, Training Loss: 0.2530, Training F1-score: 0.9088, Validation Loss: 0.6352, Validation F1-score: 0.7906
+Epoch 8/100, Training Loss: 0.2402, Training F1-score: 0.9115, Validation Loss: 0.5964, Validation F1-score: 0.7974
+Epoch 9/100, Training Loss: 0.2306, Training F1-score: 0.9172, Validation Loss: 0.8611, Validation F1-score: 0.7646
+Epoch 10/100, Training Loss: 0.2257, Training F1-score: 0.9162, Validation Loss: 0.5565, Validation F1-score: 0.8038
+Epoch 11/100, Training Loss: 0.1683, Training F1-score: 0.9404, Validation Loss: 0.6449, Validation F1-score: 0.7941
+Epoch 12/100, Training Loss: 0.1601, Training F1-score: 0.9429, Validation Loss: 0.6630, Validation F1-score: 0.7946
+Epoch 13/100, Training Loss: 0.1578, Training F1-score: 0.9424, Validation Loss: 0.6484, Validation F1-score: 0.7953
+Epoch 14/100, Training Loss: 0.1547, Training F1-score: 0.9455, Validation Loss: 0.6443, Validation F1-score: 0.7927
+[I 2025-01-06 21:47:12,669] Trial 90 finished with value: 0.8368055555555556 and parameters: {'batch_size': 8, 'learning_rate': 0.0005, 'dropout': 0.35, 'optimizer': 'Adam', 'step_size': 10, 'gamma': 0.1, 'layer_freeze_upto': 'dino_model.blocks.11.ls2.gamma'}. Best is trial 22 with value: 0.8368055555555556.
+Epoch 15/100, Training Loss: 0.1517, Training F1-score: 0.9448, Validation Loss: 0.6850, Validation F1-score: 0.7972
+Early stopping triggered after 15 epochs.
+Best F1-score till now on Validation data: 0.8368055555555556
+==================== Training of trial number:91 ====================
+Learning rate: 0.0000250000
+Dropout: 0.25
+Optimizer: Adam
+Momentum term: 0
+Number of frozen parameters: dino_model.blocks.7.ls2.gamma
+Step size: 14
+Gamma: 0.1
+Batch size: 8
+Device: cuda
+Best F1-score on Validation data until now: 0.8368055555555556
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+Epoch 1/100, Training Loss: 0.5723, Training F1-score: 0.7923, Validation Loss: 0.5798, Validation F1-score: 0.7859
+Best F1-score till now on the current trail on Validation data: 0.7859375
+[I 2025-01-06 22:06:54,659] Trial 91 pruned. 
+Epoch 2/100, Training Loss: 0.3450, Training F1-score: 0.8745, Validation Loss: 0.6050, Validation F1-score: 0.7753
+Best F1-score till now on Validation data: 0.8368055555555556
+==================== Training of trial number:92 ====================
+Learning rate: 0.0000005000
+Dropout: 0.25
+Optimizer: Adam
+Momentum term: 0
+Number of frozen parameters: dino_model.blocks.3.ls2.gamma
+Step size: 13
+Gamma: 0.2
+Batch size: 8
+Device: cuda
+Best F1-score on Validation data until now: 0.8368055555555556
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-06 22:16:56,575] Trial 92 pruned. 
+Epoch 1/100, Training Loss: 1.4517, Training F1-score: 0.4968, Validation Loss: 1.3240, Validation F1-score: 0.5071
+Best F1-score till now on Validation data: 0.8368055555555556
+==================== Training of trial number:93 ====================
+Learning rate: 0.0001000000
+Dropout: 0.3
+Optimizer: RMSprop
+Momentum term: 0
+Number of frozen parameters: dino_model.blocks.5.ls2.gamma
+Step size: 15
+Gamma: 0.1
+Batch size: 8
+Device: cuda
+Best F1-score on Validation data until now: 0.8368055555555556
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-06 22:26:45,278] Trial 93 pruned. 
+Epoch 1/100, Training Loss: 0.5623, Training F1-score: 0.7867, Validation Loss: 0.6135, Validation F1-score: 0.7688
+Best F1-score till now on Validation data: 0.8368055555555556
+==================== Training of trial number:94 ====================
+Learning rate: 0.0050000000
+Dropout: 0.5
+Optimizer: Adam
+Momentum term: 0
+Number of frozen parameters: dino_model.blocks.7.ls2.gamma
+Step size: 12
+Gamma: 0.3
+Batch size: 16
+Device: cuda
+Best F1-score on Validation data until now: 0.8368055555555556
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-06 22:36:15,115] Trial 94 pruned. 
+Epoch 1/100, Training Loss: 0.7138, Training F1-score: 0.7326, Validation Loss: 0.6666, Validation F1-score: 0.7462
+Best F1-score till now on Validation data: 0.8368055555555556
+==================== Training of trial number:95 ====================
+Learning rate: 0.0000002500
+Dropout: 0.25
+Optimizer: SGD
+Momentum term: 0.8628702938838507
+Number of frozen parameters: dino_model.blocks.9.ls2.gamma
+Step size: 11
+Gamma: 0.1
+Batch size: 8
+Device: cuda
+Best F1-score on Validation data until now: 0.8368055555555556
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-06 22:46:10,861] Trial 95 pruned. 
+Epoch 1/100, Training Loss: 1.9179, Training F1-score: 0.3510, Validation Loss: 1.8451, Validation F1-score: 0.4477
+Best F1-score till now on Validation data: 0.8368055555555556
+==================== Training of trial number:96 ====================
+Learning rate: 0.0000010000
+Dropout: 0.25
+Optimizer: Adam
+Momentum term: 0
+Number of frozen parameters: dino_model.blocks.7.ls2.gamma
+Step size: 8
+Gamma: 0.1
+Batch size: 16
+Device: cuda
+Best F1-score on Validation data until now: 0.8368055555555556
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-06 22:55:40,364] Trial 96 pruned. 
+Epoch 1/100, Training Loss: 1.4520, Training F1-score: 0.5061, Validation Loss: 1.2957, Validation F1-score: 0.5339
+Best F1-score till now on Validation data: 0.8368055555555556
+==================== Training of trial number:97 ====================
+Learning rate: 0.0025000000
+Dropout: 0.25
+Optimizer: Adam
+Momentum term: 0
+Number of frozen parameters: dino_model.blocks.7.ls2.gamma
+Step size: 9
+Gamma: 0.1
+Batch size: 16
+Device: cuda
+Best F1-score on Validation data until now: 0.8368055555555556
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+Epoch 1/100, Training Loss: 0.6090, Training F1-score: 0.7682, Validation Loss: 0.5663, Validation F1-score: 0.8005
+Best F1-score till now on the current trail on Validation data: 0.8005208333333333
+Epoch 2/100, Training Loss: 0.4435, Training F1-score: 0.8331, Validation Loss: 0.5965, Validation F1-score: 0.7642
+Epoch 3/100, Training Loss: 0.3737, Training F1-score: 0.8626, Validation Loss: 0.5906, Validation F1-score: 0.7752
+Epoch 4/100, Training Loss: 0.3429, Training F1-score: 0.8724, Validation Loss: 0.5584, Validation F1-score: 0.7937
+Epoch 5/100, Training Loss: 0.3091, Training F1-score: 0.8878, Validation Loss: 0.5721, Validation F1-score: 0.7812
+Epoch 6/100, Training Loss: 0.2967, Training F1-score: 0.8909, Validation Loss: 0.6001, Validation F1-score: 0.7802
+Epoch 7/100, Training Loss: 0.2885, Training F1-score: 0.8965, Validation Loss: 0.4686, Validation F1-score: 0.8172
+Best F1-score till now on the current trail on Validation data: 0.8171874999999998
+Epoch 8/100, Training Loss: 0.2686, Training F1-score: 0.9028, Validation Loss: 0.7296, Validation F1-score: 0.7873
+Epoch 9/100, Training Loss: 0.2629, Training F1-score: 0.9056, Validation Loss: 0.5311, Validation F1-score: 0.8052
+Epoch 10/100, Training Loss: 0.1939, Training F1-score: 0.9297, Validation Loss: 0.5596, Validation F1-score: 0.8075
+Epoch 11/100, Training Loss: 0.1849, Training F1-score: 0.9327, Validation Loss: 0.5876, Validation F1-score: 0.8080
+Epoch 12/100, Training Loss: 0.1820, Training F1-score: 0.9333, Validation Loss: 0.5741, Validation F1-score: 0.8109
+Epoch 13/100, Training Loss: 0.1777, Training F1-score: 0.9361, Validation Loss: 0.7472, Validation F1-score: 0.7887
+Epoch 14/100, Training Loss: 0.1735, Training F1-score: 0.9369, Validation Loss: 0.6481, Validation F1-score: 0.7993
+Epoch 15/100, Training Loss: 0.1717, Training F1-score: 0.9375, Validation Loss: 0.6264, Validation F1-score: 0.8017
+Epoch 16/100, Training Loss: 0.1705, Training F1-score: 0.9384, Validation Loss: 0.6330, Validation F1-score: 0.8043
+[I 2025-01-07 01:35:34,351] Trial 97 finished with value: 0.8368055555555556 and parameters: {'batch_size': 16, 'learning_rate': 0.0025, 'dropout': 0.25, 'optimizer': 'Adam', 'step_size': 9, 'gamma': 0.1, 'layer_freeze_upto': 'dino_model.blocks.7.ls2.gamma'}. Best is trial 22 with value: 0.8368055555555556.
+Epoch 17/100, Training Loss: 0.1669, Training F1-score: 0.9396, Validation Loss: 0.7163, Validation F1-score: 0.7976
+Early stopping triggered after 17 epochs.
+Best F1-score till now on Validation data: 0.8368055555555556
+==================== Training of trial number:98 ====================
+Learning rate: 0.0000250000
+Dropout: 0.25
+Optimizer: Adam
+Momentum term: 0
+Number of frozen parameters: dino_model.blocks.7.ls2.gamma
+Step size: 10
+Gamma: 0.1
+Batch size: 16
+Device: cuda
+Best F1-score on Validation data until now: 0.8368055555555556
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-07 01:45:38,410] Trial 98 pruned. 
+Epoch 1/100, Training Loss: 0.6285, Training F1-score: 0.7777, Validation Loss: 0.6199, Validation F1-score: 0.7571
+Best F1-score till now on Validation data: 0.8368055555555556
+==================== Training of trial number:99 ====================
+Learning rate: 0.0025000000
+Dropout: 0.4
+Optimizer: Adam
+Momentum term: 0
+Number of frozen parameters: dino_model.blocks.7.ls2.gamma
+Step size: 9
+Gamma: 0.1
+Batch size: 16
+Device: cuda
+Best F1-score on Validation data until now: 0.8368055555555556
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+Epoch 1/100, Training Loss: 0.6379, Training F1-score: 0.7614, Validation Loss: 0.5319, Validation F1-score: 0.7981
+Best F1-score till now on the current trail on Validation data: 0.7980902777777777
+Epoch 2/100, Training Loss: 0.4506, Training F1-score: 0.8329, Validation Loss: 0.5308, Validation F1-score: 0.8052
+Best F1-score till now on the current trail on Validation data: 0.8052083333333333
+Epoch 3/100, Training Loss: 0.4008, Training F1-score: 0.8507, Validation Loss: 0.5688, Validation F1-score: 0.7852
+Epoch 4/100, Training Loss: 0.3534, Training F1-score: 0.8710, Validation Loss: 0.7586, Validation F1-score: 0.7655
+Epoch 5/100, Training Loss: 0.3304, Training F1-score: 0.8798, Validation Loss: 0.5770, Validation F1-score: 0.8012
+Epoch 6/100, Training Loss: 0.3144, Training F1-score: 0.8839, Validation Loss: 0.5410, Validation F1-score: 0.7965
+Epoch 7/100, Training Loss: 0.3015, Training F1-score: 0.8906, Validation Loss: 0.6900, Validation F1-score: 0.7826
+Epoch 8/100, Training Loss: 0.2933, Training F1-score: 0.8939, Validation Loss: 0.6875, Validation F1-score: 0.7835
+Epoch 9/100, Training Loss: 0.2839, Training F1-score: 0.8951, Validation Loss: 0.6039, Validation F1-score: 0.7905
+Epoch 10/100, Training Loss: 0.2076, Training F1-score: 0.9273, Validation Loss: 0.6165, Validation F1-score: 0.8089
+Best F1-score till now on the current trail on Validation data: 0.8088541666666667
+Epoch 11/100, Training Loss: 0.2000, Training F1-score: 0.9291, Validation Loss: 0.6643, Validation F1-score: 0.8043
+Epoch 12/100, Training Loss: 0.1935, Training F1-score: 0.9294, Validation Loss: 0.6377, Validation F1-score: 0.8036
+Epoch 13/100, Training Loss: 0.1895, Training F1-score: 0.9327, Validation Loss: 0.6081, Validation F1-score: 0.8007
+Epoch 14/100, Training Loss: 0.1894, Training F1-score: 0.9315, Validation Loss: 0.5842, Validation F1-score: 0.8132
+Best F1-score till now on the current trail on Validation data: 0.8131944444444443
+Epoch 15/100, Training Loss: 0.1836, Training F1-score: 0.9347, Validation Loss: 0.6100, Validation F1-score: 0.8141
+Best F1-score till now on the current trail on Validation data: 0.8140625
+Epoch 16/100, Training Loss: 0.1827, Training F1-score: 0.9350, Validation Loss: 0.5849, Validation F1-score: 0.8123
+Epoch 17/100, Training Loss: 0.1792, Training F1-score: 0.9347, Validation Loss: 0.6473, Validation F1-score: 0.8092
+Epoch 18/100, Training Loss: 0.1751, Training F1-score: 0.9366, Validation Loss: 0.6110, Validation F1-score: 0.8090
+Epoch 19/100, Training Loss: 0.1675, Training F1-score: 0.9399, Validation Loss: 0.6458, Validation F1-score: 0.8116
+Epoch 20/100, Training Loss: 0.1646, Training F1-score: 0.9398, Validation Loss: 0.6573, Validation F1-score: 0.8083
+Epoch 21/100, Training Loss: 0.1647, Training F1-score: 0.9403, Validation Loss: 0.6464, Validation F1-score: 0.8118
+Epoch 22/100, Training Loss: 0.1666, Training F1-score: 0.9397, Validation Loss: 0.6526, Validation F1-score: 0.8113
+Epoch 23/100, Training Loss: 0.1655, Training F1-score: 0.9395, Validation Loss: 0.6648, Validation F1-score: 0.8113
+Epoch 24/100, Training Loss: 0.1653, Training F1-score: 0.9409, Validation Loss: 0.6727, Validation F1-score: 0.8128
+[I 2025-01-07 05:41:21,429] Trial 99 finished with value: 0.8368055555555556 and parameters: {'batch_size': 16, 'learning_rate': 0.0025, 'dropout': 0.4, 'optimizer': 'Adam', 'step_size': 9, 'gamma': 0.1, 'layer_freeze_upto': 'dino_model.blocks.7.ls2.gamma'}. Best is trial 22 with value: 0.8368055555555556.
+Epoch 25/100, Training Loss: 0.1639, Training F1-score: 0.9413, Validation Loss: 0.6609, Validation F1-score: 0.8102
+Early stopping triggered after 25 epochs.
+Best F1-score till now on Validation data: 0.8368055555555556
+==================== Training of trial number:100 ====================
+Learning rate: 0.0025000000
+Dropout: 0.25
+Optimizer: Adam
+Momentum term: 0
+Number of frozen parameters: dino_model.blocks.10.ls2.gamma
+Step size: 14
+Gamma: 0.5
+Batch size: 16
+Device: cuda
+Best F1-score on Validation data until now: 0.8368055555555556
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-07 05:51:07,367] Trial 100 pruned. 
+Epoch 1/100, Training Loss: 0.6090, Training F1-score: 0.7696, Validation Loss: 0.6950, Validation F1-score: 0.7651
+Best F1-score till now on Validation data: 0.8368055555555556
+==================== Training of trial number:101 ====================
+Learning rate: 0.0000250000
+Dropout: 0.2
+Optimizer: Adam
+Momentum term: 0
+Number of frozen parameters: dino_model.blocks.7.ls2.gamma
+Step size: 16
+Gamma: 0.1
+Batch size: 8
+Device: cuda
+Best F1-score on Validation data until now: 0.8368055555555556
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-07 06:01:00,332] Trial 101 pruned. 
+Epoch 1/100, Training Loss: 0.5724, Training F1-score: 0.7915, Validation Loss: 0.6162, Validation F1-score: 0.7646
+Best F1-score till now on Validation data: 0.8368055555555556
+==================== Training of trial number:102 ====================
+Learning rate: 0.0007500000
+Dropout: 0.35
+Optimizer: Adam
+Momentum term: 0
+Number of frozen parameters: dino_model.blocks.2.ls2.gamma
+Step size: 13
+Gamma: 0.1
+Batch size: 8
+Device: cuda
+Best F1-score on Validation data until now: 0.8368055555555556
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+Epoch 1/100, Training Loss: 0.5901, Training F1-score: 0.7776, Validation Loss: 0.5026, Validation F1-score: 0.8118
+Best F1-score till now on the current trail on Validation data: 0.8118055555555556
+Epoch 2/100, Training Loss: 0.4153, Training F1-score: 0.8429, Validation Loss: 0.5978, Validation F1-score: 0.7830
+Epoch 3/100, Training Loss: 0.3569, Training F1-score: 0.8678, Validation Loss: 0.8817, Validation F1-score: 0.7182
+Epoch 4/100, Training Loss: 0.3186, Training F1-score: 0.8830, Validation Loss: 0.6334, Validation F1-score: 0.7932
+Epoch 5/100, Training Loss: 0.2948, Training F1-score: 0.8953, Validation Loss: 0.6735, Validation F1-score: 0.7712
+Epoch 6/100, Training Loss: 0.2762, Training F1-score: 0.8983, Validation Loss: 0.6629, Validation F1-score: 0.7715
+Epoch 7/100, Training Loss: 0.2704, Training F1-score: 0.9017, Validation Loss: 0.6615, Validation F1-score: 0.7641
+Epoch 8/100, Training Loss: 0.2551, Training F1-score: 0.9083, Validation Loss: 0.7331, Validation F1-score: 0.7753
+Epoch 9/100, Training Loss: 0.2444, Training F1-score: 0.9139, Validation Loss: 0.6059, Validation F1-score: 0.7955
+Epoch 10/100, Training Loss: 0.2351, Training F1-score: 0.9144, Validation Loss: 0.9996, Validation F1-score: 0.7344
+[I 2025-01-07 07:48:06,167] Trial 102 finished with value: 0.8368055555555556 and parameters: {'batch_size': 8, 'learning_rate': 0.00075, 'dropout': 0.35, 'optimizer': 'Adam', 'step_size': 13, 'gamma': 0.1, 'layer_freeze_upto': 'dino_model.blocks.2.ls2.gamma'}. Best is trial 22 with value: 0.8368055555555556.
+Epoch 11/100, Training Loss: 0.2304, Training F1-score: 0.9165, Validation Loss: 0.6857, Validation F1-score: 0.7677
+Early stopping triggered after 11 epochs.
+Best F1-score till now on Validation data: 0.8368055555555556
+==================== Training of trial number:103 ====================
+Learning rate: 0.0000500000
+Dropout: 0.25
+Optimizer: RMSprop
+Momentum term: 0
+Number of frozen parameters: dino_model.blocks.6.ls2.gamma
+Step size: 7
+Gamma: 0.3
+Batch size: 16
+Device: cuda
+Best F1-score on Validation data until now: 0.8368055555555556
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+Epoch 1/100, Training Loss: 0.5483, Training F1-score: 0.8001, Validation Loss: 0.5982, Validation F1-score: 0.7797
+Best F1-score till now on the current trail on Validation data: 0.7796875
+[I 2025-01-07 08:07:02,715] Trial 103 pruned. 
+Epoch 2/100, Training Loss: 0.3559, Training F1-score: 0.8689, Validation Loss: 0.5805, Validation F1-score: 0.7870
+Best F1-score till now on Validation data: 0.8368055555555556
+==================== Training of trial number:104 ====================
+Learning rate: 0.0075000000
+Dropout: 0.25
+Optimizer: Adam
+Momentum term: 0
+Number of frozen parameters: dino_model.blocks.7.ls2.gamma
+Step size: 10
+Gamma: 0.1
+Batch size: 8
+Device: cuda
+Best F1-score on Validation data until now: 0.8368055555555556
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+Epoch 1/100, Training Loss: 0.7218, Training F1-score: 0.7288, Validation Loss: 0.6422, Validation F1-score: 0.7793
+Best F1-score till now on the current trail on Validation data: 0.7793402777777778
+[I 2025-01-07 08:26:36,859] Trial 104 pruned. 
+Epoch 2/100, Training Loss: 0.5758, Training F1-score: 0.7825, Validation Loss: 0.7177, Validation F1-score: 0.7530
+Best F1-score till now on Validation data: 0.8368055555555556
+==================== Training of trial number:105 ====================
+Learning rate: 0.0000250000
+Dropout: 0.32
+Optimizer: Adam
+Momentum term: 0
+Number of frozen parameters: dino_model.blocks.7.ls2.gamma
+Step size: 12
+Gamma: 0.4
+Batch size: 8
+Device: cuda
+Best F1-score on Validation data until now: 0.8368055555555556
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+Epoch 1/100, Training Loss: 0.6012, Training F1-score: 0.7851, Validation Loss: 0.5653, Validation F1-score: 0.7877
+Best F1-score till now on the current trail on Validation data: 0.7876736111111111
+Epoch 2/100, Training Loss: 0.3604, Training F1-score: 0.8695, Validation Loss: 0.5196, Validation F1-score: 0.8047
+Best F1-score till now on the current trail on Validation data: 0.8046875
+Epoch 3/100, Training Loss: 0.3011, Training F1-score: 0.8905, Validation Loss: 0.5485, Validation F1-score: 0.7908
+Epoch 4/100, Training Loss: 0.2650, Training F1-score: 0.9047, Validation Loss: 0.6206, Validation F1-score: 0.7760
+Epoch 5/100, Training Loss: 0.2486, Training F1-score: 0.9111, Validation Loss: 0.5418, Validation F1-score: 0.7911
+Epoch 6/100, Training Loss: 0.2280, Training F1-score: 0.9177, Validation Loss: 0.5097, Validation F1-score: 0.8212
+Best F1-score till now on the current trail on Validation data: 0.8211805555555555
+Epoch 7/100, Training Loss: 0.2194, Training F1-score: 0.9215, Validation Loss: 0.6160, Validation F1-score: 0.7847
+Epoch 8/100, Training Loss: 0.2075, Training F1-score: 0.9264, Validation Loss: 0.5046, Validation F1-score: 0.8309
+Best F1-score till now on the current trail on Validation data: 0.8309027777777777
+Epoch 9/100, Training Loss: 0.2003, Training F1-score: 0.9289, Validation Loss: 0.6301, Validation F1-score: 0.7988
+Epoch 10/100, Training Loss: 0.1901, Training F1-score: 0.9313, Validation Loss: 0.6245, Validation F1-score: 0.7875
+Epoch 11/100, Training Loss: 0.1867, Training F1-score: 0.9353, Validation Loss: 0.5370, Validation F1-score: 0.8042
+Epoch 12/100, Training Loss: 0.1825, Training F1-score: 0.9339, Validation Loss: 0.5301, Validation F1-score: 0.8111
+Epoch 13/100, Training Loss: 0.1495, Training F1-score: 0.9479, Validation Loss: 0.5792, Validation F1-score: 0.8125
+Epoch 14/100, Training Loss: 0.1479, Training F1-score: 0.9475, Validation Loss: 0.5443, Validation F1-score: 0.8174
+Epoch 15/100, Training Loss: 0.1472, Training F1-score: 0.9479, Validation Loss: 0.5359, Validation F1-score: 0.8191
+Epoch 16/100, Training Loss: 0.1427, Training F1-score: 0.9496, Validation Loss: 0.5852, Validation F1-score: 0.8047
+Epoch 17/100, Training Loss: 0.1392, Training F1-score: 0.9506, Validation Loss: 0.5721, Validation F1-score: 0.8099
+[I 2025-01-07 11:22:18,392] Trial 105 finished with value: 0.8368055555555556 and parameters: {'batch_size': 8, 'learning_rate': 2.5e-05, 'dropout': 0.32, 'optimizer': 'Adam', 'step_size': 12, 'gamma': 0.4, 'layer_freeze_upto': 'dino_model.blocks.7.ls2.gamma'}. Best is trial 22 with value: 0.8368055555555556.
+Epoch 18/100, Training Loss: 0.1396, Training F1-score: 0.9498, Validation Loss: 0.5777, Validation F1-score: 0.8045
+Early stopping triggered after 18 epochs.
+Best F1-score till now on Validation data: 0.8368055555555556
+==================== Training of trial number:106 ====================
+Learning rate: 0.0000250000
+Dropout: 0.28
+Optimizer: Adam
+Momentum term: 0
+Number of frozen parameters: dino_model.blocks.6.ls2.gamma
+Step size: 15
+Gamma: 0.2
+Batch size: 16
+Device: cuda
+Best F1-score on Validation data until now: 0.8368055555555556
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-07 11:31:50,114] Trial 106 pruned. 
+Epoch 1/100, Training Loss: 0.6338, Training F1-score: 0.7730, Validation Loss: 0.5857, Validation F1-score: 0.7688
+Best F1-score till now on Validation data: 0.8368055555555556
+==================== Training of trial number:107 ====================
+Learning rate: 0.0000050000
+Dropout: 0.28
+Optimizer: Adam
+Momentum term: 0
+Number of frozen parameters: dino_model.blocks.6.ls2.gamma
+Step size: 14
+Gamma: 0.2
+Batch size: 16
+Device: cuda
+Best F1-score on Validation data until now: 0.8368055555555556
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-07 11:41:20,512] Trial 107 pruned. 
+Epoch 1/100, Training Loss: 1.0082, Training F1-score: 0.6576, Validation Loss: 0.8177, Validation F1-score: 0.6837
+Best F1-score till now on Validation data: 0.8368055555555556
+==================== Training of trial number:108 ====================
+Learning rate: 0.0000250000
+Dropout: 0.28
+Optimizer: Adam
+Momentum term: 0
+Number of frozen parameters: dino_model.blocks.6.ls2.gamma
+Step size: 15
+Gamma: 0.2
+Batch size: 16
+Device: cuda
+Best F1-score on Validation data until now: 0.8368055555555556
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-07 11:50:50,753] Trial 108 pruned. 
+Epoch 1/100, Training Loss: 0.6359, Training F1-score: 0.7724, Validation Loss: 0.5816, Validation F1-score: 0.7719
+Best F1-score till now on Validation data: 0.8368055555555556
+==================== Training of trial number:109 ====================
+Learning rate: 0.0000250000
+Dropout: 0.28
+Optimizer: Adam
+Momentum term: 0
+Number of frozen parameters: dino_model.blocks.8.ls2.gamma
+Step size: 16
+Gamma: 0.2
+Batch size: 16
+Device: cuda
+Best F1-score on Validation data until now: 0.8368055555555556
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-07 12:00:20,136] Trial 109 pruned. 
+Epoch 1/100, Training Loss: 0.6272, Training F1-score: 0.7776, Validation Loss: 0.5957, Validation F1-score: 0.7701
+Best F1-score till now on Validation data: 0.8368055555555556
+==================== Training of trial number:110 ====================
+Learning rate: 0.0000250000
+Dropout: 0.25
+Optimizer: Adam
+Momentum term: 0
+Number of frozen parameters: dino_model.blocks.9.ls2.gamma
+Step size: 13
+Gamma: 0.2
+Batch size: 16
+Device: cuda
+Best F1-score on Validation data until now: 0.8368055555555556
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-07 12:09:49,827] Trial 110 pruned. 
+Epoch 1/100, Training Loss: 0.6266, Training F1-score: 0.7802, Validation Loss: 0.5986, Validation F1-score: 0.7712
+Best F1-score till now on Validation data: 0.8368055555555556
+==================== Training of trial number:111 ====================
+Learning rate: 0.0000100000
+Dropout: 0.25
+Optimizer: Adam
+Momentum term: 0
+Number of frozen parameters: dino_model.blocks.6.ls2.gamma
+Step size: 14
+Gamma: 0.1
+Batch size: 8
+Device: cuda
+Best F1-score on Validation data until now: 0.8368055555555556
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-07 12:19:40,006] Trial 111 pruned. 
+Epoch 1/100, Training Loss: 0.7199, Training F1-score: 0.7495, Validation Loss: 0.6825, Validation F1-score: 0.7299
+Best F1-score till now on Validation data: 0.8368055555555556
+==================== Training of trial number:112 ====================
+Learning rate: 0.0000007500
+Dropout: 0.35
+Optimizer: RMSprop
+Momentum term: 0
+Number of frozen parameters: dino_model.blocks.4.ls2.gamma
+Step size: 9
+Gamma: 0.3
+Batch size: 16
+Device: cuda
+Best F1-score on Validation data until now: 0.8368055555555556
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-07 12:29:09,231] Trial 112 pruned. 
+Epoch 1/100, Training Loss: 1.4426, Training F1-score: 0.4977, Validation Loss: 1.3346, Validation F1-score: 0.5097
+Best F1-score till now on Validation data: 0.8368055555555556
+==================== Training of trial number:113 ====================
+Learning rate: 0.0000500000
+Dropout: 0.28
+Optimizer: Adam
+Momentum term: 0
+Number of frozen parameters: dino_model.blocks.1.ls2.gamma
+Step size: 13
+Gamma: 0.1
+Batch size: 8
+Device: cuda
+Best F1-score on Validation data until now: 0.8368055555555556
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+Epoch 1/100, Training Loss: 0.5358, Training F1-score: 0.8023, Validation Loss: 0.5982, Validation F1-score: 0.7809
+Best F1-score till now on the current trail on Validation data: 0.7809027777777777
+[I 2025-01-07 12:48:45,974] Trial 113 pruned. 
+Epoch 2/100, Training Loss: 0.3461, Training F1-score: 0.8725, Validation Loss: 0.5648, Validation F1-score: 0.7851
+Best F1-score till now on Validation data: 0.8368055555555556
+==================== Training of trial number:114 ====================
+Learning rate: 0.0000001000
+Dropout: 0.25
+Optimizer: SGD
+Momentum term: 0.8285779575729229
+Number of frozen parameters: dino_model.blocks.7.ls2.gamma
+Step size: 8
+Gamma: 0.1
+Batch size: 8
+Device: cuda
+Best F1-score on Validation data until now: 0.8368055555555556
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-07 12:58:38,283] Trial 114 pruned. 
+Epoch 1/100, Training Loss: 1.8967, Training F1-score: 0.3201, Validation Loss: 1.8563, Validation F1-score: 0.4186
+Best F1-score till now on Validation data: 0.8368055555555556
+==================== Training of trial number:115 ====================
+Learning rate: 0.0010000000
+Dropout: 0.25
+Optimizer: Adam
+Momentum term: 0
+Number of frozen parameters: dino_model.blocks.0.ls2.gamma
+Step size: 20
+Gamma: 0.1
+Batch size: 16
+Device: cuda
+Best F1-score on Validation data until now: 0.8368055555555556
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-07 13:08:07,564] Trial 115 pruned. 
+Epoch 1/100, Training Loss: 0.5581, Training F1-score: 0.7869, Validation Loss: 0.8177, Validation F1-score: 0.7220
+Best F1-score till now on Validation data: 0.8368055555555556
+==================== Training of trial number:116 ====================
+Learning rate: 0.0000500000
+Dropout: 0.25
+Optimizer: RMSprop
+Momentum term: 0
+Number of frozen parameters: dino_model.blocks.9.ls2.gamma
+Step size: 12
+Gamma: 0.3
+Batch size: 8
+Device: cuda
+Best F1-score on Validation data until now: 0.8368055555555556
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-07 13:17:55,299] Trial 116 pruned. 
+Epoch 1/100, Training Loss: 0.5318, Training F1-score: 0.7999, Validation Loss: 0.9469, Validation F1-score: 0.6830
+Best F1-score till now on Validation data: 0.8368055555555556
+==================== Training of trial number:117 ====================
+Learning rate: 0.0000500000
+Dropout: 0.25
+Optimizer: RMSprop
+Momentum term: 0
+Number of frozen parameters: dino_model.blocks.9.ls2.gamma
+Step size: 11
+Gamma: 0.3
+Batch size: 8
+Device: cuda
+Best F1-score on Validation data until now: 0.8368055555555556
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-07 13:27:43,275] Trial 117 pruned. 
+Epoch 1/100, Training Loss: 0.5358, Training F1-score: 0.8005, Validation Loss: 0.6486, Validation F1-score: 0.7319
+Best F1-score till now on Validation data: 0.8368055555555556
+==================== Training of trial number:118 ====================
+Learning rate: 0.0000250000
+Dropout: 0.25
+Optimizer: RMSprop
+Momentum term: 0
+Number of frozen parameters: dino_model.blocks.7.ls2.gamma
+Step size: 15
+Gamma: 0.3
+Batch size: 8
+Device: cuda
+Best F1-score on Validation data until now: 0.8368055555555556
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-07 13:37:33,062] Trial 118 pruned. 
+Epoch 1/100, Training Loss: 0.5578, Training F1-score: 0.7985, Validation Loss: 0.6513, Validation F1-score: 0.7578
+Best F1-score till now on Validation data: 0.8368055555555556
+==================== Training of trial number:119 ====================
+Learning rate: 0.0002500000
+Dropout: 0.25
+Optimizer: RMSprop
+Momentum term: 0
+Number of frozen parameters: dino_model.blocks.9.ls2.gamma
+Step size: 12
+Gamma: 0.3
+Batch size: 8
+Device: cuda
+Best F1-score on Validation data until now: 0.8368055555555556
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-07 13:47:20,555] Trial 119 pruned. 
+Epoch 1/100, Training Loss: 0.5772, Training F1-score: 0.7799, Validation Loss: 0.6494, Validation F1-score: 0.7358
+Best F1-score till now on Validation data: 0.8368055555555556
+==================== Training of trial number:120 ====================
+Learning rate: 0.0000500000
+Dropout: 0.3
+Optimizer: RMSprop
+Momentum term: 0
+Number of frozen parameters: dino_model.blocks.3.ls2.gamma
+Step size: 14
+Gamma: 0.3
+Batch size: 8
+Device: cuda
+Best F1-score on Validation data until now: 0.8368055555555556
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+Epoch 1/100, Training Loss: 0.5477, Training F1-score: 0.7969, Validation Loss: 0.5841, Validation F1-score: 0.7767
+Best F1-score till now on the current trail on Validation data: 0.7767361111111111
+[I 2025-01-07 14:06:52,383] Trial 120 pruned. 
+Epoch 2/100, Training Loss: 0.3637, Training F1-score: 0.8645, Validation Loss: 0.6186, Validation F1-score: 0.7766
+Best F1-score till now on Validation data: 0.8368055555555556
+==================== Training of trial number:121 ====================
+Learning rate: 0.0000750000
+Dropout: 0.25
+Optimizer: Adam
+Momentum term: 0
+Number of frozen parameters: dino_model.blocks.9.ls2.gamma
+Step size: 11
+Gamma: 0.5
+Batch size: 8
+Device: cuda
+Best F1-score on Validation data until now: 0.8368055555555556
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-07 14:16:42,198] Trial 121 pruned. 
+Epoch 1/100, Training Loss: 0.5294, Training F1-score: 0.8008, Validation Loss: 0.7719, Validation F1-score: 0.7226
+Best F1-score till now on Validation data: 0.8368055555555556
+==================== Training of trial number:122 ====================
+Learning rate: 0.0000250000
+Dropout: 0.5
+Optimizer: Adam
+Momentum term: 0
+Number of frozen parameters: dino_model.blocks.5.ls2.gamma
+Step size: 10
+Gamma: 0.1
+Batch size: 8
+Device: cuda
+Best F1-score on Validation data until now: 0.8368055555555556
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-07 14:26:30,694] Trial 122 pruned. 
+Epoch 1/100, Training Loss: 0.6385, Training F1-score: 0.7722, Validation Loss: 0.6726, Validation F1-score: 0.7469
+Best F1-score till now on Validation data: 0.8368055555555556
+==================== Training of trial number:123 ====================
+Learning rate: 0.0000025000
+Dropout: 0.2
+Optimizer: Adam
+Momentum term: 0
+Number of frozen parameters: dino_model.blocks.7.ls2.gamma
+Step size: 12
+Gamma: 0.3
+Batch size: 8
+Device: cuda
+Best F1-score on Validation data until now: 0.8368055555555556
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-07 14:36:23,130] Trial 123 pruned. 
+Epoch 1/100, Training Loss: 1.0505, Training F1-score: 0.6432, Validation Loss: 0.8965, Validation F1-score: 0.6566
+Best F1-score till now on Validation data: 0.8368055555555556
+==================== Training of trial number:124 ====================
+Learning rate: 0.0000075000
+Dropout: 0.25
+Optimizer: RMSprop
+Momentum term: 0
+Number of frozen parameters: dino_model.blocks.6.ls2.gamma
+Step size: 13
+Gamma: 0.1
+Batch size: 16
+Device: cuda
+Best F1-score on Validation data until now: 0.8368055555555556
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-07 14:45:54,116] Trial 124 pruned. 
+Epoch 1/100, Training Loss: 0.8455, Training F1-score: 0.7114, Validation Loss: 0.7490, Validation F1-score: 0.7286
+Best F1-score till now on Validation data: 0.8368055555555556
+==================== Training of trial number:125 ====================
+Learning rate: 0.0025000000
+Dropout: 0.4
+Optimizer: Adam
+Momentum term: 0
+Number of frozen parameters: dino_model.blocks.11.ls2.gamma
+Step size: 9
+Gamma: 0.2
+Batch size: 8
+Device: cuda
+Best F1-score on Validation data until now: 0.8368055555555556
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-07 14:55:46,583] Trial 125 pruned. 
+Epoch 1/100, Training Loss: 0.6462, Training F1-score: 0.7572, Validation Loss: 0.5951, Validation F1-score: 0.7538
+Best F1-score till now on Validation data: 0.8368055555555556
+==================== Training of trial number:126 ====================
+Learning rate: 0.0007500000
+Dropout: 0.25
+Optimizer: Adam
+Momentum term: 0
+Number of frozen parameters: dino_model.blocks.7.ls2.gamma
+Step size: 13
+Gamma: 0.1
+Batch size: 8
+Device: cuda
+Best F1-score on Validation data until now: 0.8368055555555556
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-07 15:05:56,239] Trial 126 pruned. 
+Epoch 1/100, Training Loss: 0.5744, Training F1-score: 0.7829, Validation Loss: 0.6384, Validation F1-score: 0.7182
+Best F1-score till now on Validation data: 0.8368055555555556
+==================== Training of trial number:127 ====================
+Learning rate: 0.0007500000
+Dropout: 0.25
+Optimizer: Adam
+Momentum term: 0
+Number of frozen parameters: dino_model.blocks.7.ls2.gamma
+Step size: 14
+Gamma: 0.1
+Batch size: 8
+Device: cuda
+Best F1-score on Validation data until now: 0.8368055555555556
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-07 15:15:50,779] Trial 127 pruned. 
+Epoch 1/100, Training Loss: 0.5719, Training F1-score: 0.7816, Validation Loss: 0.6029, Validation F1-score: 0.7561
+Best F1-score till now on Validation data: 0.8368055555555556
+==================== Training of trial number:128 ====================
+Learning rate: 0.0007500000
+Dropout: 0.25
+Optimizer: Adam
+Momentum term: 0
+Number of frozen parameters: dino_model.blocks.7.ls2.gamma
+Step size: 13
+Gamma: 0.1
+Batch size: 8
+Device: cuda
+Best F1-score on Validation data until now: 0.8368055555555556
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-07 15:25:45,149] Trial 128 pruned. 
+Epoch 1/100, Training Loss: 0.5738, Training F1-score: 0.7827, Validation Loss: 0.6651, Validation F1-score: 0.7500
+Best F1-score till now on Validation data: 0.8368055555555556
+==================== Training of trial number:129 ====================
+Learning rate: 0.0000250000
+Dropout: 0.25
+Optimizer: Adam
+Momentum term: 0
+Number of frozen parameters: dino_model.blocks.7.ls2.gamma
+Step size: 14
+Gamma: 0.1
+Batch size: 8
+Device: cuda
+Best F1-score on Validation data until now: 0.8368055555555556
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-07 15:35:35,347] Trial 129 pruned. 
+Epoch 1/100, Training Loss: 0.5644, Training F1-score: 0.7983, Validation Loss: 0.5955, Validation F1-score: 0.7738
+Best F1-score till now on Validation data: 0.8368055555555556
+==================== Training of trial number:130 ====================
+Learning rate: 0.0005000000
+Dropout: 0.35
+Optimizer: Adam
+Momentum term: 0
+Number of frozen parameters: dino_model.blocks.9.ls2.gamma
+Step size: 12
+Gamma: 0.1
+Batch size: 8
+Device: cuda
+Best F1-score on Validation data until now: 0.8368055555555556
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-07 15:45:25,610] Trial 130 pruned. 
+Epoch 1/100, Training Loss: 0.5667, Training F1-score: 0.7860, Validation Loss: 0.6273, Validation F1-score: 0.7472
+Best F1-score till now on Validation data: 0.8368055555555556
+==================== Training of trial number:131 ====================
+Learning rate: 0.0000005000
+Dropout: 0.25
+Optimizer: Adam
+Momentum term: 0
+Number of frozen parameters: dino_model.blocks.7.ls2.gamma
+Step size: 15
+Gamma: 0.1
+Batch size: 8
+Device: cuda
+Best F1-score on Validation data until now: 0.8368055555555556
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-07 15:55:16,166] Trial 131 pruned. 
+Epoch 1/100, Training Loss: 1.5193, Training F1-score: 0.5031, Validation Loss: 1.3505, Validation F1-score: 0.5276
+Best F1-score till now on Validation data: 0.8368055555555556
+==================== Training of trial number:132 ====================
+Learning rate: 0.0001000000
+Dropout: 0.25
+Optimizer: Adam
+Momentum term: 0
+Number of frozen parameters: dino_model.blocks.10.ls2.gamma
+Step size: 13
+Gamma: 0.4
+Batch size: 16
+Device: cuda
+Best F1-score on Validation data until now: 0.8368055555555556
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-07 16:04:48,824] Trial 132 pruned. 
+Epoch 1/100, Training Loss: 0.5461, Training F1-score: 0.8010, Validation Loss: 0.6301, Validation F1-score: 0.7557
+Best F1-score till now on Validation data: 0.8368055555555556
+==================== Training of trial number:133 ====================
+Learning rate: 0.0050000000
+Dropout: 0.25
+Optimizer: Adam
+Momentum term: 0
+Number of frozen parameters: dino_model.blocks.2.ls2.gamma
+Step size: 10
+Gamma: 0.1
+Batch size: 8
+Device: cuda
+Best F1-score on Validation data until now: 0.8368055555555556
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+Epoch 1/100, Training Loss: 0.6643, Training F1-score: 0.7561, Validation Loss: 0.6179, Validation F1-score: 0.7755
+Best F1-score till now on the current trail on Validation data: 0.7755208333333333
+[I 2025-01-07 16:24:31,196] Trial 133 pruned. 
+Epoch 2/100, Training Loss: 0.5016, Training F1-score: 0.8122, Validation Loss: 0.5458, Validation F1-score: 0.7899
+Best F1-score till now on Validation data: 0.8368055555555556
+==================== Training of trial number:134 ====================
+Learning rate: 0.0000250000
+Dropout: 0.25
+Optimizer: SGD
+Momentum term: 0.9326112502992134
+Number of frozen parameters: dino_model.blocks.7.ls2.gamma
+Step size: 11
+Gamma: 0.3
+Batch size: 16
+Device: cuda
+Best F1-score on Validation data until now: 0.8368055555555556
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-07 16:34:03,877] Trial 134 pruned. 
+Epoch 1/100, Training Loss: 1.1803, Training F1-score: 0.5951, Validation Loss: 1.0449, Validation F1-score: 0.6168
+Best F1-score till now on Validation data: 0.8368055555555556
+==================== Training of trial number:135 ====================
+Learning rate: 0.0000002500
+Dropout: 0.28
+Optimizer: Adam
+Momentum term: 0
+Number of frozen parameters: dino_model.blocks.7.ls2.gamma
+Step size: 12
+Gamma: 0.1
+Batch size: 8
+Device: cuda
+Best F1-score on Validation data until now: 0.8368055555555556
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-07 16:43:56,948] Trial 135 pruned. 
+Epoch 1/100, Training Loss: 1.6462, Training F1-score: 0.4111, Validation Loss: 1.4246, Validation F1-score: 0.4479
+Best F1-score till now on Validation data: 0.8368055555555556
+==================== Training of trial number:136 ====================
+Learning rate: 0.0000250000
+Dropout: 0.25
+Optimizer: Adam
+Momentum term: 0
+Number of frozen parameters: dino_model.blocks.3.ls2.gamma
+Step size: 12
+Gamma: 0.1
+Batch size: 16
+Device: cuda
+Best F1-score on Validation data until now: 0.8368055555555556
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-07 16:53:29,052] Trial 136 pruned. 
+Epoch 1/100, Training Loss: 0.6221, Training F1-score: 0.7774, Validation Loss: 0.6667, Validation F1-score: 0.7354
+Best F1-score till now on Validation data: 0.8368055555555556
+==================== Training of trial number:137 ====================
+Learning rate: 0.0000250000
+Dropout: 0.25
+Optimizer: Adam
+Momentum term: 0
+Number of frozen parameters: dino_model.blocks.3.ls2.gamma
+Step size: 13
+Gamma: 0.1
+Batch size: 16
+Device: cuda
+Best F1-score on Validation data until now: 0.8368055555555556
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-07 17:03:00,480] Trial 137 pruned. 
+Epoch 1/100, Training Loss: 0.6257, Training F1-score: 0.7769, Validation Loss: 0.6331, Validation F1-score: 0.7601
+Best F1-score till now on Validation data: 0.8368055555555556
+==================== Training of trial number:138 ====================
+Learning rate: 0.0000250000
+Dropout: 0.32
+Optimizer: Adam
+Momentum term: 0
+Number of frozen parameters: dino_model.blocks.3.ls2.gamma
+Step size: 11
+Gamma: 0.1
+Batch size: 16
+Device: cuda
+Best F1-score on Validation data until now: 0.8368055555555556
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-07 17:12:33,247] Trial 138 pruned. 
+Epoch 1/100, Training Loss: 0.6430, Training F1-score: 0.7709, Validation Loss: 0.6040, Validation F1-score: 0.7715
+Best F1-score till now on Validation data: 0.8368055555555556
+==================== Training of trial number:139 ====================
+Learning rate: 0.0000010000
+Dropout: 0.25
+Optimizer: Adam
+Momentum term: 0
+Number of frozen parameters: dino_model.blocks.8.ls2.gamma
+Step size: 14
+Gamma: 0.1
+Batch size: 16
+Device: cuda
+Best F1-score on Validation data until now: 0.8368055555555556
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-07 17:22:05,371] Trial 139 pruned. 
+Epoch 1/100, Training Loss: 1.4914, Training F1-score: 0.4926, Validation Loss: 1.3146, Validation F1-score: 0.5292
+Best F1-score till now on Validation data: 0.8368055555555556
+==================== Training of trial number:140 ====================
+Learning rate: 0.0002500000
+Dropout: 0.25
+Optimizer: Adam
+Momentum term: 0
+Number of frozen parameters: dino_model.blocks.3.ls2.gamma
+Step size: 12
+Gamma: 0.1
+Batch size: 16
+Device: cuda
+Best F1-score on Validation data until now: 0.8368055555555556
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-07 17:31:38,290] Trial 140 pruned. 
+Epoch 1/100, Training Loss: 0.5420, Training F1-score: 0.7943, Validation Loss: 0.5542, Validation F1-score: 0.7729
+Best F1-score till now on Validation data: 0.8368055555555556
+==================== Training of trial number:141 ====================
+Learning rate: 0.0000250000
+Dropout: 0.25
+Optimizer: RMSprop
+Momentum term: 0
+Number of frozen parameters: dino_model.blocks.6.ls2.gamma
+Step size: 13
+Gamma: 0.1
+Batch size: 8
+Device: cuda
+Best F1-score on Validation data until now: 0.8368055555555556
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-07 17:41:29,983] Trial 141 pruned. 
+Epoch 1/100, Training Loss: 0.5600, Training F1-score: 0.7988, Validation Loss: 0.6106, Validation F1-score: 0.7597
+Best F1-score till now on Validation data: 0.8368055555555556
+==================== Training of trial number:142 ====================
+Learning rate: 0.0075000000
+Dropout: 0.35
+Optimizer: Adam
+Momentum term: 0
+Number of frozen parameters: dino_model.blocks.9.ls2.gamma
+Step size: 9
+Gamma: 0.3
+Batch size: 16
+Device: cuda
+Best F1-score on Validation data until now: 0.8368055555555556
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+Epoch 1/100, Training Loss: 0.6926, Training F1-score: 0.7416, Validation Loss: 0.5699, Validation F1-score: 0.7745
+Best F1-score till now on the current trail on Validation data: 0.7744791666666667
+[I 2025-01-07 18:00:20,717] Trial 142 pruned. 
+Epoch 2/100, Training Loss: 0.5338, Training F1-score: 0.8012, Validation Loss: 0.5817, Validation F1-score: 0.7812
+Best F1-score till now on Validation data: 0.8368055555555556
+==================== Training of trial number:143 ====================
+Learning rate: 0.0000250000
+Dropout: 0.25
+Optimizer: Adam
+Momentum term: 0
+Number of frozen parameters: dino_model.blocks.7.ls2.gamma
+Step size: 18
+Gamma: 0.2
+Batch size: 8
+Device: cuda
+Best F1-score on Validation data until now: 0.8368055555555556
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+Epoch 1/100, Training Loss: 0.5752, Training F1-score: 0.7939, Validation Loss: 0.5918, Validation F1-score: 0.7755
+Best F1-score till now on the current trail on Validation data: 0.7755208333333333
+[I 2025-01-07 18:19:59,494] Trial 143 pruned. 
+Epoch 2/100, Training Loss: 0.3447, Training F1-score: 0.8720, Validation Loss: 0.5739, Validation F1-score: 0.7880
+Best F1-score till now on Validation data: 0.8368055555555556
+==================== Training of trial number:144 ====================
+Learning rate: 0.0000500000
+Dropout: 0.25
+Optimizer: Adam
+Momentum term: 0
+Number of frozen parameters: dino_model.blocks.4.ls2.gamma
+Step size: 12
+Gamma: 0.1
+Batch size: 16
+Device: cuda
+Best F1-score on Validation data until now: 0.8368055555555556
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+Epoch 1/100, Training Loss: 0.5626, Training F1-score: 0.7948, Validation Loss: 0.5968, Validation F1-score: 0.7828
+Best F1-score till now on the current trail on Validation data: 0.7828125
+[I 2025-01-07 18:38:59,850] Trial 144 pruned. 
+Epoch 2/100, Training Loss: 0.3468, Training F1-score: 0.8729, Validation Loss: 0.5443, Validation F1-score: 0.7887
+Best F1-score till now on Validation data: 0.8368055555555556
+==================== Training of trial number:145 ====================
+Learning rate: 0.0025000000
+Dropout: 0.3
+Optimizer: Adam
+Momentum term: 0
+Number of frozen parameters: dino_model.blocks.1.ls2.gamma
+Step size: 11
+Gamma: 0.1
+Batch size: 8
+Device: cuda
+Best F1-score on Validation data until now: 0.8368055555555556
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+Epoch 1/100, Training Loss: 0.6220, Training F1-score: 0.7702, Validation Loss: 0.5745, Validation F1-score: 0.7937
+Best F1-score till now on the current trail on Validation data: 0.79375
+Epoch 2/100, Training Loss: 0.4547, Training F1-score: 0.8307, Validation Loss: 0.6037, Validation F1-score: 0.7682
+Epoch 3/100, Training Loss: 0.3883, Training F1-score: 0.8560, Validation Loss: 0.6574, Validation F1-score: 0.7474
+Epoch 4/100, Training Loss: 0.3561, Training F1-score: 0.8697, Validation Loss: 0.6369, Validation F1-score: 0.7769
+slurmstepd: error: *** JOB 967882 ON tg06a CANCELLED AT 2025-01-07T19:20:50 DUE TO TIME LIMIT ***
+=== JOB_STATISTICS ===
+=== current date     : Tue 07 Jan 2025 07:20:52 PM CET
+= Job-ID             : 967882 on tinygpu
+= Job-Name           : MinicondaName
+= Job-Command        : /home/woody/iwfa/iwfa044h/runner7.sh
+= Initial workdir    : /home/woody/iwfa/iwfa044h
+= Queue/Partition    : work
+= Slurm account      : iwfa with QOS=normal
+= Requested resources:  for 1-00:00:00
+= Elapsed runtime    : 1-00:00:15
+= Total RAM usage    : 3.6 GiB of requested  GiB (%)   
+= Node list          : tg06a
+= Subm/Elig/Start/End: 2025-01-06T03:19:38 / 2025-01-06T03:19:38 / 2025-01-06T19:20:34 / 2025-01-07T19:20:49
+======================
+=== Quota infos ======
+    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+    /home/hpc           58.3G   104.9G   209.7G        N/A     146K     500K   1,000K        N/A    
+    /home/vault          0.0K  1048.6G  2097.2G        N/A       1      200K     400K        N/A    
+    /home/woody        996.8G  1000.0G  1500.0G        N/A   1,813K   5,000K   7,500K        N/A    
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]
+NVIDIA GeForce RTX 2080 Ti, 00000000:86:00.0, 1315135, 96 %, 28 %, 1792 MiB, 86373710 ms

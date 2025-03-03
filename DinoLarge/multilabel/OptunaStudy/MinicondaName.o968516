@@ -1,0 +1,671 @@
+### Starting TaskPrologue of job 968516 on tg072 at Tue 07 Jan 2025 02:50:08 AM CET
+Running on cores 0-1,8-9,16-17,24-25 with governor ondemand
+Tue Jan  7 02:50:08 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 565.57.01              Driver Version: 565.57.01      CUDA Version: 12.7     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  Tesla V100-PCIE-32GB           On  |   00000000:18:00.0 Off |                    0 |
+| N/A   34C    P0             26W /  250W |       1MiB /  32768MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+/home/hpc/iwfa/iwfa044h/.local/lib/python3.8/site-packages/pandas/core/computation/expressions.py:20: UserWarning: Pandas requires version '2.7.3' or newer of 'numexpr' (version '2.7.1' currently installed).
+  from pandas.core.computation.check import NUMEXPR_INSTALLED
+[I 2025-01-07 02:51:01,838] Using an existing study with name 'OptunaStudy01multilabel_DinoL' instead of creating a new one.
+Best trial's number:  46
+Best score: 0.9248364263233793
+Best hyperparameters:
+layer_freeze: 181
+dropout: 0.2941633796777616
+learning_rate: 1e-06
+optimizer: Adam
+patience: 13
+Number of trials completed: 20
+Number of pruned trials: 30
+Total number of trails completed: 50
+Number of trials to run: 150
+==================== Training of trial number:56 ====================
+Hyperparameters:
+Layer freeze: 130
+Dropout: 0.3754110091850435
+Learning rate: 5e-07
+Optimizer: Adam
+Momentum term: 0
+Patience: 5
+Device: cuda
+Best F1-score on Validation data until now: 0.9248364263233793
+/home/woody/iwfa/iwfa044h/CleanLab_Test/ActiveLearningApproaches/multiclass/OptunaStudy/Final/DinoL/Multilabel/OptunaStudy01multilabel_DinoL.py:98: FutureWarning: suggest_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float instead.
+  dropout = trial.suggest_uniform('dropout', 0.2, 0.5)
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+/home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+/home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+/home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+[I 2025-01-07 03:10:00,838] Trial 56 pruned. 
+Epoch 1/100, Training Loss: 0.1545, Training F1-score: 0.9316, Validation Loss: 0.1428, Validation F1-score: 0.9088
+Best F1-score till now on Validation data: 0.9248364263233793
+==================== Training of trial number:57 ====================
+Hyperparameters:
+Layer freeze: 150
+Dropout: 0.33827119427670194
+Learning rate: 5e-07
+Optimizer: Adam
+Momentum term: 0
+Patience: 6
+Device: cuda
+Best F1-score on Validation data until now: 0.9248364263233793
+/home/woody/iwfa/iwfa044h/CleanLab_Test/ActiveLearningApproaches/multiclass/OptunaStudy/Final/DinoL/Multilabel/OptunaStudy01multilabel_DinoL.py:98: FutureWarning: suggest_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float instead.
+  dropout = trial.suggest_uniform('dropout', 0.2, 0.5)
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-07 03:27:58,934] Trial 57 pruned. 
+Epoch 1/100, Training Loss: 0.1658, Training F1-score: 0.9286, Validation Loss: 0.1493, Validation F1-score: 0.9120
+Best F1-score till now on Validation data: 0.9248364263233793
+==================== Training of trial number:58 ====================
+Hyperparameters:
+Layer freeze: 108
+Dropout: 0.36521826135126123
+Learning rate: 5e-07
+Optimizer: Adam
+Momentum term: 0
+Patience: 3
+Device: cuda
+Best F1-score on Validation data until now: 0.9248364263233793
+/home/woody/iwfa/iwfa044h/CleanLab_Test/ActiveLearningApproaches/multiclass/OptunaStudy/Final/DinoL/Multilabel/OptunaStudy01multilabel_DinoL.py:98: FutureWarning: suggest_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float instead.
+  dropout = trial.suggest_uniform('dropout', 0.2, 0.5)
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+Epoch 1/100, Training Loss: 0.1459, Training F1-score: 0.9314, Validation Loss: 0.1308, Validation F1-score: 0.9192
+Best F1-score till now on the current trail on Validation data: 0.9192032528621978
+Epoch 2/100, Training Loss: 0.0718, Training F1-score: 0.9718, Validation Loss: 0.1547, Validation F1-score: 0.8928
+Epoch 3/100, Training Loss: 0.0565, Training F1-score: 0.9763, Validation Loss: 0.1294, Validation F1-score: 0.9074
+[I 2025-01-07 04:46:26,399] Trial 58 finished with value: 0.9248364263233793 and parameters: {'layer_freeze': 108, 'dropout': 0.36521826135126123, 'learning_rate': 5e-07, 'optimizer': 'Adam', 'patience': 3}. Best is trial 46 with value: 0.9248364263233793.
+Epoch 4/100, Training Loss: 0.0486, Training F1-score: 0.9783, Validation Loss: 0.1426, Validation F1-score: 0.8975
+Early stopping triggered after 4 epochs.
+Best F1-score till now on Validation data: 0.9248364263233793
+==================== Training of trial number:59 ====================
+Hyperparameters:
+Layer freeze: 110
+Dropout: 0.36659799898777296
+Learning rate: 5e-07
+Optimizer: Adam
+Momentum term: 0
+Patience: 3
+Device: cuda
+Best F1-score on Validation data until now: 0.9248364263233793
+/home/woody/iwfa/iwfa044h/CleanLab_Test/ActiveLearningApproaches/multiclass/OptunaStudy/Final/DinoL/Multilabel/OptunaStudy01multilabel_DinoL.py:98: FutureWarning: suggest_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float instead.
+  dropout = trial.suggest_uniform('dropout', 0.2, 0.5)
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-07 05:06:09,083] Trial 59 pruned. 
+Epoch 1/100, Training Loss: 0.1542, Training F1-score: 0.9331, Validation Loss: 0.1417, Validation F1-score: 0.9025
+Best F1-score till now on Validation data: 0.9248364263233793
+==================== Training of trial number:60 ====================
+Hyperparameters:
+Layer freeze: 97
+Dropout: 0.3614562640281722
+Learning rate: 5e-07
+Optimizer: Adam
+Momentum term: 0
+Patience: 4
+Device: cuda
+Best F1-score on Validation data until now: 0.9248364263233793
+/home/woody/iwfa/iwfa044h/CleanLab_Test/ActiveLearningApproaches/multiclass/OptunaStudy/Final/DinoL/Multilabel/OptunaStudy01multilabel_DinoL.py:98: FutureWarning: suggest_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float instead.
+  dropout = trial.suggest_uniform('dropout', 0.2, 0.5)
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-07 05:26:28,980] Trial 60 pruned. 
+Epoch 1/100, Training Loss: 0.1537, Training F1-score: 0.9357, Validation Loss: 0.1438, Validation F1-score: 0.9087
+Best F1-score till now on Validation data: 0.9248364263233793
+==================== Training of trial number:61 ====================
+Hyperparameters:
+Layer freeze: 80
+Dropout: 0.39477462993094015
+Learning rate: 5e-07
+Optimizer: Adam
+Momentum term: 0
+Patience: 6
+Device: cuda
+Best F1-score on Validation data until now: 0.9248364263233793
+/home/woody/iwfa/iwfa044h/CleanLab_Test/ActiveLearningApproaches/multiclass/OptunaStudy/Final/DinoL/Multilabel/OptunaStudy01multilabel_DinoL.py:98: FutureWarning: suggest_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float instead.
+  dropout = trial.suggest_uniform('dropout', 0.2, 0.5)
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-07 05:47:31,370] Trial 61 pruned. 
+Epoch 1/100, Training Loss: 0.1534, Training F1-score: 0.9342, Validation Loss: 0.1381, Validation F1-score: 0.9126
+Best F1-score till now on Validation data: 0.9248364263233793
+==================== Training of trial number:62 ====================
+Hyperparameters:
+Layer freeze: 145
+Dropout: 0.3434764962252866
+Learning rate: 0.001
+Optimizer: Adam
+Momentum term: 0
+Patience: 4
+Device: cuda
+Best F1-score on Validation data until now: 0.9248364263233793
+/home/woody/iwfa/iwfa044h/CleanLab_Test/ActiveLearningApproaches/multiclass/OptunaStudy/Final/DinoL/Multilabel/OptunaStudy01multilabel_DinoL.py:98: FutureWarning: suggest_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float instead.
+  dropout = trial.suggest_uniform('dropout', 0.2, 0.5)
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-07 06:05:35,460] Trial 62 pruned. 
+Epoch 1/100, Training Loss: 0.6449, Training F1-score: 0.1716, Validation Loss: 0.6298, Validation F1-score: 0.2304
+Best F1-score till now on Validation data: 0.9248364263233793
+==================== Training of trial number:63 ====================
+Hyperparameters:
+Layer freeze: 127
+Dropout: 0.40955021384728957
+Learning rate: 1e-07
+Optimizer: Adam
+Momentum term: 0
+Patience: 8
+Device: cuda
+Best F1-score on Validation data until now: 0.9248364263233793
+/home/woody/iwfa/iwfa044h/CleanLab_Test/ActiveLearningApproaches/multiclass/OptunaStudy/Final/DinoL/Multilabel/OptunaStudy01multilabel_DinoL.py:98: FutureWarning: suggest_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float instead.
+  dropout = trial.suggest_uniform('dropout', 0.2, 0.5)
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-07 06:24:29,684] Trial 63 pruned. 
+Epoch 1/100, Training Loss: 0.2896, Training F1-score: 0.8581, Validation Loss: 0.2026, Validation F1-score: 0.8990
+Best F1-score till now on Validation data: 0.9248364263233793
+==================== Training of trial number:64 ====================
+Hyperparameters:
+Layer freeze: 156
+Dropout: 0.32620836678667714
+Learning rate: 7.5e-07
+Optimizer: Adam
+Momentum term: 0
+Patience: 9
+Device: cuda
+Best F1-score on Validation data until now: 0.9248364263233793
+/home/woody/iwfa/iwfa044h/CleanLab_Test/ActiveLearningApproaches/multiclass/OptunaStudy/Final/DinoL/Multilabel/OptunaStudy01multilabel_DinoL.py:98: FutureWarning: suggest_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float instead.
+  dropout = trial.suggest_uniform('dropout', 0.2, 0.5)
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+Epoch 1/100, Training Loss: 0.1422, Training F1-score: 0.9390, Validation Loss: 0.1454, Validation F1-score: 0.9152
+Best F1-score till now on the current trail on Validation data: 0.9151817792775686
+Epoch 2/100, Training Loss: 0.0687, Training F1-score: 0.9718, Validation Loss: 0.1512, Validation F1-score: 0.9079
+Epoch 3/100, Training Loss: 0.0535, Training F1-score: 0.9762, Validation Loss: 0.1360, Validation F1-score: 0.9195
+Best F1-score till now on the current trail on Validation data: 0.919490535586562
+Epoch 4/100, Training Loss: 0.0459, Training F1-score: 0.9783, Validation Loss: 0.1429, Validation F1-score: 0.9118
+Epoch 5/100, Training Loss: 0.0404, Training F1-score: 0.9797, Validation Loss: 0.1407, Validation F1-score: 0.9177
+Epoch 6/100, Training Loss: 0.0364, Training F1-score: 0.9810, Validation Loss: 0.1807, Validation F1-score: 0.9073
+Epoch 7/100, Training Loss: 0.0332, Training F1-score: 0.9824, Validation Loss: 0.1539, Validation F1-score: 0.8967
+Epoch 8/100, Training Loss: 0.0300, Training F1-score: 0.9836, Validation Loss: 0.1468, Validation F1-score: 0.9119
+Epoch 9/100, Training Loss: 0.0280, Training F1-score: 0.9848, Validation Loss: 0.1623, Validation F1-score: 0.9101
+Epoch 10/100, Training Loss: 0.0255, Training F1-score: 0.9860, Validation Loss: 0.1697, Validation F1-score: 0.9054
+Epoch 11/100, Training Loss: 0.0232, Training F1-score: 0.9868, Validation Loss: 0.1995, Validation F1-score: 0.9109
+[I 2025-01-07 09:53:32,026] Trial 64 finished with value: 0.9248364263233793 and parameters: {'layer_freeze': 156, 'dropout': 0.32620836678667714, 'learning_rate': 7.5e-07, 'optimizer': 'Adam', 'patience': 9}. Best is trial 46 with value: 0.9248364263233793.
+Epoch 12/100, Training Loss: 0.0217, Training F1-score: 0.9877, Validation Loss: 0.1999, Validation F1-score: 0.9075
+Early stopping triggered after 12 epochs.
+Best F1-score till now on Validation data: 0.9248364263233793
+==================== Training of trial number:65 ====================
+Hyperparameters:
+Layer freeze: 136
+Dropout: 0.35780109253748105
+Learning rate: 2.5e-06
+Optimizer: SGD
+Momentum term: 0.9358755464302425
+Patience: 7
+Device: cuda
+Best F1-score on Validation data until now: 0.9248364263233793
+/home/woody/iwfa/iwfa044h/CleanLab_Test/ActiveLearningApproaches/multiclass/OptunaStudy/Final/DinoL/Multilabel/OptunaStudy01multilabel_DinoL.py:98: FutureWarning: suggest_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float instead.
+  dropout = trial.suggest_uniform('dropout', 0.2, 0.5)
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-07 10:11:27,401] Trial 65 pruned. 
+Epoch 1/100, Training Loss: 0.4495, Training F1-score: 0.6876, Validation Loss: 0.2891, Validation F1-score: 0.8454
+Best F1-score till now on Validation data: 0.9248364263233793
+==================== Training of trial number:66 ====================
+Hyperparameters:
+Layer freeze: 51
+Dropout: 0.38085789580990365
+Learning rate: 1e-05
+Optimizer: Adam
+Momentum term: 0
+Patience: 6
+Device: cuda
+Best F1-score on Validation data until now: 0.9248364263233793
+/home/woody/iwfa/iwfa044h/CleanLab_Test/ActiveLearningApproaches/multiclass/OptunaStudy/Final/DinoL/Multilabel/OptunaStudy01multilabel_DinoL.py:98: FutureWarning: suggest_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float instead.
+  dropout = trial.suggest_uniform('dropout', 0.2, 0.5)
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-07 10:33:46,045] Trial 66 pruned. 
+Epoch 1/100, Training Loss: 0.1123, Training F1-score: 0.9410, Validation Loss: 0.1829, Validation F1-score: 0.8851
+Best F1-score till now on Validation data: 0.9248364263233793
+==================== Training of trial number:67 ====================
+Hyperparameters:
+Layer freeze: 157
+Dropout: 0.32443171923196834
+Learning rate: 7.5e-07
+Optimizer: Adam
+Momentum term: 0
+Patience: 9
+Device: cuda
+Best F1-score on Validation data until now: 0.9248364263233793
+/home/woody/iwfa/iwfa044h/CleanLab_Test/ActiveLearningApproaches/multiclass/OptunaStudy/Final/DinoL/Multilabel/OptunaStudy01multilabel_DinoL.py:98: FutureWarning: suggest_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float instead.
+  dropout = trial.suggest_uniform('dropout', 0.2, 0.5)
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-07 10:51:11,990] Trial 67 pruned. 
+Epoch 1/100, Training Loss: 0.1464, Training F1-score: 0.9335, Validation Loss: 0.1445, Validation F1-score: 0.9118
+Best F1-score till now on Validation data: 0.9248364263233793
+==================== Training of trial number:68 ====================
+Hyperparameters:
+Layer freeze: 118
+Dropout: 0.3105528482979334
+Learning rate: 0.00025
+Optimizer: Adam
+Momentum term: 0
+Patience: 9
+Device: cuda
+Best F1-score on Validation data until now: 0.9248364263233793
+/home/woody/iwfa/iwfa044h/CleanLab_Test/ActiveLearningApproaches/multiclass/OptunaStudy/Final/DinoL/Multilabel/OptunaStudy01multilabel_DinoL.py:98: FutureWarning: suggest_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float instead.
+  dropout = trial.suggest_uniform('dropout', 0.2, 0.5)
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-07 11:10:32,915] Trial 68 pruned. 
+Epoch 1/100, Training Loss: 0.6424, Training F1-score: 0.1832, Validation Loss: 0.6287, Validation F1-score: 0.0000
+Best F1-score till now on Validation data: 0.9248364263233793
+==================== Training of trial number:69 ====================
+Hyperparameters:
+Layer freeze: 154
+Dropout: 0.3328038566592347
+Learning rate: 7.5e-07
+Optimizer: Adam
+Momentum term: 0
+Patience: 8
+Device: cuda
+Best F1-score on Validation data until now: 0.9248364263233793
+/home/woody/iwfa/iwfa044h/CleanLab_Test/ActiveLearningApproaches/multiclass/OptunaStudy/Final/DinoL/Multilabel/OptunaStudy01multilabel_DinoL.py:98: FutureWarning: suggest_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float instead.
+  dropout = trial.suggest_uniform('dropout', 0.2, 0.5)
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-07 11:28:16,873] Trial 69 pruned. 
+Epoch 1/100, Training Loss: 0.1400, Training F1-score: 0.9361, Validation Loss: 0.1450, Validation F1-score: 0.8866
+Best F1-score till now on Validation data: 0.9248364263233793
+==================== Training of trial number:70 ====================
+Hyperparameters:
+Layer freeze: 167
+Dropout: 0.34678098142527486
+Learning rate: 5e-05
+Optimizer: Adam
+Momentum term: 0
+Patience: 10
+Device: cuda
+Best F1-score on Validation data until now: 0.9248364263233793
+/home/woody/iwfa/iwfa044h/CleanLab_Test/ActiveLearningApproaches/multiclass/OptunaStudy/Final/DinoL/Multilabel/OptunaStudy01multilabel_DinoL.py:98: FutureWarning: suggest_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float instead.
+  dropout = trial.suggest_uniform('dropout', 0.2, 0.5)
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-07 11:45:28,786] Trial 70 pruned. 
+Epoch 1/100, Training Loss: 0.1937, Training F1-score: 0.8819, Validation Loss: 0.2700, Validation F1-score: 0.8854
+Best F1-score till now on Validation data: 0.9248364263233793
+==================== Training of trial number:71 ====================
+Hyperparameters:
+Layer freeze: 147
+Dropout: 0.3221393585746375
+Learning rate: 7.5e-05
+Optimizer: Adam
+Momentum term: 0
+Patience: 11
+Device: cuda
+Best F1-score on Validation data until now: 0.9248364263233793
+/home/woody/iwfa/iwfa044h/CleanLab_Test/ActiveLearningApproaches/multiclass/OptunaStudy/Final/DinoL/Multilabel/OptunaStudy01multilabel_DinoL.py:98: FutureWarning: suggest_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float instead.
+  dropout = trial.suggest_uniform('dropout', 0.2, 0.5)
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-07 12:03:27,504] Trial 71 pruned. 
+Epoch 1/100, Training Loss: 0.6408, Training F1-score: 0.1850, Validation Loss: 0.6292, Validation F1-score: 0.0000
+Best F1-score till now on Validation data: 0.9248364263233793
+==================== Training of trial number:72 ====================
+Hyperparameters:
+Layer freeze: 192
+Dropout: 0.3934656227481917
+Learning rate: 5e-07
+Optimizer: Adam
+Momentum term: 0
+Patience: 8
+Device: cuda
+Best F1-score on Validation data until now: 0.9248364263233793
+/home/woody/iwfa/iwfa044h/CleanLab_Test/ActiveLearningApproaches/multiclass/OptunaStudy/Final/DinoL/Multilabel/OptunaStudy01multilabel_DinoL.py:98: FutureWarning: suggest_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float instead.
+  dropout = trial.suggest_uniform('dropout', 0.2, 0.5)
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+Epoch 1/100, Training Loss: 0.1805, Training F1-score: 0.9206, Validation Loss: 0.1464, Validation F1-score: 0.9181
+Best F1-score till now on the current trail on Validation data: 0.918148468808035
+Epoch 2/100, Training Loss: 0.0904, Training F1-score: 0.9656, Validation Loss: 0.1269, Validation F1-score: 0.9220
+Best F1-score till now on the current trail on Validation data: 0.9219534642935363
+Epoch 3/100, Training Loss: 0.0691, Training F1-score: 0.9727, Validation Loss: 0.1228, Validation F1-score: 0.9150
+Epoch 4/100, Training Loss: 0.0576, Training F1-score: 0.9757, Validation Loss: 0.1250, Validation F1-score: 0.9147
+Epoch 5/100, Training Loss: 0.0509, Training F1-score: 0.9763, Validation Loss: 0.1211, Validation F1-score: 0.9226
+Best F1-score till now on the current trail on Validation data: 0.9226447305130057
+Epoch 6/100, Training Loss: 0.0458, Training F1-score: 0.9781, Validation Loss: 0.1298, Validation F1-score: 0.9092
+Epoch 7/100, Training Loss: 0.0416, Training F1-score: 0.9792, Validation Loss: 0.1412, Validation F1-score: 0.9162
+Epoch 8/100, Training Loss: 0.0385, Training F1-score: 0.9807, Validation Loss: 0.1382, Validation F1-score: 0.9100
+Epoch 9/100, Training Loss: 0.0354, Training F1-score: 0.9824, Validation Loss: 0.1318, Validation F1-score: 0.9166
+Epoch 10/100, Training Loss: 0.0332, Training F1-score: 0.9824, Validation Loss: 0.1362, Validation F1-score: 0.9186
+Epoch 11/100, Training Loss: 0.0309, Training F1-score: 0.9838, Validation Loss: 0.1584, Validation F1-score: 0.8875
+Epoch 12/100, Training Loss: 0.0292, Training F1-score: 0.9844, Validation Loss: 0.1543, Validation F1-score: 0.9174
+[I 2025-01-07 15:28:32,348] Trial 72 finished with value: 0.9248364263233793 and parameters: {'layer_freeze': 192, 'dropout': 0.3934656227481917, 'learning_rate': 5e-07, 'optimizer': 'Adam', 'patience': 8}. Best is trial 46 with value: 0.9248364263233793.
+Epoch 13/100, Training Loss: 0.0269, Training F1-score: 0.9859, Validation Loss: 0.1585, Validation F1-score: 0.9146
+Early stopping triggered after 13 epochs.
+Best F1-score till now on Validation data: 0.9248364263233793
+==================== Training of trial number:73 ====================
+Hyperparameters:
+Layer freeze: 143
+Dropout: 0.2944818995226715
+Learning rate: 2.5e-07
+Optimizer: Adam
+Momentum term: 0
+Patience: 4
+Device: cuda
+Best F1-score on Validation data until now: 0.9248364263233793
+/home/woody/iwfa/iwfa044h/CleanLab_Test/ActiveLearningApproaches/multiclass/OptunaStudy/Final/DinoL/Multilabel/OptunaStudy01multilabel_DinoL.py:98: FutureWarning: suggest_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float instead.
+  dropout = trial.suggest_uniform('dropout', 0.2, 0.5)
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-07 15:46:55,659] Trial 73 pruned. 
+Epoch 1/100, Training Loss: 0.2078, Training F1-score: 0.9052, Validation Loss: 0.1680, Validation F1-score: 0.8992
+Best F1-score till now on Validation data: 0.9248364263233793
+==================== Training of trial number:74 ====================
+Hyperparameters:
+Layer freeze: 111
+Dropout: 0.3676668556741849
+Learning rate: 0.0025
+Optimizer: Adam
+Momentum term: 0
+Patience: 5
+Device: cuda
+Best F1-score on Validation data until now: 0.9248364263233793
+/home/woody/iwfa/iwfa044h/CleanLab_Test/ActiveLearningApproaches/multiclass/OptunaStudy/Final/DinoL/Multilabel/OptunaStudy01multilabel_DinoL.py:98: FutureWarning: suggest_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float instead.
+  dropout = trial.suggest_uniform('dropout', 0.2, 0.5)
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-07 16:06:53,133] Trial 74 pruned. 
+Epoch 1/100, Training Loss: 0.6445, Training F1-score: 0.1764, Validation Loss: 0.6409, Validation F1-score: 0.0000
+Best F1-score till now on Validation data: 0.9248364263233793
+==================== Training of trial number:75 ====================
+Hyperparameters:
+Layer freeze: 173
+Dropout: 0.3558267133443866
+Learning rate: 7.5e-07
+Optimizer: SGD
+Momentum term: 0.8476905792459646
+Patience: 10
+Device: cuda
+Best F1-score on Validation data until now: 0.9248364263233793
+/home/woody/iwfa/iwfa044h/CleanLab_Test/ActiveLearningApproaches/multiclass/OptunaStudy/Final/DinoL/Multilabel/OptunaStudy01multilabel_DinoL.py:98: FutureWarning: suggest_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float instead.
+  dropout = trial.suggest_uniform('dropout', 0.2, 0.5)
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-07 16:23:33,334] Trial 75 pruned. 
+Epoch 1/100, Training Loss: 0.6436, Training F1-score: 0.3357, Validation Loss: 0.6050, Validation F1-score: 0.2341
+Best F1-score till now on Validation data: 0.9248364263233793
+==================== Training of trial number:76 ====================
+Hyperparameters:
+Layer freeze: 131
+Dropout: 0.336318021624757
+Learning rate: 0.005
+Optimizer: Adam
+Momentum term: 0
+Patience: 9
+Device: cuda
+Best F1-score on Validation data until now: 0.9248364263233793
+/home/woody/iwfa/iwfa044h/CleanLab_Test/ActiveLearningApproaches/multiclass/OptunaStudy/Final/DinoL/Multilabel/OptunaStudy01multilabel_DinoL.py:98: FutureWarning: suggest_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float instead.
+  dropout = trial.suggest_uniform('dropout', 0.2, 0.5)
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-07 16:42:20,533] Trial 76 pruned. 
+Epoch 1/100, Training Loss: 0.6414, Training F1-score: 0.1618, Validation Loss: 0.6291, Validation F1-score: 0.0000
+Best F1-score till now on Validation data: 0.9248364263233793
+==================== Training of trial number:77 ====================
+Hyperparameters:
+Layer freeze: 195
+Dropout: 0.3989657741131176
+Learning rate: 5e-07
+Optimizer: Adam
+Momentum term: 0
+Patience: 7
+Device: cuda
+Best F1-score on Validation data until now: 0.9248364263233793
+/home/woody/iwfa/iwfa044h/CleanLab_Test/ActiveLearningApproaches/multiclass/OptunaStudy/Final/DinoL/Multilabel/OptunaStudy01multilabel_DinoL.py:98: FutureWarning: suggest_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float instead.
+  dropout = trial.suggest_uniform('dropout', 0.2, 0.5)
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-07 16:58:15,425] Trial 77 pruned. 
+Epoch 1/100, Training Loss: 0.1784, Training F1-score: 0.9181, Validation Loss: 0.1631, Validation F1-score: 0.8892
+Best F1-score till now on Validation data: 0.9248364263233793
+==================== Training of trial number:78 ====================
+Hyperparameters:
+Layer freeze: 186
+Dropout: 0.3846991652958293
+Learning rate: 5e-07
+Optimizer: Adam
+Momentum term: 0
+Patience: 8
+Device: cuda
+Best F1-score on Validation data until now: 0.9248364263233793
+/home/woody/iwfa/iwfa044h/CleanLab_Test/ActiveLearningApproaches/multiclass/OptunaStudy/Final/DinoL/Multilabel/OptunaStudy01multilabel_DinoL.py:98: FutureWarning: suggest_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float instead.
+  dropout = trial.suggest_uniform('dropout', 0.2, 0.5)
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+Epoch 1/100, Training Loss: 0.1672, Training F1-score: 0.9260, Validation Loss: 0.1395, Validation F1-score: 0.9161
+Best F1-score till now on the current trail on Validation data: 0.9161207196335496
+Epoch 2/100, Training Loss: 0.0824, Training F1-score: 0.9678, Validation Loss: 0.1349, Validation F1-score: 0.9024
+Epoch 3/100, Training Loss: 0.0642, Training F1-score: 0.9742, Validation Loss: 0.1253, Validation F1-score: 0.9177
+Best F1-score till now on the current trail on Validation data: 0.9176849117015312
+Epoch 4/100, Training Loss: 0.0537, Training F1-score: 0.9769, Validation Loss: 0.1303, Validation F1-score: 0.9159
+Epoch 5/100, Training Loss: 0.0482, Training F1-score: 0.9773, Validation Loss: 0.1237, Validation F1-score: 0.9098
+Epoch 6/100, Training Loss: 0.0437, Training F1-score: 0.9793, Validation Loss: 0.1415, Validation F1-score: 0.9024
+Epoch 7/100, Training Loss: 0.0404, Training F1-score: 0.9800, Validation Loss: 0.1374, Validation F1-score: 0.8994
+Epoch 8/100, Training Loss: 0.0365, Training F1-score: 0.9820, Validation Loss: 0.1409, Validation F1-score: 0.8990
+Epoch 9/100, Training Loss: 0.0347, Training F1-score: 0.9823, Validation Loss: 0.1483, Validation F1-score: 0.9146
+Epoch 10/100, Training Loss: 0.0319, Training F1-score: 0.9834, Validation Loss: 0.1492, Validation F1-score: 0.8995
+[I 2025-01-07 19:55:58,199] Trial 78 finished with value: 0.9248364263233793 and parameters: {'layer_freeze': 186, 'dropout': 0.3846991652958293, 'learning_rate': 5e-07, 'optimizer': 'Adam', 'patience': 8}. Best is trial 46 with value: 0.9248364263233793.
+Epoch 11/100, Training Loss: 0.0295, Training F1-score: 0.9840, Validation Loss: 0.1678, Validation F1-score: 0.8961
+Early stopping triggered after 11 epochs.
+Best F1-score till now on Validation data: 0.9248364263233793
+==================== Training of trial number:79 ====================
+Hyperparameters:
+Layer freeze: 193
+Dropout: 0.37453539085396
+Learning rate: 5e-07
+Optimizer: Adam
+Momentum term: 0
+Patience: 11
+Device: cuda
+Best F1-score on Validation data until now: 0.9248364263233793
+/home/woody/iwfa/iwfa044h/CleanLab_Test/ActiveLearningApproaches/multiclass/OptunaStudy/Final/DinoL/Multilabel/OptunaStudy01multilabel_DinoL.py:98: FutureWarning: suggest_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float instead.
+  dropout = trial.suggest_uniform('dropout', 0.2, 0.5)
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-07 20:12:27,779] Trial 79 pruned. 
+Epoch 1/100, Training Loss: 0.1686, Training F1-score: 0.9211, Validation Loss: 0.1514, Validation F1-score: 0.9100
+Best F1-score till now on Validation data: 0.9248364263233793
+==================== Training of trial number:80 ====================
+Hyperparameters:
+Layer freeze: 158
+Dropout: 0.4114923619664143
+Learning rate: 5e-07
+Optimizer: Adam
+Momentum term: 0
+Patience: 7
+Device: cuda
+Best F1-score on Validation data until now: 0.9248364263233793
+/home/woody/iwfa/iwfa044h/CleanLab_Test/ActiveLearningApproaches/multiclass/OptunaStudy/Final/DinoL/Multilabel/OptunaStudy01multilabel_DinoL.py:98: FutureWarning: suggest_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float instead.
+  dropout = trial.suggest_uniform('dropout', 0.2, 0.5)
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-07 20:30:02,132] Trial 80 pruned. 
+Epoch 1/100, Training Loss: 0.1712, Training F1-score: 0.9221, Validation Loss: 0.1581, Validation F1-score: 0.9044
+Best F1-score till now on Validation data: 0.9248364263233793
+==================== Training of trial number:81 ====================
+Hyperparameters:
+Layer freeze: 174
+Dropout: 0.34661442878981763
+Learning rate: 0.00075
+Optimizer: Adam
+Momentum term: 0
+Patience: 3
+Device: cuda
+Best F1-score on Validation data until now: 0.9248364263233793
+/home/woody/iwfa/iwfa044h/CleanLab_Test/ActiveLearningApproaches/multiclass/OptunaStudy/Final/DinoL/Multilabel/OptunaStudy01multilabel_DinoL.py:98: FutureWarning: suggest_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float instead.
+  dropout = trial.suggest_uniform('dropout', 0.2, 0.5)
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-07 20:47:09,032] Trial 81 pruned. 
+Epoch 1/100, Training Loss: 0.6448, Training F1-score: 0.1795, Validation Loss: 0.6303, Validation F1-score: 0.0000
+Best F1-score till now on Validation data: 0.9248364263233793
+==================== Training of trial number:82 ====================
+Hyperparameters:
+Layer freeze: 182
+Dropout: 0.39123649568204805
+Learning rate: 2.5e-05
+Optimizer: Adam
+Momentum term: 0
+Patience: 10
+Device: cuda
+Best F1-score on Validation data until now: 0.9248364263233793
+/home/woody/iwfa/iwfa044h/CleanLab_Test/ActiveLearningApproaches/multiclass/OptunaStudy/Final/DinoL/Multilabel/OptunaStudy01multilabel_DinoL.py:98: FutureWarning: suggest_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float instead.
+  dropout = trial.suggest_uniform('dropout', 0.2, 0.5)
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-07 21:03:36,313] Trial 82 pruned. 
+Epoch 1/100, Training Loss: 0.1238, Training F1-score: 0.9315, Validation Loss: 0.1497, Validation F1-score: 0.8832
+Best F1-score till now on Validation data: 0.9248364263233793
+==================== Training of trial number:83 ====================
+Hyperparameters:
+Layer freeze: 168
+Dropout: 0.43586903606448835
+Learning rate: 7.5e-06
+Optimizer: Adam
+Momentum term: 0
+Patience: 14
+Device: cuda
+Best F1-score on Validation data until now: 0.9248364263233793
+/home/woody/iwfa/iwfa044h/CleanLab_Test/ActiveLearningApproaches/multiclass/OptunaStudy/Final/DinoL/Multilabel/OptunaStudy01multilabel_DinoL.py:98: FutureWarning: suggest_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float instead.
+  dropout = trial.suggest_uniform('dropout', 0.2, 0.5)
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-07 21:20:45,158] Trial 83 pruned. 
+Epoch 1/100, Training Loss: 0.1076, Training F1-score: 0.9449, Validation Loss: 0.1534, Validation F1-score: 0.9113
+Best F1-score till now on Validation data: 0.9248364263233793
+==================== Training of trial number:84 ====================
+Hyperparameters:
+Layer freeze: 187
+Dropout: 0.2908890655839113
+Learning rate: 0.0001
+Optimizer: Adam
+Momentum term: 0
+Patience: 9
+Device: cuda
+Best F1-score on Validation data until now: 0.9248364263233793
+/home/woody/iwfa/iwfa044h/CleanLab_Test/ActiveLearningApproaches/multiclass/OptunaStudy/Final/DinoL/Multilabel/OptunaStudy01multilabel_DinoL.py:98: FutureWarning: suggest_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float instead.
+  dropout = trial.suggest_uniform('dropout', 0.2, 0.5)
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-07 21:36:58,064] Trial 84 pruned. 
+Epoch 1/100, Training Loss: 0.6033, Training F1-score: 0.3262, Validation Loss: 0.6302, Validation F1-score: 0.0000
+Best F1-score till now on Validation data: 0.9248364263233793
+==================== Training of trial number:85 ====================
+Hyperparameters:
+Layer freeze: 200
+Dropout: 0.3282088886973619
+Learning rate: 0.0075
+Optimizer: Adam
+Momentum term: 0
+Patience: 8
+Device: cuda
+Best F1-score on Validation data until now: 0.9248364263233793
+/home/woody/iwfa/iwfa044h/CleanLab_Test/ActiveLearningApproaches/multiclass/OptunaStudy/Final/DinoL/Multilabel/OptunaStudy01multilabel_DinoL.py:98: FutureWarning: suggest_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float instead.
+  dropout = trial.suggest_uniform('dropout', 0.2, 0.5)
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-07 21:52:34,207] Trial 85 pruned. 
+Epoch 1/100, Training Loss: 0.6425, Training F1-score: 0.1561, Validation Loss: 0.6292, Validation F1-score: 0.0000
+Best F1-score till now on Validation data: 0.9248364263233793
+==================== Training of trial number:86 ====================
+Hyperparameters:
+Layer freeze: 138
+Dropout: 0.31330713386472037
+Learning rate: 5e-07
+Optimizer: Adam
+Momentum term: 0
+Patience: 11
+Device: cuda
+Best F1-score on Validation data until now: 0.9248364263233793
+/home/woody/iwfa/iwfa044h/CleanLab_Test/ActiveLearningApproaches/multiclass/OptunaStudy/Final/DinoL/Multilabel/OptunaStudy01multilabel_DinoL.py:98: FutureWarning: suggest_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float instead.
+  dropout = trial.suggest_uniform('dropout', 0.2, 0.5)
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-07 22:11:00,027] Trial 86 pruned. 
+Epoch 1/100, Training Loss: 0.1479, Training F1-score: 0.9374, Validation Loss: 0.1446, Validation F1-score: 0.9072
+Best F1-score till now on Validation data: 0.9248364263233793
+==================== Training of trial number:87 ====================
+Hyperparameters:
+Layer freeze: 185
+Dropout: 0.38353955219877117
+Learning rate: 5e-07
+Optimizer: Adam
+Momentum term: 0
+Patience: 8
+Device: cuda
+Best F1-score on Validation data until now: 0.9248364263233793
+/home/woody/iwfa/iwfa044h/CleanLab_Test/ActiveLearningApproaches/multiclass/OptunaStudy/Final/DinoL/Multilabel/OptunaStudy01multilabel_DinoL.py:98: FutureWarning: suggest_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float instead.
+  dropout = trial.suggest_uniform('dropout', 0.2, 0.5)
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+Epoch 1/100, Training Loss: 0.1712, Training F1-score: 0.9194, Validation Loss: 0.1402, Validation F1-score: 0.9210
+Best F1-score till now on the current trail on Validation data: 0.9209922251160831
+Epoch 2/100, Training Loss: 0.0834, Training F1-score: 0.9677, Validation Loss: 0.1263, Validation F1-score: 0.9198
+Epoch 3/100, Training Loss: 0.0645, Training F1-score: 0.9735, Validation Loss: 0.1391, Validation F1-score: 0.8929
+Epoch 4/100, Training Loss: 0.0554, Training F1-score: 0.9768, Validation Loss: 0.1346, Validation F1-score: 0.9142
+Epoch 5/100, Training Loss: 0.0494, Training F1-score: 0.9771, Validation Loss: 0.1237, Validation F1-score: 0.9139
+Epoch 6/100, Training Loss: 0.0452, Training F1-score: 0.9781, Validation Loss: 0.1410, Validation F1-score: 0.8835
+Epoch 7/100, Training Loss: 0.0412, Training F1-score: 0.9802, Validation Loss: 0.1199, Validation F1-score: 0.9189
+Epoch 8/100, Training Loss: 0.0382, Training F1-score: 0.9809, Validation Loss: 0.1316, Validation F1-score: 0.9034
+[I 2025-01-08 00:35:52,019] Trial 87 finished with value: 0.9248364263233793 and parameters: {'layer_freeze': 185, 'dropout': 0.38353955219877117, 'learning_rate': 5e-07, 'optimizer': 'Adam', 'patience': 8}. Best is trial 46 with value: 0.9248364263233793.
+Epoch 9/100, Training Loss: 0.0353, Training F1-score: 0.9820, Validation Loss: 0.1226, Validation F1-score: 0.9151
+Early stopping triggered after 9 epochs.
+Best F1-score till now on Validation data: 0.9248364263233793
+==================== Training of trial number:88 ====================
+Hyperparameters:
+Layer freeze: 194
+Dropout: 0.3624703749291669
+Learning rate: 1e-06
+Optimizer: Adam
+Momentum term: 0
+Patience: 6
+Device: cuda
+Best F1-score on Validation data until now: 0.9248364263233793
+/home/woody/iwfa/iwfa044h/CleanLab_Test/ActiveLearningApproaches/multiclass/OptunaStudy/Final/DinoL/Multilabel/OptunaStudy01multilabel_DinoL.py:98: FutureWarning: suggest_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float instead.
+  dropout = trial.suggest_uniform('dropout', 0.2, 0.5)
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+[I 2025-01-08 00:51:57,711] Trial 88 pruned. 
+Epoch 1/100, Training Loss: 0.1395, Training F1-score: 0.9337, Validation Loss: 0.1568, Validation F1-score: 0.8829
+Best F1-score till now on Validation data: 0.9248364263233793
+==================== Training of trial number:89 ====================
+Hyperparameters:
+Layer freeze: 162
+Dropout: 0.40597625056583436
+Learning rate: 5e-07
+Optimizer: Adam
+Momentum term: 0
+Patience: 7
+Device: cuda
+Best F1-score on Validation data until now: 0.9248364263233793
+/home/woody/iwfa/iwfa044h/CleanLab_Test/ActiveLearningApproaches/multiclass/OptunaStudy/Final/DinoL/Multilabel/OptunaStudy01multilabel_DinoL.py:98: FutureWarning: suggest_uniform has been deprecated in v3.0.0. This feature will be removed in v6.0.0. See https://github.com/optuna/optuna/releases/tag/v3.0.0. Use suggest_float instead.
+  dropout = trial.suggest_uniform('dropout', 0.2, 0.5)
+Using cache found in /home/hpc/iwfa/iwfa044h/.cache/torch/hub/facebookresearch_dinov2_main
+Epoch 1/100, Training Loss: 0.1684, Training F1-score: 0.9280, Validation Loss: 0.1432, Validation F1-score: 0.9228
+Best F1-score till now on the current trail on Validation data: 0.9227554522284188
+Epoch 2/100, Training Loss: 0.0836, Training F1-score: 0.9699, Validation Loss: 0.1335, Validation F1-score: 0.9185
+Epoch 3/100, Training Loss: 0.0639, Training F1-score: 0.9749, Validation Loss: 0.1365, Validation F1-score: 0.8990
+Epoch 4/100, Training Loss: 0.0539, Training F1-score: 0.9765, Validation Loss: 0.1385, Validation F1-score: 0.9046
+Epoch 5/100, Training Loss: 0.0473, Training F1-score: 0.9791, Validation Loss: 0.1335, Validation F1-score: 0.9205
+Epoch 6/100, Training Loss: 0.0426, Training F1-score: 0.9800, Validation Loss: 0.1452, Validation F1-score: 0.9016
+slurmstepd: error: *** JOB 968516 ON tg072 CANCELLED AT 2025-01-08T02:49:50 DUE TO TIME LIMIT ***
+=== JOB_STATISTICS ===
+=== current date     : Wed 08 Jan 2025 02:49:52 AM CET
+= Job-ID             : 968516 on tinygpu
+= Job-Name           : MinicondaName
+= Job-Command        : /home/woody/iwfa/iwfa044h/runner4.sh
+= Initial workdir    : /home/woody/iwfa/iwfa044h
+= Queue/Partition    : v100
+= Slurm account      : iwfa with QOS=normal
+= Requested resources:  for 1-00:00:00
+= Elapsed runtime    : 1-00:00:00
+= Total RAM usage    : 3.1 GiB of requested  GiB (%)   
+= Node list          : tg072
+= Subm/Elig/Start/End: 2025-01-07T02:48:46 / 2025-01-07T02:48:46 / 2025-01-07T02:49:50 / 2025-01-08T02:49:50
+======================
+=== Quota infos ======
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]
+Tesla V100-PCIE-32GB, 00000000:18:00.0, 1003907, 97 %, 35 %, 8028 MiB, 86327888 ms
