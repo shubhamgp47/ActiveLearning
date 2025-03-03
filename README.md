@@ -159,8 +159,8 @@ ai-faps-shubham-gupta/
 To clone this repository and navigate into the project directory, run the following commands:
 
 ```bash
-git clone https://github.com/andi677/ai-faps-shubham-gupta.git
-cd ai-faps-shubham-gupta
+git clone https://github.com/shubham47/ActiveLearning.git
+cd ActiveLearning
 ```
 
 ## Create the Environment
