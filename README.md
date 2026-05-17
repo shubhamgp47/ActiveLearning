@@ -173,3 +173,7 @@ To set up the environment, use Conda:
 conda env create -f requirements.yml
 conda activate ActiveLearning
 ```
+
+## Results
+1. Results for DinoS multiclass classification. Experiments were run 10 times for each strategy.
+   ![DinoS_multiclass_Test_F1](plot/3592e718-b783-4c79-b3c4-196c7ce18db1.jpg)
