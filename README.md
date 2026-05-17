@@ -3,13 +3,15 @@
 ## Aim of the Project
 In objective of this study is to evaluate the effectiveness of various Active Learning approaches in reducing labeling effort for defect detection in manufacturing coils. Specifically,this study aims to assess whether AL-based instance selection for labeling can outperform traditional Random Sampling. Additionally, we also compare the effectiveness of various AL query strategies and the performance of the models. We tackle the following research questions -
 
-Research Question 1 : Does active learning surpass random sampling?
+Research Question 1 : Does AL outperform RS or at least achieve the same results as RS with fewer samples?
 
-Research Question 2: Which active learning query strategies do not result in worse results compared to random sampling?
+Research Question 2: Which AL strategies do not worsen the results compared to RS?
 
-Research Question 3: Does the gain over random sampling justified considering the overhead costs involved?
+Research Question 3: Are multiclass supported query strategies better than multilabel query strategies?
 
-We have used DINOv2 and EfficientNetv2 models for the experiments and Optuna for hzperparameter optimisation.
+Research Question 4: Is it justified to implement AL considering the overhead costs involved?
+
+We have used DINOv2 and EfficientNetv2 models for the experiments and Optuna for hyperparameter optimization.
 
 # Project Structure
 ```
