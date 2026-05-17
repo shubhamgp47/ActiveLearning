@@ -176,4 +176,22 @@ conda activate ActiveLearning
 
 ## Results
 1. Results for DinoS multiclass classification. Experiments were run 10 times for each strategy.
-   ![DinoS_multiclass_Test_F1](plot/3592e718-b783-4c79-b3c4-196c7ce18db1.jpg)
+![DinoS_multiclass_Test_F1](Plots/DinoS_multiclass_Test_F1.png)
+
+2. Results for DinoS multilabel classification. Experiments were run 5 times for each strategy.
+![DinoS_multilabel_Test_F1](Plots/DinoS_multilabel_Test_F1.png)
+
+3. Results for DinoS multilabel classification where samples were selected by multiclass strategies. Experiments were run 5 times for each strategy.
+![DinoS_multiclass_to_multilabel_Test_F1](Plots/DinoS_multiclass_to_multilabel_Test_F1.png)
+
+4. Results for DinoL multiclass classification. Experiments were run twice for each strategy.
+![DinoL_multiclass_Test_F1](Plots/DinoL_multiclass_Test_F1.png)
+
+5. Results for DinoL multilabel classification. Experiments were run twice for each strategy.
+![DinoL_multilabel_Test_F1](Plots/DinoL_multilabel_Test_F1.png)
+
+5. Results for EfficientNet multiclass classification. Experiments were run twice for Margin Sampling and Random Sampling and once for Entropy and Uncertainty Sampling.
+![Efficientnet_multiclass_Test_F1](Plots/EfficientNet_multiclass_Test_F1.png)
+
+6. Results for EfficientNet multilabel classification. Experiments were run twice for each strategy.
+![EfficientNet_multilabel_Test_F1](Plots/EfficientNet_multilabel_Test_F1.png)
